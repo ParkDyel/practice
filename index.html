@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <title>codemirror editor</title>
     <div id="includeJS">
-      <script src="./vender/codemirror/lib/codemirror.js"></script>
-
-      <script src="./vender/codemirror/mode/javascript/javascript.js"></script>
-      <link rel="stylesheet" href="./vender/codemirror/lib/codemirror.css">
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
       <link rel="stylesheet" href="./style.css">
       <!-- Insert this line above script imports  -->
       <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -20,7 +17,10 @@
   <body>
     <h1>editor</h1>
   
-  <div id="editor"></div>
+  <div id="editor">
+    <textarea :value="input" @input="update"></textarea>
+    <div v-html="compiledMarkdown"></div>
+  </div>
   <div class="editor-button-area">
     <input id="save-path" type="text"></input>
     <button id="save-btn">Save</button>
@@ -30,6 +30,8 @@
     <script src="./script.js"></script>
     <script src="./utils.js"></script>
   </body>
-
+  <div id="includeJsFooter">
+    <script src="editor.js"></script>
+  </div>
 
 </html>
