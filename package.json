@@ -1,0 +1,17 @@
+{
+  "name": "breadpad",
+  "version": "0.1.0",
+  "description": "learn about electrion",
+  "main": "background.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Editor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.4.14"
+  }
+}

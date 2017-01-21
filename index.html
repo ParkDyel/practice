@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>codemirror editor</title>
+    <div id="includeJS">
+      <script src="./vender/codemirror/lib/codemirror.js"></script>
+
+      <script src="./vender/codemirror/mode/javascript/javascript.js"></script>
+      <link rel="stylesheet" href="./vender/codemirror/lib/codemirror.css">
+      <link rel="stylesheet" href="./style.css">
+      <!-- Insert this line above script imports  -->
+      <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+      <!-- normal script imports etc  -->
+      <script src="./vender/lib/jquery-3.1.1.js"></script>    
+      <!-- Insert this line after script imports -->
+      <script>if (window.module) module = window.module;</script>
+    </div>
+  </head>
+  <body>
+    <h1>editor</h1>
+  
+  <div id="editor"></div>
+  <div class="editor-button-area">
+    <input id="save-path" type="text"></input>
+    <button id="save-btn">Save</button>
+    <button id="remove-btn">Remove</button>
+    <button id="exit-btn">Exit</button>
+  </div>
+    <script src="./script.js"></script>
+    <script src="./utils.js"></script>
+  </body>
+
+
+</html>
