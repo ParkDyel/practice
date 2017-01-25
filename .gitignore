@@ -1,0 +1,9 @@
+# just.ignore
+just.ignore
+
+# Logs
+npm-debug.log*
+
+# install via Package Manager
+node_modules
+

@@ -1,0 +1,11 @@
+{
+  "name": "monitoring",
+  "version": "0.1.0",
+  "description": "monitoring CPU_temperature via vcgencmd measure_temp",
+  "main": "background.js",
+  "scripts": {
+    "test": "node background.js"
+  },
+  "author": "Dyel",
+  "license": "MIT"
+}
