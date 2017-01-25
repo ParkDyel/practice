@@ -1,0 +1,11 @@
+{
+  "name": "displaysize",
+  "version": "0.1.0",
+  "description": "handling display size of electron window",
+  "main": "background.js",
+  "scripts": {
+    "test": "electron ./background.js"
+  },
+  "author": "Dyel",
+  "license": "MIT"
+}
