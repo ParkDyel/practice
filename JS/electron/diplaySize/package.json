@@ -4,7 +4,7 @@
   "description": "handling display size of electron window",
   "main": "background.js",
   "scripts": {
-    "test": "electron ./background.js"
+    "test": "electron ."
   },
   "author": "Dyel",
   "license": "MIT"
