@@ -1,0 +1,393 @@
+
+> code-oss-dev@1.9.0 preinstall /home/hl-rpi-0216/installed/vscode
+> node build/npm/preinstall.js
+
+npm WARN optional dep failed, continuing windows-foreground-love@0.1.0
+npm WARN optional dep failed, continuing windows-mutex@0.2.0
+npm WARN optional dep failed, continuing fsevents@0.3.8
+
+> oniguruma@6.1.1 install /home/hl-rpi-0216/installed/vscode/node_modules/oniguruma
+> node-gyp rebuild
+
+make: 디렉터리 '/home/hl-rpi-0216/installed/vscode/node_modules/oniguruma/build' 들어감
+  CC(target) Release/obj.target/oniguruma/deps/onig/regcomp.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regenc.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regerror.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regexec.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regext.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/reggnu.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regparse.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regposerr.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regposix.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regsyntax.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regtrav.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/regversion.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/st.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/ascii.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/big5.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/cp1251.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/euc_jp.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/euc_kr.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/euc_tw.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/gb18030.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_1.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_2.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_3.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_4.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_5.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_6.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_7.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_8.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_9.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_10.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_11.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_13.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_14.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_15.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/iso8859_16.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/koi8.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/koi8_r.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/mktable.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/sjis.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/unicode.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/utf16_be.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/utf16_le.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/utf32_be.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/utf32_le.o
+  CC(target) Release/obj.target/oniguruma/deps/onig/enc/utf8.o
+  AR(target) Release/obj.target/oniguruma.a
+  COPY Release/oniguruma.a
+  CXX(target) Release/obj.target/onig_scanner/src/onig-result.o
+  CXX(target) Release/obj.target/onig_scanner/src/onig-reg-exp.o
+  CXX(target) Release/obj.target/onig_scanner/src/onig-scanner.o
+  CXX(target) Release/obj.target/onig_scanner/src/onig-scanner-worker.o
+  CXX(target) Release/obj.target/onig_scanner/src/onig-searcher.o
+  CXX(target) Release/obj.target/onig_scanner/src/onig-string.o
+../src/onig-string.cc: In constructor ‘OnigString::OnigString(v8::Local<v8::String>)’:
+../src/onig-string.cc:25:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   hasMultiByteChars = (value->Length() != utf8_length_);
+                                        ^
+  SOLINK_MODULE(target) Release/obj.target/onig_scanner.node
+  COPY Release/onig_scanner.node
+make: 디렉터리 '/home/hl-rpi-0216/installed/vscode/node_modules/oniguruma/build' 나감
+
+> typechecker@2.0.8 preinstall /home/hl-rpi-0216/installed/vscode/node_modules/typechecker
+> node ./cyclic.js
+
+
+> code-oss-dev@1.9.0 postinstall /home/hl-rpi-0216/installed/vscode
+> node build/npm/postinstall.js
+
+
+> vscode-extensions@0.0.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions
+> node ./postinstall
+
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/README.md'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/cancellationToken.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.dom.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.dom.iterable.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.collection.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.core.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.generator.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.iterable.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.promise.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.proxy.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.reflect.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.symbol.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2016.array.include.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2016.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2017.object.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.es5.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.scripthost.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/lib.webworker.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/protocol.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/tsc.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/tsserver.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/tsserverlibrary.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/tsserverlibrary.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/typescriptServices.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/typescriptServices.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/lib/typingsInstaller.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/bin/tsc'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/bin/tsserver'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/Gulpfile.ts'
+typescript@2.0.10 node_modules/typescript
+npm WARN deprecated node-uuid@1.4.7: use uuid module instead
+npm WARN deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+typescript@1.8.10 node_modules/typescript
+
+vscode@1.0.1 node_modules/vscode
+├── semver@5.3.0
+├── glob@5.0.15 (path-is-absolute@1.0.1, inherits@2.0.3, once@1.4.0, inflight@1.0.6, minimatch@3.0.3)
+├── vinyl-source-stream@1.1.0 (vinyl@0.4.6, through2@0.6.5)
+├── gulp-gunzip@0.0.3 (vinyl@0.4.6, through2@0.6.5)
+├── gulp-chmod@1.3.0 (stat-mode@0.2.2, deep-assign@1.0.0, through2@2.0.3)
+├── source-map-support@0.3.3 (source-map@0.1.32)
+├── gulp-filter@4.0.0 (multimatch@2.1.0, streamfilter@1.0.5, gulp-util@3.0.8)
+├── mocha@2.5.3 (escape-string-regexp@1.0.2, commander@2.3.0, diff@1.4.0, supports-color@1.2.0, growl@1.9.2, to-iso-string@0.0.2, debug@2.2.0, mkdirp@0.5.1, glob@3.2.11, jade@0.26.3)
+├── request@2.79.0 (aws-sign2@0.6.0, tunnel-agent@0.4.3, forever-agent@0.6.1, oauth-sign@0.8.2, caseless@0.11.0, is-typedarray@1.0.0, stringstream@0.0.5, aws4@1.5.0, isstream@0.1.2, json-stringify-safe@5.0.1, extend@3.0.0, uuid@3.0.1, qs@6.3.0, combined-stream@1.0.5, mime-types@2.1.14, tough-cookie@2.3.2, form-data@2.1.2, hawk@3.1.3, http-signature@1.1.1, har-validator@2.0.6)
+├── gulp-vinyl-zip@1.4.0 (yazl@2.4.2, vinyl@0.4.6, queue@3.1.0, event-stream@3.3.4, yauzl@2.7.0, through2@0.6.5, vinyl-fs@2.4.4)
+├── gulp-symdest@1.1.0 (queue@3.1.0, event-stream@3.3.4, mkdirp@0.5.1, vinyl-fs@2.4.4)
+├── gulp-untar@0.0.4 (streamifier@0.1.1, event-stream@3.1.7, through2@0.4.2, tar@0.1.20, gulp-util@2.2.20)
+└── gulp-remote-src@0.4.1 (node.extend@1.1.6, vinyl@0.2.3, event-stream@3.1.7, through2@0.5.1, request@2.58.0)
+npm WARN deprecated node-uuid@1.4.7: use uuid module instead
+npm WARN deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.
+npm WARN deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+
+> vscode-colorize-tests@0.0.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions/vscode-colorize-tests
+> node ./node_modules/vscode/bin/install
+
+Detected VS Code engine version: *
+Fetching vscode.d.ts from: https://raw.githubusercontent.com/Microsoft/vscode/master/src/vs/vscode.d.ts
+vscode.d.ts successfully installed!
+
+typescript@1.8.10 node_modules/typescript
+
+vscode@1.0.1 node_modules/vscode
+├── semver@5.3.0
+├── glob@5.0.15 (path-is-absolute@1.0.1, inherits@2.0.3, inflight@1.0.6, once@1.4.0, minimatch@3.0.3)
+├── gulp-gunzip@0.0.3 (vinyl@0.4.6, through2@0.6.5)
+├── vinyl-source-stream@1.1.0 (vinyl@0.4.6, through2@0.6.5)
+├── gulp-chmod@1.3.0 (stat-mode@0.2.2, deep-assign@1.0.0, through2@2.0.3)
+├── source-map-support@0.3.3 (source-map@0.1.32)
+├── gulp-filter@4.0.0 (multimatch@2.1.0, streamfilter@1.0.5, gulp-util@3.0.8)
+├── request@2.79.0 (aws-sign2@0.6.0, tunnel-agent@0.4.3, forever-agent@0.6.1, oauth-sign@0.8.2, caseless@0.11.0, is-typedarray@1.0.0, stringstream@0.0.5, aws4@1.5.0, isstream@0.1.2, json-stringify-safe@5.0.1, extend@3.0.0, uuid@3.0.1, qs@6.3.0, combined-stream@1.0.5, mime-types@2.1.14, tough-cookie@2.3.2, form-data@2.1.2, hawk@3.1.3, http-signature@1.1.1, har-validator@2.0.6)
+├── mocha@2.5.3 (escape-string-regexp@1.0.2, commander@2.3.0, diff@1.4.0, supports-color@1.2.0, growl@1.9.2, to-iso-string@0.0.2, debug@2.2.0, mkdirp@0.5.1, glob@3.2.11, jade@0.26.3)
+├── gulp-vinyl-zip@1.4.0 (yazl@2.4.2, vinyl@0.4.6, queue@3.1.0, yauzl@2.7.0, event-stream@3.3.4, through2@0.6.5, vinyl-fs@2.4.4)
+├── gulp-symdest@1.1.0 (queue@3.1.0, event-stream@3.3.4, mkdirp@0.5.1, vinyl-fs@2.4.4)
+├── gulp-untar@0.0.4 (streamifier@0.1.1, event-stream@3.1.7, through2@0.4.2, tar@0.1.20, gulp-util@2.2.20)
+└── gulp-remote-src@0.4.1 (node.extend@1.1.6, vinyl@0.2.3, event-stream@3.1.7, through2@0.5.1, request@2.58.0)
+npm WARN package.json json@0.1.0 No description
+npm WARN package.json json@0.1.0 No repository field.
+npm WARN package.json json@0.1.0 No README data
+npm WARN package.json json@0.1.0 No license field.
+
+> json@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/json
+> cd server && npm install
+
+npm WARN package.json vscode-json-languageserver@1.0.0 No repository field.
+npm WARN package.json vscode-json-languageserver@1.0.0 No README data
+ms@0.7.2 node_modules/ms
+
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+@types/node@6.0.62 node_modules/@types/node
+
+request-light@0.2.0 node_modules/request-light
+
+vscode-uri@1.0.0 node_modules/vscode-uri
+
+https-proxy-agent@0.3.6 node_modules/https-proxy-agent
+
+http-proxy-agent@0.2.7 node_modules/http-proxy-agent
+
+agent-base@1.0.2 node_modules/agent-base
+
+extend@3.0.0 node_modules/extend
+
+jsonc-parser@0.3.1 node_modules/jsonc-parser
+
+debug@2.6.0 node_modules/debug
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-json-languageservice@2.0.0-next.12 node_modules/vscode-json-languageservice
+
+vscode-languageserver@3.0.2-beta.5 node_modules/vscode-languageserver
+winreg@0.0.13 node_modules/winreg
+
+vscode-extension-telemetry@0.0.5 node_modules/vscode-extension-telemetry
+
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+@types/node@6.0.62 node_modules/@types/node
+
+applicationinsights@0.15.6 node_modules/applicationinsights
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-languageclient@3.0.2-beta.5 node_modules/vscode-languageclient
+npm WARN package.json configuration-editing@0.0.1 No description
+npm WARN package.json configuration-editing@0.0.1 No repository field.
+npm WARN package.json configuration-editing@0.0.1 No README data
+npm WARN package.json configuration-editing@0.0.1 No license field.
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+jsonc-parser@0.3.1 node_modules/jsonc-parser
+npm WARN package.json extension-editing@0.0.1 No description
+npm WARN package.json extension-editing@0.0.1 No repository field.
+npm WARN package.json extension-editing@0.0.1 No README data
+npm WARN package.json extension-editing@0.0.1 No license field.
+npm WARN package.json vscode-markdown@0.2.0 No repository field.
+npm WARN package.json vscode-markdown@0.2.0 No README data
+npm WARN package.json vscode-markdown@0.2.0 No license field.
+markdown-it-named-headers@0.0.4 node_modules/markdown-it-named-headers
+
+winreg@0.0.13 node_modules/winreg
+
+vscode-extension-telemetry@0.0.5 node_modules/vscode-extension-telemetry
+
+linkify-it@1.2.4 node_modules/linkify-it
+
+mdurl@1.0.1 node_modules/mdurl
+
+uc.micro@1.0.2 node_modules/uc.micro
+
+entities@1.1.1 node_modules/entities
+
+sprintf-js@1.0.3 node_modules/sprintf-js
+
+applicationinsights@0.15.6 node_modules/applicationinsights
+
+string@3.3.1 node_modules/string
+
+argparse@1.0.7 node_modules/argparse
+
+markdown-it@6.1.1 node_modules/markdown-it
+
+highlight.js@9.5.0 node_modules/highlight.js
+npm WARN package.json typescript@0.10.1 No repository field.
+npm WARN package.json typescript@0.10.1 No README data
+
+> typescript@0.10.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions/typescript
+> node ./bin/postinstall
+
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/tsc.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/tsserverlibrary.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/tsserverlibrary.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/typescript.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/typescript.js'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/typescriptServices.d.ts'
+removed '/home/hl-rpi-0216/installed/vscode/extensions/typescript/node_modules/typescript/lib/typescriptServices.js'
+@types/semver@5.3.30 node_modules/@types/semver
+
+winreg@0.0.13 node_modules/winreg
+
+vscode-extension-telemetry@0.0.5 node_modules/vscode-extension-telemetry
+
+vscode-nls@2.0.1 node_modules/vscode-nls
+
+applicationinsights@0.15.6 node_modules/applicationinsights
+
+semver@4.3.6 node_modules/semver
+
+typescript@2.1.5 node_modules/typescript
+npm WARN package.json php@0.1.0 No description
+npm WARN package.json php@0.1.0 No repository field.
+npm WARN package.json php@0.1.0 No README data
+npm WARN package.json php@0.1.0 No license field.
+vscode-nls@1.0.7 node_modules/vscode-nls
+npm WARN package.json javascript@0.1.0 No description
+npm WARN package.json javascript@0.1.0 No repository field.
+npm WARN package.json javascript@0.1.0 No README data
+npm WARN package.json javascript@0.1.0 No license field.
+ms@0.7.1 node_modules/ms
+
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+jsonc-parser@0.3.1 node_modules/jsonc-parser
+
+request-light@0.2.0 node_modules/request-light
+
+http-proxy-agent@0.2.7 node_modules/http-proxy-agent
+
+agent-base@1.0.2 node_modules/agent-base
+
+https-proxy-agent@0.3.6 node_modules/https-proxy-agent
+
+extend@3.0.0 node_modules/extend
+
+debug@2.2.0 node_modules/debug
+npm WARN package.json css@0.1.0 No description
+npm WARN package.json css@0.1.0 No repository field.
+npm WARN package.json css@0.1.0 No README data
+npm WARN package.json css@0.1.0 No license field.
+
+> css@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/css
+> cd server && npm install
+
+npm WARN package.json vscode-css-languageserver@1.0.0 No repository field.
+npm WARN package.json vscode-css-languageserver@1.0.0 No README data
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+@types/node@6.0.62 node_modules/@types/node
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-languageserver@3.0.2-beta.5 node_modules/vscode-languageserver
+
+vscode-css-languageservice@2.0.0-next.9 node_modules/vscode-css-languageservice
+vscode-nls@2.0.1 node_modules/vscode-nls
+
+@types/node@6.0.62 node_modules/@types/node
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-languageclient@3.0.2-beta.5 node_modules/vscode-languageclient
+npm WARN package.json html@0.1.0 No description
+npm WARN package.json html@0.1.0 No repository field.
+npm WARN package.json html@0.1.0 No README data
+npm WARN package.json html@0.1.0 No license field.
+
+> html@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/html
+> cd server && npm install
+
+npm WARN package.json vscode-html-languageserver@1.0.0 No repository field.
+npm WARN package.json vscode-html-languageserver@1.0.0 No README data
+@types/mocha@2.2.37 node_modules/@types/mocha
+
+vscode-nls@2.0.1 node_modules/vscode-nls
+
+@types/node@6.0.58 node_modules/@types/node
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+vscode-uri@1.0.0 node_modules/vscode-uri
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-html-languageservice@2.0.0-next.6 node_modules/vscode-html-languageservice
+
+vscode-languageserver@3.0.2-beta.5 node_modules/vscode-languageserver
+
+vscode-css-languageservice@2.0.0-next.8 node_modules/vscode-css-languageservice
+@types/mocha@2.2.38 node_modules/@types/mocha
+
+winreg@0.0.13 node_modules/winreg
+
+vscode-extension-telemetry@0.0.5 node_modules/vscode-extension-telemetry
+
+vscode-nls@2.0.1 node_modules/vscode-nls
+
+vscode-languageserver-types@3.0.2-beta.5 node_modules/vscode-languageserver-types
+
+@types/node@6.0.62 node_modules/@types/node
+
+applicationinsights@0.15.6 node_modules/applicationinsights
+
+vscode-jsonrpc@3.0.2-beta.5 node_modules/vscode-jsonrpc
+
+vscode-languageclient@3.0.2-beta.5 node_modules/vscode-languageclient
+npm WARN package.json git@0.0.1 No repository field.
+npm WARN package.json git@0.0.1 No license field.
+vscode-nls@2.0.2 node_modules/vscode-nls
+
+denodeify@1.2.1 node_modules/denodeify
+
+lodash@4.17.4 node_modules/lodash

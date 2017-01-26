@@ -1,0 +1,78 @@
+
+> code-oss-dev@1.9.0 preinstall /home/hl-rpi-0216/installed/vscode
+> node build/npm/preinstall.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/gulp-watch/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.0.17: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"arm"})
+
+> code-oss-dev@1.9.0 postinstall /home/hl-rpi-0216/installed/vscode
+> node build/npm/postinstall.js
+
+
+> vscode-extensions@0.0.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions
+> node ./postinstall
+
+{ [Error: ENOENT: no such file or directory, unlink '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/Gulpfile.ts']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'unlink',
+  path: '/home/hl-rpi-0216/installed/vscode/extensions/node_modules/typescript/Gulpfile.ts' }
+
+> vscode-colorize-tests@0.0.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions/vscode-colorize-tests
+> node ./node_modules/vscode/bin/install
+
+Detected VS Code engine version: *
+Fetching vscode.d.ts from: https://raw.githubusercontent.com/Microsoft/vscode/master/src/vs/vscode.d.ts
+vscode.d.ts successfully installed!
+
+
+> json@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/json
+> cd server && npm install
+
+npm WARN vscode-json-languageserver@1.0.0 No repository field.
+npm WARN json@0.1.0 No description
+npm WARN json@0.1.0 No repository field.
+npm WARN json@0.1.0 No license field.
+npm WARN configuration-editing@0.0.1 No description
+npm WARN configuration-editing@0.0.1 No repository field.
+npm WARN configuration-editing@0.0.1 No license field.
+npm WARN extension-editing@0.0.1 No description
+npm WARN extension-editing@0.0.1 No repository field.
+npm WARN extension-editing@0.0.1 No license field.
+npm WARN vscode-markdown@0.2.0 No repository field.
+npm WARN vscode-markdown@0.2.0 No license field.
+
+> typescript@0.10.1 postinstall /home/hl-rpi-0216/installed/vscode/extensions/typescript
+> node ./bin/postinstall
+
+npm WARN typescript@0.10.1 No repository field.
+npm WARN php@0.1.0 No description
+npm WARN php@0.1.0 No repository field.
+npm WARN php@0.1.0 No license field.
+npm WARN javascript@0.1.0 No description
+npm WARN javascript@0.1.0 No repository field.
+npm WARN javascript@0.1.0 No license field.
+
+> css@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/css
+> cd server && npm install
+
+npm WARN vscode-css-languageserver@1.0.0 No repository field.
+npm WARN css@0.1.0 No description
+npm WARN css@0.1.0 No repository field.
+npm WARN css@0.1.0 No license field.
+
+> html@0.1.0 postinstall /home/hl-rpi-0216/installed/vscode/extensions/html
+> cd server && npm install
+
+npm WARN vscode-html-languageserver@1.0.0 No repository field.
+npm WARN html@0.1.0 No description
+npm WARN html@0.1.0 No repository field.
+npm WARN html@0.1.0 No license field.
+npm WARN git@0.0.1 No repository field.
+npm WARN git@0.0.1 No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@0.3.8 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@0.3.8: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"arm"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: windows-foreground-love@0.1.0 (node_modules/windows-foreground-love):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for windows-foreground-love@0.1.0: wanted {"os":"win32","arch":"any"} (current: {"os":"linux","arch":"arm"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: windows-mutex@0.2.0 (node_modules/windows-mutex):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for windows-mutex@0.2.0: wanted {"os":"win32","arch":"any"} (current: {"os":"linux","arch":"arm"})

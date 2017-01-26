@@ -1,0 +1,43 @@
+/home/hl-rpi-0216/installed/vscode/build/gulpfile.vscode.js:226
+			...builtInExtensions.map(e => `!extensions/${e.name}/**`)
+			^^^
+
+SyntaxError: Unexpected token ...
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:414:25)
+    at Object.Module._extensions..js (module.js:442:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:311:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+    at /home/hl-rpi-0216/installed/vscode/gulpfile.js:76:17
+    at Array.forEach (native)
+    at Object.<anonymous> (/home/hl-rpi-0216/installed/vscode/gulpfile.js:76:4)
+    at Module._compile (module.js:435:26)
+    at Object.Module._extensions..js (module.js:442:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:311:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+/home/hl-rpi-0216/installed/vscode/build/gulpfile.vscode.js:226
+			...builtInExtensions.map(e => `!extensions/${e.name}/**`)
+			^^^
+
+SyntaxError: Unexpected token ...
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:414:25)
+    at Object.Module._extensions..js (module.js:442:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:311:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+    at /home/hl-rpi-0216/installed/vscode/gulpfile.js:76:17
+    at Array.forEach (native)
+    at Object.<anonymous> (/home/hl-rpi-0216/installed/vscode/gulpfile.js:76:4)
+    at Module._compile (module.js:435:26)
+    at Object.Module._extensions..js (module.js:442:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:311:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+./scripts/code.sh: 줄 41: /home/hl-rpi-0216/installed/vscode/.build/electron/code-oss: 그런 파일이나 디렉터리가 없습니다

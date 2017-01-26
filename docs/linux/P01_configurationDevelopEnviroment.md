@@ -46,6 +46,7 @@
  sudo apt-get update
  sudo apt-get install chromium-browser
  // install code
+ ###### it isn't work on fish shell, maybe use bash shell
  sudo apt-get install libx11-dev
  git clone https://github.com/microsoft/vscode
  cd vscode
