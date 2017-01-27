@@ -1,0 +1,31 @@
+module.js:457
+    throw err;
+    ^
+
+Error: Cannot find module 'gulp-watch'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/hl-rpi-0216/installed/vscode/build/lib/watch/index.js:22:4)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+module.js:457
+    throw err;
+    ^
+
+Error: Cannot find module 'gulp-watch'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/hl-rpi-0216/installed/vscode/build/lib/watch/index.js:22:4)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+./scripts/code.sh: 줄 41: /home/hl-rpi-0216/installed/vscode/.build/electron/code-oss: 그런 파일이나 디렉터리가 없습니다

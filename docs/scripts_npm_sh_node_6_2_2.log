@@ -1,0 +1,18 @@
+npm WARN deprecated ghooks@1.0.3: Use npmjs.com/husky instead, see https://github.com/gtramontina/ghooks/issues/166
+npm WARN deprecated node-uuid@1.4.7: use uuid module instead
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm ls graceful-fs' to find it in the tree.
+npm WARN deprecated minimatch@0.2.12: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.
+npm WARN lifecycle typechecker@2.0.8~preinstall: cannot run in wd %s %s (wd=%s) typechecker@2.0.8 node ./cyclic.js /home/hl-rpi-0216/installed/vscode/node_modules/.staging/typechecker-3e76bed7
+npm WARN prefer global coffee-script@1.12.3 should be installed with -g
+npm WARN prefer global js-beautify@1.5.10 should be installed with -g
+
+> oniguruma@6.1.1 install /home/hl-rpi-0216/installed/vscode/node_modules/oniguruma
+> node-gyp rebuild
+
+
+
