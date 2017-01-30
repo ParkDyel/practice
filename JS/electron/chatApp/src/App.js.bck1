@@ -1,0 +1,88 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+import ChatListComponent from './Components/ChatList/ChatList.js';
+import UserListComponent from './Components/UserList/UserList.js';
+
+function toggle(){
+  if(document.getElementById("chatList").style.display==="")
+    document.getElementById("chatList").style.display="none";
+  else
+    document.getElementById("chatList").style.display="";
+};
+
+function toggle2(){
+  if(document.getElementById("userList").style.display==="")
+    document.getElementById("userList").style.display="none";
+  else
+    document.getElementById("userList").style.display="";
+};
+
+class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.chats=[
+      {
+        id:1,
+        name:'A'
+      },
+      {
+        id:2,
+        name:'B'
+      },
+      {
+        id:3,
+        name:'C'
+      },
+      {
+        id:4,
+        name:'D'
+      }
+    ];
+    this.users=[
+      {
+        id:1,
+        name:'UserA'
+      },
+      {
+        id:2,
+        name:'UserB'
+      },
+      {
+        id:3,
+        name:'UserC'
+      },
+      {
+        id:4,
+        name:'UserD'
+      }
+    ];
+  }
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <div id='chatList'>
+          <ChatListComponent chats={this.chats}/>
+        </div>
+        <div id='userList'>
+          <UserListComponent users={this.users}/>
+        </div>
+        <div>
+          <button onClick={toggle}>Show Chat List</button>
+          <button onClick={toggle2}>Show User List</button>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;

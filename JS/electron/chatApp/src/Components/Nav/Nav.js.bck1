@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+
+export default class NavComponent extends Component{
+  generateClickHandler(text){
+    return() => {
+      alert(text);
+    }
+  }
+
+  render(){
+    return (
+      <div>
+        <a onClick={this.generateClickHandler('chats')}>Chats</a>
+        <a onClick={this.generateClickHandler('users')}>Users</a>
+      </div>
+    );
+  }
+}
