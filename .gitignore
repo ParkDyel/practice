@@ -1,6 +1,9 @@
 # just.ignore
 just.ignore
 
+# Setting file
+init.*.*
+
 # Logs
 npm-debug.log*
 
