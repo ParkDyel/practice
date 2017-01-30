@@ -12,7 +12,7 @@ function createWindow () {
 
   // 그리고 현재 디렉터리의 index.html을 로드합니다.
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'src/index.html'),
     protocol: 'file:',
     slashes: true
   }))
