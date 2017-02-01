@@ -1,7 +1,7 @@
 {
-  "name": "displaysize",
+  "name": "displayElectron",
   "version": "0.1.0",
-  "description": "handling display size of electron window",
+  "description": "build Electron develoment enviroment on RPi",
   "main": "background.js",
   "scripts": {
     "test": "electron ."

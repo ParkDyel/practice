@@ -1,10 +1,9 @@
 {
   "name": "dyelmkdir",
-  "version": "0.1.0",
-  "description": "make directory as sequance path, and write 'just.ignore'.",
+  "version": "0.1.1",
+  "description": "make directory as sequancial path, and if not exist 'just.ignore', create it.",
   "main": "dyelMkdir.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dyel",
   "license": "MIT",
