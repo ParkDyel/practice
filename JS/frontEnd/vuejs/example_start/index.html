@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="title">
+    <h1 v-text="content[0]">content[0]</h1>
+    {# cannot exist same id tag #}
+    <h1 v-html="content[1]">content[1]</h1>
+  </div>
+  <div id="vueCounter">
+    <h1>카운터: {{ number }}</h1>
+    <button @click="increment">증가</button>
+    <button @click="decrement">감소</button>
+  </div>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="modules.vue"></script>
+</body>
+{#if vue.js locate here, app.vue will can't load vue.js#}
+</html>
