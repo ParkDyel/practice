@@ -2,32 +2,29 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>personal scheduler</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="../vender/lib/jquery-3.1.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="../vender/lib/vue.js"></script>
-  <script src="../vender/lib/firebase.js"></script>
 </head>
 
 <body>
-  <script type="text/javascript">
-    //페이지가 로드되면 실행한다.
-    $(document).ready(function () {
-      $("#contents").load("login.html");
-      //~이렇게 한줄만 해주면 알아서 contents에 testContents.html파일을 넣어 준다.
-    });
-  </script>
-  <div id="contents">
+  <div id="header">
+    <fake-nav></fake-nav>
   </div>
 </body>
 <footer>
   <div id="scripts">
+    <script src="../vender/lib/jquery-3.1.1.min.js"></script>
+    <script src="../vender/lib/vue.js"></script>
+    <script src="../vender/lib/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
-    <script src="../init.Firebase.js"></script>
+    <!--script src="../init.Firebase.js"></script-->
+    <script src="./components/loginModal.vue"></script>
+  </div>
+  <div>
+    <link rel="stylesheet" href="login.css">
   </div>
 </footer>
 

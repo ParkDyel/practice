@@ -1,5 +1,0 @@
-[Unit]
-Description=Dyel's made, jus test .service
-
-[Service]
-ExecStart=/usr/bin/touch home/hl-rpi-0216/test.txt
