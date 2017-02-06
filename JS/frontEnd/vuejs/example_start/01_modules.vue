@@ -1,7 +1,8 @@
 var vueCounter = new Vue({
   el: '#vueCounter', 
   data: {
-    number: 0
+    number: 0,
+    visible : false
   },
   // app 뷰 인스턴스를 위한 메소드들
   methods: {
@@ -12,6 +13,9 @@ var vueCounter = new Vue({
     },
     decrement: function() {
       this.number--;
+    },
+    showCounter: function(){
+      this.visible = !this.visible
     }
   }
 });
@@ -19,7 +23,8 @@ var vueCounter = new Vue({
 var title = new Vue({
   el: '#title', 
   data: {
-    content : ['from Park Dyel', '<br>now we just start!</br>']
+    content : ['from Park Dyel', '<br>now we just start!</br>'],
+    visible : true
   }
 });
 

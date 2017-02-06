@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Vue.js TEST PAGE</title>
+
+  <link rel="stylesheet" href="vue.css">
+</head>
+<body>
+  <!-- v-cloak is defined in vue.css and it will prevent shoing message before javascript loading complte.-->
+  <div id="title" v-cloak>
+    <h1 v-text="content[0]">content[0]</h1>
+    <!--# cannot exist same id tag #-->
+    <h1 v-html="content[1]" v-show="visible">content[1]</h1>
+  </div>
+  <div id="vueCounter" v-cloak>
+    <div v-show="visible">
+      <h1>카운터: {{ number }}</h1>
+      <!-- v-on that event listener is equl @ -->
+      <button @click="increment">증가</button>
+      <button @click="decrement">감소</button>
+      <h1 v-if="number>5">number grater or equl than 5</h1>
+      <h1 v-else-if="number===5">number is exactly same as 5</h1>
+      <h1 v-else>number less than 5</h1>
+      <!-- v-pre define this code had not a certain element, so if declare v-pre, cost time about compile will be shortter. even if {{ }} tag -->
+    </div>
+    <button @click="showCounter" v-show="!visible">카운터</button>    
+  </div>
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="01_modules.vue"></script>
+</body>
+<!--if vue.js locate here, app.vue will can't load vue.js-->
+</html>
