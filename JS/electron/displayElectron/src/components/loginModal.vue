@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="login.css">
-</head>
-
-<body>
-  <div id="fake-nav">
+<template>
+  <div class="fake-nav">
     <a href="#register" @click="open('register', $event)">Register</a>
-    <a href="#login" @click="open('login', $event)">Login</a>
-  </div>
-  <div class="user-modal-container" id="login-modal" @click="close">
+    <a href="#login" @click="open(login, $event)">Login</a>
+      <div class="user-modal-container" id="login-modal" @click="close">
     <div class="user-modal">
       <ul class="form-switcher">
         <li @click="flip('register', $event)"><a href="" id="register-form">Register</a>
@@ -45,11 +34,23 @@
       </div>
     </div>
   </div>
-</body>
-<footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../vender/lib/vue.js"></script>
-  <script src="login.js"></script>
-</footer>
-
-</html>
+  </div>
+</template>
+<script>
+  export default () {
+    methods: {
+      open: function (which, e) {
+        //      console.log(e);
+        e.preventDefault();
+        if (modal.active !== null) {
+          $('#form-' + modal.active).removeClass('active');
+          $('#' + modal.active + '-form').removeClass('active');
+        }
+        $('#login-modal').addClass('active');
+        $('#form-' + which).addClass('active');
+        $('#' + which + '-form').addClass('active');
+        modal.active = which;
+      }
+    }
+  }
+</script>

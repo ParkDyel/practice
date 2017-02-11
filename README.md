@@ -7,7 +7,7 @@ it's consist of 90% JavaScript and 10% etc.
 and JavaScript is consist of 30% Node.js, 30% Electron, 20% frond-End (like React.js, vue.js), 20% JavaScript it self.
 
 ## project list
-###JS 
+### JS 
 #### dyelMkdir
 {
   "name": "dyelmkdir",
@@ -38,4 +38,11 @@ and JavaScript is consist of 30% Node.js, 30% Electron, 20% frond-End (like Reac
     "electron": "^1.4.15"
   }
 }
-#### 
+
+## history
+{
+  '20170201' : {
+    'contents' : 'Merged distributed projects, and created documents',
+    'scripts' : 'git rm --cached .\PRWF'
+  }
+}
