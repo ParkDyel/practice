@@ -50,7 +50,7 @@ app.on('activate', () => {
     createWindow()
   }
 })
-a
+
 ipcMain.on('exit', (event, arg) => {
   // exit program
   // console.log(arg);
