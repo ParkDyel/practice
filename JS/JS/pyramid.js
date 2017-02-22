@@ -2,7 +2,7 @@ var strbuf;
 var height
 var width=0
 
-height = 16
+height = 15
 
 // for (var i = 0; i < height; i++) {
 //   strbuf = ''
