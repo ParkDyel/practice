@@ -48,3 +48,135 @@
 // expect 0,1,2
 // result 0,1,2
 // closure와 자기 호출 함수를 활용하여 해결할 수 있다.
+
+// 인코딩/디코딩 함수
+// escape() / unescape(), encodeURI() / decodeURI(), encodeURIComponent() / decodeURIComponent
+//var userUrl = 'http://dyel.net?category=축구'
+// console.log(escape(userUrl)); 
+// http%3A//dyel.net%3Fcategory%3D%uCD95%uAD6C -> 알파벳, 숫자, 일부 특수 문자를 제외하고 변환
+// console.log(encodeURI(userUrl));
+// http://dyel.net?category=%EC%B6%95%EA%B5%AC ->  escape() 함수에서 인터넷 주소에 사용되는 일부 특수 문자는 변환하지 않음 
+// console.log(encodeURIComponent(userUrl)); 
+// http%3A%2F%2Fdyel.net%3Fcategory%3D%EC%B6%95%EA%B5%AC -> 영어 숫자를 제외한 모든 문자 변환
+
+// console.log(isNaN(NaN))
+// console.log(isFinite(100/0))
+
+
+// // object
+// var output = {
+//   'data' : 'hello',
+//   return : function(){
+//     return this.data
+//   }
+// }
+
+// console.log(output['data'])
+// console.log(output.data)
+// console.log(output.return())
+
+//// object에 대한 for문
+
+// var 오브젝트 = {
+//   data1 : 'Dyel'
+// , data2 : 'Dior'
+// , data3 : 'Dore'
+// , value1 : 55
+// , value2 : 77
+// , value3 : 67
+// , buffer : ''
+// , function1 : function(key){
+//   return this.key
+// }
+// }
+
+// var value1='525';
+// for (var key in 오브젝트){
+//   console.log(key +' : ' + 오브젝트[key])
+// }
+
+// console.log('function1' in 오브젝트)
+
+// with(오브젝트){
+//   console.log(data1)
+//   console.log(data2)
+//   console.log(data3)
+//   console.log(value1)
+//   console.log(value2)
+//   console.log(value3)
+// }
+
+// console.log(value1)
+
+// console.log(오브젝트)
+// delete(오브젝트.buffer)
+// console.log(오브젝트)
+// console.log('%d', 오브젝트.value1)
+
+//// array with object
+
+// function makeStudentObject(name, test1, test2, test3, test4) {
+//   var willReturn = {
+//     이름: name,
+//     test1: test1,
+//     test2: test2,
+//     test3: test3,
+//     test4: test4,
+//     getSum: function () {
+//       return this.test1 + this.test2 + this.test3 + this.test4
+//     },
+//     getAverage: function () {
+//       return this.getSum() / 4
+//     },
+//     toString: function () {
+//       return this.이름 + ' : \tSUM = ' + this.getSum() + '\tAVG = ' + this.getAverage()
+//     }
+//   }
+//   return willReturn
+// }
+
+// var students = [{
+//   이름: '다이엘',
+//   test1: 100,
+//   test2: 100,
+//   test3: 100,
+//   test4: 100
+// }, {
+//   이름: '아난나',
+//   test1: 50,
+//   test2: 66,
+//   test3: 41,
+//   test4: 2
+// }, {
+//   이름: '루하마',
+//   test1: 40,
+//   test2: 78,
+//   test3: 57,
+//   test4: 16
+// }]
+
+// for (var i in students) {
+//   students[i].getSum = function () {
+//     return this.test1 + this.test2 + this.test3 + this.test4
+//   }
+//   students[i].getAverage = function () {
+//     return this.getSum() / 4
+//   }
+//   students[i].toString = function () {
+//     return this.이름 + ' : \tSUM = ' + this.getSum() + '\tAVG = ' + this.getAverage()
+//   }
+// }
+
+// for (var i in students) {
+//   console.log(students[i].toString())
+// }
+// console.log('\n\n')
+
+// students.push(makeStudentObject('잘생긴', 99, 53, 21, 45))
+// students.push(makeStudentObject('머엇진', 99, 99, 99, 99))
+
+// for (var i in students) {
+//   console.log(students[i].toString())
+// }
+
+//// constructor
