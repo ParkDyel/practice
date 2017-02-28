@@ -1,0 +1,20 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "tasks": [{
+      "taskName" : "basic",
+      "command": "echo",
+      "isShellCommand": true,
+      "args": ["Hello World"],
+      "showOutput": "always"
+    },
+    {
+      "taskName" : "c compiler",
+      "command": "gcc",
+      "isShellCommand": true,
+      "showOutput": "always",
+      "args": ["-g", "main.c", "*.h", "*.c", "-o", "main.exe"]
+    }
+  ]
+}
