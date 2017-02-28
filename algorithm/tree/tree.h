@@ -9,19 +9,15 @@ typedef struct _node{
 
 typedef node* nptr;
 
-typedef struct _tree{
-  nptr root;
-} tree;
-
-void init(tree* tptr,int data);
-void setData(node* nptr, int data);
-int getData(node* nptr);
-void setLeftNode(node* nptr, int data);
-node* getLeftNode(node* nptr);
-void setRightNode(node* nptr, int data);
-node* getRightNode(node* nptr);
-void deleteNode(node* nptr, char option);
-void deleteChildNode(node* nptr);
-void deleteTree(node* nptr);
+nptr initTreeNode(int data);
+void setData(nptr ptr, int data);
+int getData(nptr ptr);
+nptr setLeftNode(nptr parent, int data);
+nptr getLeftNode(nptr ptr);
+nptr setRightNode(nptr parent, int data);
+nptr getRightNode(nptr ptr);
+int deleteNode(nptr ptr, char option);
+void deleteChildNode(nptr ptr);
+void deleteTree(nptr nptr);
 
 #endif /* TREE_H_ */

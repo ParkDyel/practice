@@ -2,62 +2,71 @@
 #include <stdlib.h>
 #include "tree.h"
 
-void init(tree* tptr, int data){
-  nptr* node=(nptr*)malloc(sizeof(nptr));
-  node->value=data;
-  tptr->root=node;
+nptr initTreeNode(int data){
+  nptr nodeBusket=(nptr)malloc(sizeof(nptr));
+  nodeBusket->value=data;
+  nodeBusket->left=NULL;
+  nodeBusket->right=NULL;
+
+  return nodeBusket;
 }
 
-void setData(node* nptr, int data){
-  nptr->value=data;
+void setData(nptr ptr, int data){
+  ptr->value=data;
 }
-int getData(node* nptr){
-  return nptr->value;
-}
-
-void setLeftNode(node* parent, int data){
-  nptr* node=(nptr*)malloc(sizeof(nptr));
-  node->value=data;
-  parent->left = node;
-}
-
-node* getLeftNode(node* nptr){
-  return nprt->left
-}
-
-void setRightNode(node* parent, int data){
-  nptr* node=(nptr*)malloc(sizeof(nptr));
-  node->value=data;
-  parent->right = node;
-}
-
-node* getRightNode(node* nptr){
-  return nprt->right
-}
-
-void deleteNode(node* nptr, char option){
-  if(nptr->left == NULL && nptr->right == NULL){
-    free(nptr);
-  } else if(option == 'F'){
-    deleteNode(nptr->left, 'F');
-    deleteNode(nptr->right, 'F');
+int getData(nptr ptr){
+  if(ptr != NULL){
+    return ptr->value;
   } else {
-    printf("this node have child")
+    fprintf(stdout, "error:Incorrect Access:dosen\'t exist\n");
+    return NULL;
+  }
+}
+
+nptr setLeftNode(nptr parent, int data){
+  nptr nodeBusket = initTreeNode(data);
+  parent->left=nodeBusket;
+  return nodeBusket;
+}
+
+nptr getLeftNode(nptr ptr){
+  return ptr->left;
+}
+
+nptr setRightNode(nptr parent, int data){
+  nptr nodeBusket = initTreeNode(data);
+  parent->right=nodeBusket; //first fix:not allocate right value.
+  return nodeBusket;
+}
+
+nptr getRightNode(nptr ptr){
+  return ptr->right;
+}
+
+int deleteNode(nptr ptr, char option){
+  if(ptr->left == NULL && ptr->right == NULL){
+    printf("clear ptr: %d\n", ptr);
+    free(ptr);
+  } else if(option == 'F'){
+    deleteNode(ptr->left, 'F');
+    deleteNode(ptr->right, 'F');
+  } else {
+    printf("this node have child");
     return -1;
   }
 }
 
-void deleteChildNode(node* nptr){
-  if (nptr->left == NULL && nptr->right == NULL){
+void deleteChildNode(nptr ptr){
+  if (ptr->left == NULL && ptr->right == NULL){
     printf("noting to do");
     return;
   }
-  deleteNode(nptr->left, 'F');
-  deleteNode(nptr->right, 'F');
-  nptr->left = NULL;
-  nptr->right = NULL;
+  deleteNode(ptr->left, 'F');
+  deleteNode(ptr->right, 'F');
+  ptr->left = NULL;
+  ptr->right = NULL;
 }
 
-void deleteTree(node* nptr){
-  deleteChildNode(nptr);
+void deleteTree(nptr ptr){
+  deleteChildNode(ptr);
 }
