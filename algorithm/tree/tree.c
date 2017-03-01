@@ -3,12 +3,12 @@
 #include "tree.h"
 
 nptr initTreeNode(int data){
-  nptr nodeBusket=(nptr)malloc(sizeof(nptr));
-  nodeBusket->value=data;
-  nodeBusket->left=NULL;
-  nodeBusket->right=NULL;
+  nptr nodeBucket=(nptr)malloc(sizeof(nptr));
+  nodeBucket->value=data;
+  nodeBucket->left=NULL;
+  nodeBucket->right=NULL;
 
-  return nodeBusket;
+  return nodeBucket;
 }
 
 void setData(nptr ptr, int data){
@@ -24,9 +24,9 @@ int getData(nptr ptr){
 }
 
 nptr setLeftNode(nptr parent, int data){
-  nptr nodeBusket = initTreeNode(data);
-  parent->left=nodeBusket;
-  return nodeBusket;
+  nptr nodeBucket = initTreeNode(data);
+  parent->left=nodeBucket;
+  return nodeBucket;
 }
 
 nptr getLeftNode(nptr ptr){
@@ -34,9 +34,9 @@ nptr getLeftNode(nptr ptr){
 }
 
 nptr setRightNode(nptr parent, int data){
-  nptr nodeBusket = initTreeNode(data);
-  parent->right=nodeBusket; //first fix:not allocate right value.
-  return nodeBusket;
+  nptr nodeBucket = initTreeNode(data);
+  parent->right=nodeBucket; //first fix:not allocate right value.
+  return nodeBucket;
 }
 
 nptr getRightNode(nptr ptr){
