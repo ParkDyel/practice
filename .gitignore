@@ -10,3 +10,5 @@ npm-debug.log*
 # install via Package Manager
 node_modules
 
+# exe
+*.exe
