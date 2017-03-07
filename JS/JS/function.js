@@ -180,3 +180,24 @@
 // }
 
 //// constructor
+// var student = new Student()
+// Obeject, instance : Constructor function; it's simillar class, but not equl.
+// There are advantage on Constructor function, called prototype. it's share method between object made by same constructor.
+function Student(id, subject1, subject2, subject3, subject4) {
+  this.id = id
+  this.subjects = [subject1, subject2, subject3, subject4]
+}
+Student.prototype = {
+  getSum: function () {
+    return this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]
+  },
+  getAverage: function () {
+    return (this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]) / 4
+  },
+  toString: function () {
+    return 'id : ' + this.subjects[0] + '\t' + this.subjects[1] + '\t' + this.subjects[2] + '\t' + this.subjects[3]
+  }
+}
+
+var Dyel = new Student('Dyel', 100, 100, 100, 100)
+console.log(Dyel.toString())
