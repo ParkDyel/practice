@@ -180,24 +180,84 @@
 // }
 
 //// constructor
-// var student = new Student()
-// Obeject, instance : Constructor function; it's simillar class, but not equl.
-// There are advantage on Constructor function, called prototype. it's share method between object made by same constructor.
-function Student(id, subject1, subject2, subject3, subject4) {
-  this.id = id
-  this.subjects = [subject1, subject2, subject3, subject4]
-}
-Student.prototype = {
-  getSum: function () {
-    return this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]
-  },
-  getAverage: function () {
-    return (this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]) / 4
-  },
-  toString: function () {
-    return 'id : ' + this.subjects[0] + '\t' + this.subjects[1] + '\t' + this.subjects[2] + '\t' + this.subjects[3]
-  }
-}
+// // var student = new Student()
+// // Obeject, instance : Constructor function; it's simillar class, but not equl.
+// // There are advantage on Constructor function, called prototype. it's share method between object made by same constructor.
+// function Student(id, subject1, subject2, subject3, subject4) {
+//   this.id = id
+//   this.subjects = [subject1, subject2, subject3, subject4]
+// }
+// Student.prototype = {
+//   getSum: function () {
+//     return this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]
+//   },
+//   getAverage: function () {
+//     return (this.subjects[0] + this.subjects[1] + this.subjects[2] + this.subjects[3]) / 4
+//   },
+//   toString: function () {
+//     return 'id : ' + this.subjects[0] + '\t' + this.subjects[1] + '\t' + this.subjects[2] + '\t' + this.subjects[3]
+//   }
+// }
 
-var Dyel = new Student('Dyel', 100, 100, 100, 100)
-console.log(Dyel.toString())
+// var Dyel = new Student('Dyel', 100, 100, 100, 100)
+// console.log(Dyel.toString())
+// console.log(Dyel.id)
+
+// //// Enclapsulation
+// function Student(userId, passwd) {
+//   if (userId === 'master') {
+//     throw 'Don\'t set Id as \'master\''
+//   } else if (passwd === '12141214') {
+//     throw 'Don\'t set passwd as \'12141214\''
+//   }
+//   var enc_userId = userId
+//   var enc_passwd = passwd
+
+//   this.getUserId = function () {
+//     return enc_userId
+//   }
+//   this.getPasswd = function () {
+//     return enc_passwd
+//   }
+//   this.setUserId = function (userId) {
+//     if (userId === 'master') {
+//       throw 'Don\'t set Id as \'master\''
+//     } else {
+//       enc_userId = userId
+//     }
+//   }
+//   this.setPasswd = function (passwd) {
+//     if (passwd === '12141214') {
+//       throw 'Don\'t set passwd as \'12141214\''
+//     } else {
+//       enc_passwd = passwd
+//     }
+
+//   }
+// }
+// Student.prototype = {
+//   getDataId: function () {
+//     return this.getUserId() + this.getPasswd()
+//   }
+// }
+
+// var Dyel = new Student('Dyel', '1214')
+// console.log(Dyel.enc_userId)
+// // Dyel.setPasswd('14') // It will not work
+// // Dyel.setPasswd('12141214') // But this code throw error. So this method will run but cannot change innternal value.
+// console.log(Dyel.getDataId())
+
+
+// function RegisteredStudent(id, pwd, regi){
+//   this.base = Student
+//   this.base(id, pwd)
+//   var registered = regi
+// }
+// RegisteredStudent.prototype = Student.prototype
+// RegisteredStudent.prototype.constructor = RegisteredStudent
+
+// var Ruhama = new RegisteredStudent('Ruhama', '1214', 1)
+// console.log(Ruhama.enc_userId)
+// console.log(Ruhama.getDataId())
+
+// console.log(Ruhama instanceof Student)  // It will check Ruhama based on Student Constructor.
