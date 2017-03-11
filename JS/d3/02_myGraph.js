@@ -1,4 +1,5 @@
 var dataSet = [300, 100, 5, 60, 240]
+
 // // 01
 // d3.select("#myGraph")
 //   .append("rect") // <rect x={X_Axis} y={Y_Axis} width={width} height={height}></rect>
@@ -36,7 +37,7 @@ d3.select("#myGraph")
   .data(dataSet)
   .enter()
   .append("rect")
-  .attr("x", 0)
+  .attr("x", 10)
   .attr("y", function (d, i) {
     return i * 25
   })
@@ -63,12 +64,23 @@ d3.select("#myGraph")
     return d + "px"
   })
 
+var xScale = d3.scale.linear()
+  .domain([0, 300])
+  .range([0, 300])
+d3.select("#myGraph")
+  .append("g")
+  .attr("class", "axis")
+  .attr("transform", "translate(10, " + ((1 + dataSet.length) * 20 + 5) + ")")
+  .call(d3.svg.axis()
+    .scale(xScale)
+    .orient("bottom")
+  )
 
 // change data of chart, when click updateButton
 d3.select("#updateButton") // it work evenif myGraph
   .on("click", function () {
     for (var i = 0; i < dataSet.length; i++) {
-      dataSet[i] = Math.floor(Math.random() * 320)
+      dataSet[i] = Math.floor(Math.random() * 300)
     }
     d3.select("#myGraph")
       .selectAll("rect")
