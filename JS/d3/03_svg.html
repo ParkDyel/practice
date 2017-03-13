@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>게으른 종자여</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    svg {
+      width: 320px;
+      height: 240px;
+      border: 1px solid black;
+    }
+    
+    rect {
+      opacity: 0.5;
+      stroke-width: 4px;
+      stroke: black;
+      fill: orange;
+    }
+    
+    circle {
+      opacity: 0.75;
+      stroke-width: 4px;
+      stroke: red;
+      fill: blue;
+    }
+    
+    #div2 {
+      fill: #EE6600;
+      stroke-width: 4px;
+      stroke: #886600;
+    }
+    
+    #svg1 {
+      fill: #0066EE;
+      stroke-width: 4px;
+      stroke: #4444AA;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>SVG로 도형 그리기</h2>
+  <svg>
+    <rect x="10" y="20" width="180" height="160" rx="20" ry="40" />
+    <circle cx="190" cy="140" r="80" />
+  </svg>
+  <div id="div2">
+    <svg id="svg1">
+      <path d="M80,50 L220,90, L280,200" />
+    </svg>
+    <svg id="svg2">
+      <path d="M10,160, C80,-60 150,80 300,160, Z" />
+    </svg>
+  </div>
+</body>
+
+</html>
