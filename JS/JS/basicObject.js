@@ -132,17 +132,17 @@
 
 // Array
 
-var array = new Array('h', 'e', 'l', 'l', 'o')
-console.log(array.length) // 5
-console.log(array.join('')) // hello
-console.log(array.pop() + '\t\t' + array)
-console.log(array + '\t\t' + array[array.push('.') - 1])
-console.log(array.reverse().join(''))
-console.log(array.slice(1, 3).join(''))
-console.log(array.sort().join(''))
-console.log(array.sort(function (left, right) {
-  return right-left
-}).join(''))
+// var array = new Array('h', 'e', 'l', 'l', 'o')
+// console.log(array.length) // 5
+// console.log(array.join('')) // hello
+// console.log(array.pop() + '\t\t' + array)
+// console.log(array + '\t\t' + array[array.push('.') - 1])
+// console.log(array.reverse().join(''))
+// console.log(array.slice(1, 3).join(''))
+// console.log(array.sort().join(''))
+// console.log(array.sort(function (left, right) {
+//   return right-left
+// }).join(''))
 
 // review enclapsulation
 // function SqrtArg(args) {
@@ -165,3 +165,160 @@ console.log(array.sort(function (left, right) {
 
 // var test = new SqrtArg([14, 2, 15])
 // console.log(test.print())
+
+// Array.prototype.remove = function (index) {
+//   this.splice(index, 1)
+// }
+
+// var array = new Array(52, 173, 103, 32, 126, 365)
+
+// console.log(array)
+
+// // but, this way occur dis-expect result. : [ 52, 103, 32, 365 ] 
+// // because, when remove some a element, it pull array element. so some element will passed with out confirm if case.
+// // index 0 : 52 > 100 --> notting to do.
+// // index 1 : 173 > 100 --> remove array[1], and array[2] will be a array[1]. now array[2] is 32
+// // index 2 : (expected) 103 > 100 --> remove a element, but (result) : 32 > 100 --> notting to do.
+// for (var index = 0; index < array.length; index++) {
+//   if (array[index] > 100) {
+//     array.remove(index)
+//   }
+// }
+
+// // for make expected result, this revers for case way.
+// // result : [ 52, 32 ]
+// for (var index = array.length; index >= 0; index--) {
+//   if (array[index] > 100) {
+//     array.remove(index)
+//   }
+// }
+
+// console.log(array)
+// array.push(25)
+// console.log(array.pop())
+// array.splice(0,3)
+// console.log(array)
+
+// var array = new Array(1,2,3,4,5,4,3,2,1)
+// console.log('Value 3 in from head-side: ' + array.indexOf(3) + ', Value 3 in from end-side : ' + array.lastIndexOf(3))
+
+// var array = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+// var sum = 0;
+// var output = '';
+
+// array.forEach(function (element, index, array) {
+//   sum += element
+//   output += index + ' : ' + element + '\t ->\t SUM : ' + sum + '\n'
+// }, this);
+// console.log(output)
+
+// console.log(array.map(function (element, index, array) {
+//   return element * element
+// }, this))
+
+// var fillterArray = array.filter(function (element, index, array) {
+//   return (element % 2) == 0
+// })
+// console.log(fillterArray)
+
+// function ltFive(e, i, arr) {
+//   return e < 5;
+// }
+
+// function gtFive(e, i, arr) {
+//   return e >= 5;
+// }
+
+// output = ''
+// console.log(array.every(ltFive) + ':' + array.every(gtFive))  // if every element of array, return true.
+// console.log(array.some(ltFive) + ':' + array.some(gtFive))    // if some element of array, return true.
+// reduce(), reduceRight()
+
+
+//// toJSON
+// var object = {
+//   name : 'dyel',
+//   region : 'seoul'
+// }
+// console.log(object.name)
+
+// var objectJSON = JSON.stringify(object)
+// objectJSON.name = 'RuHaMa'
+// console.log(objectJSON.name)  // ! result : undefined
+
+// // #### Date()
+
+// var date = new Date()
+// console.log('now : ' + date)
+// // date.setDate(date.getDate() + 7)
+// // console.log('after 1 week : ' + date.toLocaleString())
+
+// Date.prototype.getInterval = function (otherDate) {
+//   if (this > otherDate) {
+//     return Math.floor((this.getTime() - otherDate.getTime()) / (1000 * 60 * 60 * 24))
+//   } else if (otherDate > this) {
+//     return Math.floor((otherDate.getTime() - this.getTime()) / (1000 * 60 * 60 * 24))
+//   }
+// }
+
+// var after1Week = new Date()
+// after1Week.setDate(after1Week.getDate() + 7)
+// console.log('interval : ' + date.getInterval(after1Week) + '일')
+
+// // #### Object
+
+// var object = new Object();
+// Object.defineProperty(object, 'name', {
+//   get: function () {
+//     console.log('GETTER')
+//     return value
+//   },
+//   set: function (newValue){
+//     console.log('SETTER')
+//     value = newValue
+//     return value
+//   }
+// })
+// object.name = 'Alpa'
+// console.log(object.name)
+
+// // new Object vs Object.create() 
+// // make Object from Object frame vs copy object from built Object.
+
+// var object = Object.create({}, {
+//   name: {
+//     value: 'Dyel',
+//     enumerable: true
+//   },
+//   region: {
+//     value: 'Seoul',
+//     enumerable: true
+//   }
+// })
+
+// var person = Object.create(object, {
+//   gender: {
+//     value: 'Male',
+//     enumerable: true
+//   },
+//   hobby: {
+//     value: 'Football',
+//     enumerable: true
+//   }
+// })  // create(Some object to desire inherition, {addition property})
+
+// console.log(person.name) // result : Dyel
+// // Object.preventExtensions, Object.isExtensible()
+// console.log(Object.isExtensible(object))
+// Object.preventExtensions(object)
+// console.log(Object.isExtensible(object))
+// Object.defineProperty(person,'h',{
+//   value:182
+// }) // !it's work?
+// console.log(person.h)
+
+// // seal(), freeze()
+
+
+// // 
