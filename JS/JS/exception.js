@@ -3,6 +3,9 @@
 function tCF(val) {
   try {
     switch (val) {
+      case val > 0:
+        throw 'TTTTTTTHROWWWWWWWWWWWW'
+        break;
       case 0:
         Err()
         break;

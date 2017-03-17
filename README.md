@@ -46,3 +46,8 @@ and JavaScript is consist of 30% Node.js, 30% Electron, 20% frond-End (like Reac
     'scripts' : 'git rm --cached .\PRWF'
   }
 }
+
+## Err Code
+{
+  '00' : 'just mistake about manage GitHub with GitKraken'
+}
