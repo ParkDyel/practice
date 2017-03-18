@@ -47,7 +47,8 @@ and JavaScript is consist of 30% Node.js, 30% Electron, 20% frond-End (like Reac
   }
 }
 
-## Err Code
+## Code
 {
-  '00' : 'just mistake about manage GitHub with GitKraken'
+  '00' : 'Err:just mistake about manage GitHub with GitKraken',
+  '99' : 'Update:just Push'
 }
