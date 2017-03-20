@@ -30,6 +30,7 @@
     </svg>
     <button id="svgGroupingTfBt" onclick="onClickSvgGroupingTfButton()" />
     <button id="svgGroupingRtBt" onclick="onClickSvgGroupingRtButton()" />
+    <button id="svgGroupingScBt" onclick="onClickSvgGroupingScButton()" />
   </div>
 
 </body>
@@ -40,6 +41,8 @@
         .innerHTML = "Transform SVG Group Button"
       document.getElementById('svgGroupingRtBt')
         .innerHTML = "Rotate SVG Group Button"
+      document.getElementById('svgGroupingScBt')
+        .innerHTML = "Scale SVG Group Button"
     }
   </script>
   <script id="moduleJS">
@@ -51,6 +54,20 @@
       return N.setAttribute('transform', 'rotate(' + ang + ', ' + x + ', ' + y + ')')
     }
 
+    function d2TranslateSc(N, sx, sy) {
+      switch (sy == undefined) {
+        case true:
+          return N.setAttribute('transform', 'scale(' + sx + ', ' + sx + ')')
+          break;
+        case false:
+          return N.setAttribute('transform', 'scale(' + sx + ', ' + sy + ')')
+          break;
+        default:
+          return console.error('Err')
+          break;
+      }
+    }
+
     function onClickSvgGroupingTfButton() {
       var N = document.getElementById("svgGroupingSvgG")
       return d2TranslateTf(N, -200, 40)
@@ -60,7 +77,11 @@
       var N = document.getElementById("svgGroupingSvgG")
       return d2TranslateRt(N, 45, 200, 100)
     }
+
+    function onClickSvgGroupingScButton() {
+      var N = document.getElementById("svgGroupingSvgG")
+      return d2TranslateSc(N, 2)
+    }
   </script>
 </footer>
-
 </html>

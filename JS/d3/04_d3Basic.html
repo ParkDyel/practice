@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="myGraph"></div>
+</body>
+<footer>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <style>
+    svg {
+      width: 320px;
+      height: 240px;
+      border: 1px solid black;
+    }
+    
+    rect {
+      fill: orange
+    }
+  </style>
+  <script>
+    var myGraph = d3.select("#myGraph")
+      .append("svg")
+      .append("rect")
+  </script>
+</footer>
+
+</html>
