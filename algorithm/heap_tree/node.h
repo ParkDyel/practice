@@ -3,9 +3,8 @@
 
 typedef struct _int_node{
   int value;
-  struct _int_node* nptr1;
-  struct _int_node* nptr2;
-  struct _int_node* nptr3;
+  struct _int_node* left;
+  struct _int_node* right;
 } int_node;
 
 typedef int_node* nptr;

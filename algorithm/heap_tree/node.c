@@ -5,9 +5,8 @@
 nptr initNode(int data){
   nptr nodeBusket=(nptr)malloc(sizeof(nptr));
   nodeBusket->value=data;
-  nodeBusket->nptr1=NULL;
-  nodeBusket->nptr2=NULL;
-  nodeBusket->nptr3=NULL;
+  nodeBusket->left=NULL;
+  nodeBusket->right=NULL;
 
   return nodeBusket;
 }
@@ -15,6 +14,7 @@ nptr initNode(int data){
 void setData(nptr ptr, int data){
   ptr->value=data;
 }
+
 int getData(nptr ptr){
   if(ptr != NULL){
     return ptr->value;
