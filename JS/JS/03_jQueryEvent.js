@@ -127,10 +127,50 @@ $(document).ready(function (event) {
   // keypress : 글자가 입력될 때 이벤트 발생
   // keyup    : 키보드를 뗄 때 이벤트 발생
 
-  // keyboard event Example
-  $('textarea', '#div1').keyup(function () {
-    var inputLength = $(this).val().length
-    var remain = 150 - inputLength
-    $('b', '#div1').html(remain)
+  // // keyboard event Example
+  // $('textarea', '#div1').keyup(function () {
+  //   var inputLength = $(this).val().length
+  //   var remain = 150 - inputLength
+  //   $('b', '#div1').html(remain)
+  // })
+
+  // // Window Event
+  // // ready    : 문서 객체가 준비 완료되면
+  // // load     : 문서 객체를 불러들일 때 발생
+  // // unload   : 문서 객체를 닫을 때 발생
+  // // resize   : 윈도 크기를 변화시킬 때 발생
+  // // scroll   : 윈도를 스크롤 할 때 발생
+  // // error    : 에러가 있을 때 발생
+
+  // // 무한 스크롤 예제
+  // for (var i=0;i<20;i++){
+  //   $('<h1>Infinity Scroll</h1>').appendTo('body')
+  // }
+  // $(window).scroll(function(){
+  //   var scrollHeight = $(window).scrollTop() + $(window).height()
+  //   var documentHeight = $(document).height()
+  //   // 200은 오차를 고려한 offset이며 동시에 미리 로드하기 위함이다.
+  //   if (scrollHeight > documentHeight-200){
+  //     for (var i=0; i<10;i++){
+  //       $('<h1>Infinity Scroll</h1>').appendTo('body')
+  //     }
+  //   }
+  // })
+
+  // // Animation
+  // // show():커지며 나타남, hide():작아지며 사라짐, toggle():show(); hide();, slideDown() : 슬라이드와 나타남, slideUp() 슬라이드와 사라짐, slideToggle();fadeIn(), fadeOut(); fadeToggle()
+  // // $(selected).method(), $(selected).method(speed={slow, normal, fast, ms}), $(selected).method(speed, callback), $(selected).method(speed, easing, callback)
+  // $('textarea', '#div1').fadeOut(function () {
+
+  // })
+
+  // innerfade plug-in
+  // src = https://medienfreunde.de/lab/innerfade/
+  $('#inner-fade').innerfade({
+    animationtype:'fade',     // or 'slide'
+    speed : 750,              // or equal jQuery speed option
+    timeout : 2000,           // interval each animation
+    type : 'random',          // 'sequence', 'random', 'randomstart'
+    containerheight : '\''+$(document).height()+'\''  // or numeric.
   })
 });

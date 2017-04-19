@@ -6,6 +6,7 @@ init.*.*
 
 # Logs
 npm-debug.log*
+debug.log
 
 # install via Package Manager
 node_modules
