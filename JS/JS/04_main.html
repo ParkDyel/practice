@@ -5,12 +5,25 @@
   <title>Learning about jQuery DOM Part</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .item {
+      background-color: skyblue;
+      color : royalblue;
+    }
+  </style>
+
 </head>
 
 <body>
-  <h1>안녕안녕</h1>
-  <h1>나는나는</h1>
-  <h1>제목이야</h1>
+  <div id='controlPannel'>
+    <!-- set text in button as $(selected).text(arg) -->
+    <button id='toggleButton' onClick='toggleClassPushed()'>Toggle H1 Class</button>
+  </div>
+  <div id='h1'>
+    <h1>안녕안녕</h1>
+    <h1>나는나는</h1>
+    <h1>제목이야</h1>
+  </div>
 </body>
 <footer>
   <script src="https://code.jquery.com/jquery-3.2.0.js"></script>
