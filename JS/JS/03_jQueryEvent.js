@@ -164,13 +164,32 @@ $(document).ready(function (event) {
 
   // })
 
-  // innerfade plug-in
-  // src = https://medienfreunde.de/lab/innerfade/
-  $('#inner-fade').innerfade({
-    animationtype:'fade',     // or 'slide'
-    speed : 750,              // or equal jQuery speed option
-    timeout : 2000,           // interval each animation
-    type : 'random',          // 'sequence', 'random', 'randomstart'
-    containerheight : '\''+$(document).height()+'\''  // or numeric.
+  // // innerfade plug-in
+  // // src = https://medienfreunde.de/lab/innerfade/
+  // $('#inner-fade').innerfade({
+  //   animationtype:'fade',     // or 'slide'
+  //   speed : 750,              // or equal jQuery speed option
+  //   timeout : 2000,           // interval each animation
+  //   type : 'random',          // 'sequence', 'random', 'randomstart'
+  //   containerheight : '\''+$(document).height()+'\''  // or numeric.
+  // })
+
+  // User Animation
+  i = -50;
+  $('div').each(function () {
+    i += 50
+    $(this).css({
+      top: i + 'px',
+      left: ($(window).width() / 2) + 'px'
+    })
   })
+  $('div').hover(function () {
+    $(this).animate({
+      left: $(window).width() - $(this).width() + 'px'
+    }, 'slow');
+  }, function () {
+    $(this).animate({
+      left: ($(window).width() / 2) + 'px'
+    }, 'slow');
+  });
 });
