@@ -183,7 +183,7 @@ $(document).ready(function (event) {
       left: ($(window).width() / 2) + 'px'
     })
   })
-  $('div').hover(function () {
+  $('div').click(function () {
     $(this).animate({
       left: $(window).width() - $(this).width() + 'px'
     }, 'slow');
@@ -192,4 +192,17 @@ $(document).ready(function (event) {
       left: ($(window).width() / 2) + 'px'
     }, 'slow');
   });
+  //Chainning
+  $('div').hover(function(){
+    $(this).animate({
+      width:'+=55',
+      height:'+=55'
+    }, 300)
+      .animate({
+        width:'+=-5',
+        height:'+=-5'
+      }, 300)
+  })
+  //$(selected).stop()
+  //$(selected).delay()
 });

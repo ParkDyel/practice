@@ -10,6 +10,7 @@ debug.log
 
 # install via Package Manager
 node_modules
+node_modules/*
 
 # exe
 *.exe

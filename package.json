@@ -3,8 +3,7 @@
   "version": "0.1.1",
   "description": "make directory as sequancial path, and if not exist 'just.ignore', create it.",
   "main": "dyelMkdir.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Dyel",
   "license": "MIT",
   "dependencies": {

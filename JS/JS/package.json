@@ -1,0 +1,16 @@
+{
+  "name": "nodemicroserver",
+  "version": "0.0.1",
+  "description": "for 04_Nodejs.js",
+  "main": "04_Nodejs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dyel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "multer": "^1.3.0"
+  }
+}
