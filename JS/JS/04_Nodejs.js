@@ -33,11 +33,6 @@ app.route('/user', urlencodedParser)
     res.send(items)
   })
   .post(function (req, res) {
-    fs.writeFile('log.log', req)
-    console.log("req.params: "); console.log(req.params);
-    console.log("req.query: "); console.log(req.query);
-    console.log("req.body: "); console.log(req.body);
-    console.log("req:"); console.log(req);
     var nameData = req.query.name
     var sexData = req.query.sex
     var item = {

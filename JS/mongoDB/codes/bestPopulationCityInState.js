@@ -1,0 +1,60 @@
+db.zips.aggregate([
+   {
+      $group:{
+         _id:{
+            state:"$state",
+            city:"$city"
+         },
+         count:{
+            $sum:1
+         },
+         population:{
+            $sum:"$pop"
+         }
+      }
+   },
+   {
+      $sort:{
+         count:-1
+      }
+   },
+   {
+      $group:{
+         _id:"$_id.state",
+         count:{
+            $first:"$count"
+         },
+         city:{
+            $first:"$_id.city"
+         },
+         population:{
+            $first:"$population"
+         }
+      }
+   }
+])
+
+db.zips.aggregate([
+   {
+      $group:{
+         _id:{
+            state:"$state",
+            city:"$city"
+         },
+         count:{
+            $sum:1
+         },
+         population:{
+            $sum:"$pop"
+         }
+      }
+   },
+   {
+      $group:{
+         _id:"$_id.state",
+         population:{
+            $max:"$population"
+         },
+      }
+   }
+])
