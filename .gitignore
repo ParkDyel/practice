@@ -1,5 +1,5 @@
 # just.ignore
-just.ignore
+*.just.ignore
 
 # Setting file
 init.*.*
