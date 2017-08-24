@@ -50,13 +50,24 @@ it's consist of 60% JavaScript, 30% C, and 10% Python.
 
 ## Code
 {
+  
   '00' : 'Err:just mistake about manage GitHub with GUI Tools',
+
   '10' : 'We have added a new field.'
+
   '11' : 'We have added a new item.'
+
   '12' : 'We have added a new files.'
+
   '20' : 'Modified throughout the field.'
+
   '21' : 'Modified throughout the item.'
+
   '22' : 'Modified throughout the files.'
+
+  
   '98' : 'Update:readme.md'
+
   '99' : 'Update:just Push'
+
 }
