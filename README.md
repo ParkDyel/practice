@@ -10,6 +10,7 @@ it's consist of 60% JavaScript, 30% C, and 10% Python.
 ## project list
 ### JS 
 #### dyelMkdir
+```
 {
   "name": "dyelmkdir",
   "version": "0.1.1",
@@ -20,11 +21,14 @@ it's consist of 60% JavaScript, 30% C, and 10% Python.
   "author": "Dyel",
   "license": "MIT",
   "dependencies": {
+    "node" : 6.x,
     "promise": "^7.1.1"
   }
 }
+```
 
 #### displayElectron
+```
 {
   "name": "displayElectron",
   "version": "0.1.0",
@@ -36,38 +40,33 @@ it's consist of 60% JavaScript, 30% C, and 10% Python.
   "author": "Dyel",
   "license": "MIT",
   "dependencies": {
+    "node" : 6.x,
     "electron": "^1.4.15"
   }
 }
+```
 
 ## history
+```
 {
   '20170201' : {
     'contents' : 'Merged distributed projects, and created documents',
     'scripts' : 'git rm --cached .\PRWF'
   }
 }
+```
 
 ## Code
-{
-  
+```
+{  
   '00' : 'Err:just mistake about manage GitHub with GUI Tools',
-
   '10' : 'We have added a new field.'
-
   '11' : 'We have added a new item.'
-
   '12' : 'We have added a new files.'
-
   '20' : 'Modified throughout the field.'
-
   '21' : 'Modified throughout the item.'
-
   '22' : 'Modified throughout the files.'
-
-  
   '98' : 'Update:readme.md'
-
   '99' : 'Update:just Push'
-
 }
+```
