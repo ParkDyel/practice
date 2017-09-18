@@ -13,11 +13,12 @@ int main(int argc, char argv[]){
 
   printf("Set Array:Start\n");
  
-  int idx;
+  int idx,idx2;
   int size=4;
   char **arr=NULL;
   
   arr = (char **) malloc (sizeof(char*)*size);
+
   for(idx=0;idx<size;idx++){
     printf("%d -for loop\t", idx);
     arr[idx]= (char*) malloc (sizeof(char)*(size+1));
@@ -36,9 +37,18 @@ int main(int argc, char argv[]){
     arr[idx][size] = '\n';
   }
 
-  for(idx=0;idx<size;idx++){
-    printf("%d -for loop\t", idx);
-    printf("%s", arr[idx]);
-  }
+  // for(idx=0;idx<size;idx++){
+  //   printf("%d -for loop\t", idx);
+  //   printf("%s", arr[idx]);
+  // }
 
+  printf("OUTPUT\n\n");
+
+  for(idx=0;idx<size;idx++){
+    for(idx2=0;idx2<size+1;idx2++){
+    // printf("%d", arr);
+      printf("%c", *(*(arr+sizeof(char)*idx)+sizeof(char)*idx2));
+    }
+  }
+  
 }
