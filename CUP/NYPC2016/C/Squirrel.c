@@ -153,7 +153,7 @@ void getMap(int size, char** address){
   printf("get Map:Done\n");
 }
 
-int getNumOf(char** address, char theChar, int size){
+int getNumOfChar(char** address, char theChar, int size){
 
   printf("Count \'%c\':Start\n", theChar);
 
@@ -172,10 +172,10 @@ int getNumOf(char** address, char theChar, int size){
   return counter;
 }
 int getNumOfCharacter(char** address, int size){
-  return getNumOf(address, 'c', size);
+  return getNumOfChar(address, 'c', size);
 }
 int getNumOfSquirrel(char** address, int size){
-  return getNumOf(address, 'd', size);
+  return getNumOfChar(address, 'd', size);
 }
 
 // float checkRatio(int numOfCharacter, int numOfSquirrel){
