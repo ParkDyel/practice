@@ -6,32 +6,34 @@
 // timer()
 #include <time.h>
 
-int setArraySize(void);
+int setArraySize(int counter);
 char** setArray(int size);
 int setMap(int size, char** address);
 void getMap(int size, char** address);
-int freeTwoDimensionalArray(char** address, int size);
-int countNumOf(char** address, char theChar, int size);
-int countNumOfCharacter(char** address, int size);
-int countNumOfSquirrel(char** address, int size);
+int getNumOfChar(char** address, char theChar, int size);
+int getNumOfCharacter(char** address, int size);
+int getNumOfSquirrel(char** address, int size);
 // float checkRatio(int numOfCharacter, int numOfSquirrel);
-int squirrelSummon(char** address, int numOfChar, int numOfSqui, int size);
-int checkSpace(char address);
+int setSquirrel(char** address, int numOfChar, int numOfSqui, int size);
+int checkTheChar(char theChar);
+int freeTwoDimensionalArray(char** address, int size);
 
 int main(int argc, char argv[]){
 
-  printf("Program Working");
+  int Main_counter=0;
+
+  printf("Program Working\n\n");
 
   printf("Plz Input Array size\n");
-  int Global_arraySize = setArraySize();
-  if(Global_arraySize>20){
-    printf("Error:Array Size is bigger than limits\n");
+  int Main_arraySize = setArraySize(0);
+  if(!Main_arraySize){
+    printf("Plz Check out Usage\n");
     return 0;
   }
-  printf("Array Size is %d\n", Global_arraySize);
+  printf("Array Size is %d\n", Main_arraySize);
 
   char** ptr_TwoDimensionalArray = NULL;
-  ptr_TwoDimensionalArray = setArray(Global_arraySize);
+  ptr_TwoDimensionalArray = setArray(Main_arraySize);
   if(ptr_TwoDimensionalArray == NULL){
     printf("Error:Cannot Allocated Array\n");
     return 0;
@@ -40,17 +42,17 @@ int main(int argc, char argv[]){
 
   // printf("print intiailized Array");
   
-  // getMap(Global_arraySize, ptr_TwoDimensionalArray);
+  // getMap(Main_arraySize, ptr_TwoDimensionalArray);
 
-  if (setMap(Global_arraySize, ptr_TwoDimensionalArray) != 0){
+  if (setMap(Main_arraySize, ptr_TwoDimensionalArray) != 0){
     printf("Error: setMap");
     return 0;
   }
 
-  getMap(Global_arraySize, ptr_TwoDimensionalArray);
+  getMap(Main_arraySize, ptr_TwoDimensionalArray);
 
-  int numOfCharacter = countNumOfCharacter(ptr_TwoDimensionalArray, Global_arraySize);
-  int numOfSquirrel = countNumOfSquirrel(ptr_TwoDimensionalArray, Global_arraySize);
+  int numOfCharacter = getNumOfCharacter(ptr_TwoDimensionalArray, Main_arraySize);
+  int numOfSquirrel = getNumOfSquirrel(ptr_TwoDimensionalArray, Main_arraySize);
   printf("Number of Character is : %d\n", numOfCharacter);
   printf("Number of Squirrel is : %d\n", numOfSquirrel);
 
@@ -63,28 +65,34 @@ int main(int argc, char argv[]){
     printf("Many Squirrel in this maps\n");
   } else {
     printf("squirrelSummon:Start\n");
-    squirrelSummon(ptr_TwoDimensionalArray, numOfCharacter, numOfSquirrel, Global_arraySize);
+    setSquirrel(ptr_TwoDimensionalArray, numOfCharacter, numOfSquirrel, Main_arraySize);
     printf("squirrelSummon:Done\n");
   }
 
-  getMap(Global_arraySize, ptr_TwoDimensionalArray);
+  getMap(Main_arraySize, ptr_TwoDimensionalArray);
 
-  freeTwoDimensionalArray(ptr_TwoDimensionalArray, Global_arraySize);
+  freeTwoDimensionalArray(ptr_TwoDimensionalArray, Main_arraySize);
 
   // printf("Program exit succesfully\n");
   // return 0;
 }
 
 
-int setArraySize(void){
-
+int setArraySize(int counter){
+  if(counter>5){
+    return 0;
+  }
   printf("Set Array Size:Start\n");
 
   int temp_sizeOfArray;
   scanf("%d", &temp_sizeOfArray);
 
   printf("Set Array Size:Done\n");
-
+  if(temp_sizeOfArray>20){
+    temp_sizeOfArray = setArraySize(++counter);
+  } else if (temp_sizeOfArray == 0){
+    temp_sizeOfArray = 0;
+  }
   return temp_sizeOfArray;
 }
 
@@ -145,7 +153,7 @@ void getMap(int size, char** address){
   printf("get Map:Done\n");
 }
 
-int countNumOf(char** address, char theChar, int size){
+int getNumOf(char** address, char theChar, int size){
 
   printf("Count \'%c\':Start\n", theChar);
 
@@ -163,19 +171,25 @@ int countNumOf(char** address, char theChar, int size){
   printf("COUNTER \'%c\':Done, %d\n", theChar, counter);
   return counter;
 }
-int countNumOfCharacter(char** address, int size){
-  return countNumOf(address, 'c', size);
+int getNumOfCharacter(char** address, int size){
+  return getNumOf(address, 'c', size);
 }
-int countNumOfSquirrel(char** address, int size){
-  return countNumOf(address, 'd', size);
+int getNumOfSquirrel(char** address, int size){
+  return getNumOf(address, 'd', size);
 }
 
 // float checkRatio(int numOfCharacter, int numOfSquirrel){
 //   return numOfSquirrel/numOfCharacter;
 // }
 
-int squirrelSummon(char** address, int numOfChar, int numOfSqui, int size){
-  int numOfSummon = (numOfChar*2) - numOfSqui;
+int setSquirrel(char** address, int numOfChar, int numOfSqui, int size){
+  int numOfSummon;
+  if((numOfChar*3) > (size*size)){
+    numOfSummon = (size*size) - numOfChar - numOfSqui;
+    printf("Cannot Summon enouht:%d\n", numOfSummon-(numOfChar*2));
+  } else {
+    numOfSummon = (numOfChar*2) - numOfSqui;
+  }
   int countSummon=0;
   int countIdx;
 
@@ -187,16 +201,16 @@ int squirrelSummon(char** address, int numOfChar, int numOfSqui, int size){
     int position = rand()%(size*size);
     int idx = position % size;
     int idx2 = position / size;
-    if(checkSpace(*(*(address+sizeof(char)*idx)+sizeof(char)*idx2))){
+    if(checkTheChar(*(*(address+sizeof(char)*idx)+sizeof(char)*idx2))){
       *(*(address+sizeof(char)*idx)+sizeof(char)*idx2) = 'd';
       countSummon++;
     }
   }
 }
 
-int checkSpace(char address){
-  printf("%c", address);
-  switch(address){
+int checkTheChar(char theChar){
+  printf("%c", theChar);
+  switch(theChar){
     case 'd':
       return 0;
       break;
