@@ -1,3 +1,9 @@
+/*
+* 넥슨아 다람쥐 뿌려줘
+* Park Dyel
+* 2017.09.23
+*/
+
 #include <stdio.h>
 // strlen()
 #include <string.h>
@@ -6,57 +12,60 @@
 // timer()
 #include <time.h>
 
-int setArraySize(int counter);
-char** setArray(int size);
-int setMap(int size, char** address);
-void getMap(int size, char** address);
-int getNumOfChar(char** address, char theChar, int size);
-int getNumOfCharacter(char** address, int size);
-int getNumOfSquirrel(char** address, int size);
-// float checkRatio(int numOfCharacter, int numOfSquirrel);
-int setSquirrel(char** address, int numOfChar, int numOfSqui, int size);
-int checkTheChar(char theChar);
-int freeTwoDimensionalArray(char** address, int size);
+int setArraySize(int counter);                                          // scanf arraySize and return it.
+char** setArray(int size);                                              // malloc char array(twoDimension)
+int setMap(int size, char** address);                                   // scanf data, for in range(0, size)
+void getMap(int size, char** address);                                  // printf data in array, for in range(0,size)
+int getNumOfChar(char** address, char theChar, int size);               // count PARAM_theChar in array(begin(address), end(address + sizeof(char)*size))
+int getNumOfCharacter(char** address, int size);                        // wrapping getNumOfChar(,theChar==c,)
+int getNumOfSquirrel(char** address, int size);                         // wrapping getNumOfChar(,theChar==d,)
+int setSquirrel(char** address, int numOfChar, int numOfSqui, int size);// calculated need summon, and allocated squirrel.
+int checkTheChar(char theChar);                                         // check something in point(x,y)
+int freeTwoDimensionalArray(char** address, int size);                  // free(address[]) for in range(0,size)
+
+// flag 
+#define CHAR_CHARACTER c
+#define CHAR_SQUIRREL d
+#define CHAR_DOTGE .
+
+/* Inner-Rule
+* tag [main_] specify variable scope (main)
+* tag [temp_] specify variable scope (function)
+* tag [ptr_] specify variable type (pointer)
+*
+*/
 
 int main(int argc, char argv[]){
 
-  int Main_counter=0;
-
   printf("Program Working\n\n");
 
-  printf("Plz Input Array size\n");
-  int Main_arraySize = setArraySize(0);
-  if(!Main_arraySize){
+  int main_arraySize = setArraySize(0);
+  if(!main_arraySize){
     printf("Plz Check out Usage\n");
     return 0;
   }
-  printf("Array Size is %d\n", Main_arraySize);
+  // printf("Array Size is %d\n", main_arraySize);
 
   char** ptr_TwoDimensionalArray = NULL;
-  ptr_TwoDimensionalArray = setArray(Main_arraySize);
+  ptr_TwoDimensionalArray = setArray(main_arraySize);
   if(ptr_TwoDimensionalArray == NULL){
     printf("Error:Cannot Allocated Array\n");
     return 0;
   }
-  printf("Address : %p\n", ptr_TwoDimensionalArray);
+  // printf("Address : %p\n", ptr_TwoDimensionalArray);
 
-  // printf("print intiailized Array");
-  
-  // getMap(Main_arraySize, ptr_TwoDimensionalArray);
-
-  if (setMap(Main_arraySize, ptr_TwoDimensionalArray) != 0){
+  if (setMap(main_arraySize, ptr_TwoDimensionalArray) != 0){
     printf("Error: setMap");
     return 0;
   }
 
-  getMap(Main_arraySize, ptr_TwoDimensionalArray);
+  getMap(main_arraySize, ptr_TwoDimensionalArray);
 
-  int numOfCharacter = getNumOfCharacter(ptr_TwoDimensionalArray, Main_arraySize);
-  int numOfSquirrel = getNumOfSquirrel(ptr_TwoDimensionalArray, Main_arraySize);
-  printf("Number of Character is : %d\n", numOfCharacter);
-  printf("Number of Squirrel is : %d\n", numOfSquirrel);
+  int numOfCharacter = getNumOfCharacter(ptr_TwoDimensionalArray, main_arraySize);
+  int numOfSquirrel = getNumOfSquirrel(ptr_TwoDimensionalArray, main_arraySize);
+  // printf("Number of Character is : %d\n", numOfCharacter);
+  // printf("Number of Squirrel is : %d\n", numOfSquirrel);
 
-  // int ratio = checkRatio(numOfCharacter, numOfSquirrel);
   if(numOfCharacter==0){
     //Nothing
     printf("no one in this maps\n");
@@ -64,33 +73,45 @@ int main(int argc, char argv[]){
     //Nothing
     printf("Many Squirrel in this maps\n");
   } else {
-    printf("squirrelSummon:Start\n");
-    setSquirrel(ptr_TwoDimensionalArray, numOfCharacter, numOfSquirrel, Main_arraySize);
-    printf("squirrelSummon:Done\n");
+    // printf("squirrelSummon:Start\n");
+    setSquirrel(ptr_TwoDimensionalArray, numOfCharacter, numOfSquirrel, main_arraySize);
+    // printf("squirrelSummon:Done\n");
   }
 
-  getMap(Main_arraySize, ptr_TwoDimensionalArray);
+  getMap(main_arraySize, ptr_TwoDimensionalArray);
 
-  freeTwoDimensionalArray(ptr_TwoDimensionalArray, Main_arraySize);
+  freeTwoDimensionalArray(ptr_TwoDimensionalArray, main_arraySize);
 
-  // printf("Program exit succesfully\n");
-  // return 0;
+  printf("Program exit succesfully\n");
+  return 0;
 }
 
 
 int setArraySize(int counter){
+  /*
+  * WARNNING!! This function is Recursive function
+  * A lot of code for trainning self purposes.
+  */
+
+  // recursive function  Counter 
   if(counter>5){
     return 0;
   }
-  printf("Set Array Size:Start\n");
 
+  // printf("Set Array Size:Start\n");
+
+  // sizeOfArray scope is only this function.
   int temp_sizeOfArray;
+  printf("Plz Insert Map Size(Map Size=InputValue*InputValue)\n")
   scanf("%d", &temp_sizeOfArray);
 
-  printf("Set Array Size:Done\n");
-  if(temp_sizeOfArray>20){
+  // printf("Set Array Size:Done\n");
+
+  // InputValue must be between 5 ~ 20.
+  if( temp_sizeOfArray>20 || temp_sizeOfArray < 5 ){
     temp_sizeOfArray = setArraySize(++counter);
   } else if (temp_sizeOfArray == 0){
+    // recursive function  Counter overflow
     temp_sizeOfArray = 0;
   }
   return temp_sizeOfArray;
@@ -105,9 +126,9 @@ char** setArray(int size){
 
   arr = (char **) malloc (sizeof(char*)*size);
   for(idx=0;idx<size;idx++){
-    arr[idx]= (char*) malloc (sizeof(char)*(size));
+    arr[idx]= (char*) malloc (sizeof(char)*(size+1));
     memset(arr[idx],'0',size);
-    arr[idx][size] = '\n';
+    arr[idx][size] = '\0';
   }
 
   printf("Set Array:Done\n");
@@ -126,7 +147,7 @@ int setMap(int size, char** address){
     printf("%d - for loop\t", idx);
     scanf("%s", address[idx]);
     // fgets(ptr, sizeof(size), stdin);
-    address[idx][size] = '\n';
+    address[idx][size] = '\0';
   }
 
   printf("Read Map:Done\n");
@@ -138,12 +159,13 @@ void getMap(int size, char** address){
 
   printf("get Map:Start\n");
 
-  int idx;
-  int idx2;
+  int row;
+  int col;
 
-  for(idx=0;idx<size;idx++){
-    for(idx2=0;idx2<size+1;idx2++){
-      printf("%c", *(*(address+sizeof(char)*idx)+sizeof(char)*idx2));
+  for(row=0;row<size;row++){
+    for(col=0;col<size;col++){
+      //size+1;
+      printf("%c", *(*(address+sizeof(char)*row)+sizeof(char)*col));
     }
   }
   // for(idx=0; idx<size;idx++){
