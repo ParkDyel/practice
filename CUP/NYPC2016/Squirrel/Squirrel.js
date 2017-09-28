@@ -20,6 +20,8 @@ stdRl.on('line', (input) => {
     GLOBAL_MAPSIZE = input;
     console.log(`Map Size is : ${GLOBAL_MAPSIZE}`);
     GLOBAL_COUNTER_READLINE++;
+  } else if(GLOBAL_COUNTER_READLINE == GLOBAL_MAPSIZE) {
+    countChar(GLOBAL_MAPDATA);
   } else {
     if(GLOBAL_COUNTER_READLINE == GLOBAL_MAPSIZE+1){
       console.log(GLOBAL_MAPDATA);
@@ -30,3 +32,7 @@ stdRl.on('line', (input) => {
     }
   }
 });
+
+function countChar(){
+  
+}
