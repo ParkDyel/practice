@@ -116,6 +116,7 @@ int setArraySize(int counter){
 
   //scanf Array Size.
   printf("Plz Insert Map Size(Map Size=InputValue*InputValue)\n");
+  printf("Map Size must be in 5 to 20\n");
   scanf("%d", &temp_sizeOfArray);
 
   if(DEBUG_FLAG)
@@ -262,13 +263,19 @@ int setSquirrel(char** address, int numOfChar, int numOfSqui, int size){
 
   // printf("need Summon : %d\n", numOfSummon);
 
+  // initialize rand as timer.
   srand(time(NULL));
   for(countIdx=0; numOfSummon!=countSummon;countIdx++){
     printf("Summon Squirrel : %d\n", countSummon+1);
-    // random position
+    // set position as random.
+    // postion value is between 0 and (size*size)-1
     int position = rand()%(size*size);
+    // position/size's share : row
+    // position/size's remainder : col
     int row = position % size;
     int col = position / size;
+
+    // if random position's space is empty, summon squirrel and increase counter. if not, do nothing.
     if(checkTheChar(*(*(address+sizeof(char)*row)+sizeof(char)*col))){
       *(*(address+sizeof(char)*row)+sizeof(char)*col) = CHAR_SQUIRREL;
       countSummon++;
@@ -277,7 +284,7 @@ int setSquirrel(char** address, int numOfChar, int numOfSqui, int size){
 }
 
 int checkTheChar(char theChar){
-  /* check the character, weather is 'd' or 'c'.
+  /* check the character in elements, weather is 'd' or 'c'.
   * return 0, if space was used.
   * retrun 1, if space is empty.
   */
