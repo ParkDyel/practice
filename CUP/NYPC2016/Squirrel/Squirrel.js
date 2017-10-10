@@ -1,38 +1,61 @@
 const promise = require('promise')
-    , readline = require('readline');
+  ,   readline = require('readline');
 
 const stdRl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
+  terminal: false
 });
 
+CHAR_USER = 'c';
+CHAR_SQUIRREL = 'd';
+CHAR_SPACE = '.';
 
-CHAR_USER = new String('c');
-CHAR_SQUIRREL = new String('d');
-CHAR_SPACE = new String('.');
-
-GLOBAL_COUNTER_READLINE = new Number(-1);
-GLOBAL_MAPSIZE = new Number(0);
+GLOBAL_COUNTER_READLINE = 0;
+GLOBAL_MAPSIZE = 0;
 GLOBAL_MAPDATA = [];
 
 stdRl.on('line', (input) => {
-  if (GLOBAL_COUNTER_READLINE == -1){
+
+  // first line : setMapSize
+  // second line ~ GLOBAL_MAPSIZE : appendMapDataRow
+  // GLOBAL_MAPSIZE + 1 line : getMapData, countChar
+  if (GLOBAL_COUNTER_READLINE == 0) {
+
+    // setMapSize;
     GLOBAL_MAPSIZE = input;
+
     console.log(`Map Size is : ${GLOBAL_MAPSIZE}`);
-    GLOBAL_COUNTER_READLINE++;
-  } else if(GLOBAL_COUNTER_READLINE == GLOBAL_MAPSIZE) {
-    countChar(GLOBAL_MAPDATA);
-  } else {
-    if(GLOBAL_COUNTER_READLINE == GLOBAL_MAPSIZE+1){
-      console.log(GLOBAL_MAPDATA);
-    } else {
-      GLOBAL_MAPDATA.push(input);
-      console.log(`ReadLine ${GLOBAL_COUNTER_READLINE}: ${GLOBAL_MAPDATA[GLOBAL_COUNTER_READLINE]}`);
-      GLOBAL_COUNTER_READLINE++;
+
+  } else if (GLOBAL_COUNTER_READLINE != GLOBAL_MAPSIZE) {
+
+    // appendMapDataRow
+    GLOBAL_MAPDATA.push(input);
+
+  } else if(GLOBAL_COUNTER_READLINE == GLOBAL_MAPSIZE){
+
+    GLOBAL_MAPDATA.push(input);
+   
+    //getMapData
+    for (var row = 0; row < GLOBAL_MAPDATA.length; row++) {
+      console.log(`${GLOBAL_MAPDATA[row]}`);
     }
+
+    countChar(GLOBAL_MAPDATA);
+
+    stdRl.close();
   }
+
+  GLOBAL_COUNTER_READLINE++;  
 });
 
-function countChar(){
-  
+
+function countChar(GLOBAL_MAPDATA){
+
 }
+
+function main() {
+  console.log(`Plz Input Map Size(Map size = inputValue*inputValue)`);
+}
+
+main();
