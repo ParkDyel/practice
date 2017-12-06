@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     Student arrStudent[N + 1];
 
     srand((unsigned)time(NULL));
-
+    
     while (1)
     {
         printf("number of students ? ");
@@ -92,30 +92,13 @@ StudentPtr FindMinimum(StudentPtr pStudents, int nByWhat)
     }
     else if (nByWhat == 2)
     {
-        char minName[10];
-        int isMin = 0;
-        strcpy(minName, (pStudents)->strName);
+        idx = 0;
         for (int i = 1; (pStudents + i)->nNumber > 0; i++)
         {
-            for (int charCoursor = 0; minName[charCoursor] == '\0' || (pStudents)->strName[charCoursor] == '\0'; charCoursor++)
+            if (strcmp((pStudents + i)->strName, (pStudents + idx)->strName) < 0)
             {
-                if (minName[charCoursor] > (pStudents)->strName[charCoursor])
-                {
-                    isMin = 1;
-                    break;
-                }
-            }
-            if (isMin)
-            {
-                strcpy(minName, (pStudents + i)->strName);
                 idx = i;
             }
-
-            // if (strcmp((pStudents + i)->strName, minName))
-            // {
-            //     strcpy(minName, (pStudents + i)->strName);
-            //     idx = i;
-            // }
         }
     }
     else if (nByWhat == 3)
@@ -139,8 +122,7 @@ void StudentCmp(StudentPtr pStudent1, StudentPtr pStudent2, int nByWhat)
 
 void Swap(StudentPtr pStudent1, StudentPtr pStudent2)
 {
-    if (pStudent1 != pStudent2)
-    {
+    if (pStudent1 != pStudent2) {
         Student tmp = *pStudent1;
         *pStudent1 = *pStudent2;
         *pStudent2 = tmp;
@@ -149,7 +131,7 @@ void Swap(StudentPtr pStudent1, StudentPtr pStudent2)
 
 void InitialStudent(StudentPtr pStudent, int nNdx)
 {
-    static int nDepartment[] = {11, 18, 23, 78, 88};
+    static int nDepartment[] = { 11, 18, 23, 78, 88 };
     int nSize = sizeof(nDepartment) / sizeof(nDepartment[0]);
     int i, nNumber;
 
