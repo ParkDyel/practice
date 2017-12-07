@@ -68,8 +68,6 @@ void SortStudent(StudentPtr pStudents, int nByWhat)
     for (int i = 0; (pStudents + i)->nNumber > 0; i++)
     {
         Swap(pStudents + i, FindMinimum((pStudents + i), nByWhat));
-        // printf("%d:\n", i);
-        // PrintArray(pStudents);
     }
 }
 
