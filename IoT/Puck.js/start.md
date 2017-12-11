@@ -15,7 +15,7 @@ Update the lastest firmware. [video](https://www.youtube.com/watch?time_continue
 2. install [nRF Connect]() App on Android Phone.
 3. turn on Puck.js with held Push Button. led will be turn red.
 4. follow Video and connect Phone to Puck.js. led will be turn blue.
-5. select device DFUTARG in SCNNER LIST.
+5. select device __DFUTarg__ in SCNNER LIST.
 6. if connected, new icon will show beteen DISCONNECT and 3 dot(options).
 7. click DFU icon.
 8. select file wich the downloads.
