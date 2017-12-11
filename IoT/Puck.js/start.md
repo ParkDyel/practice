@@ -5,7 +5,8 @@ ParkDyel
 ## STEP
 #### 1 step:Install IDE
 Install the [Espruino IDE](https://www.espruino.com/files/espruino_ide_win64_0v66.1.exe).
-because, [Windows isn't currently supported by Chrome. You can use the Web Bluetooth Polyfill, or if you just need the IDE you can use the packaged version of the Web IDE](https://www.espruino.com/Puck.js#troubleshooting).
+
+ - because, According to the web [Windows isn't currently supported by Chrome. You can use the Web Bluetooth Polyfill, or if you just need the IDE you can use the packaged version of the Web IDE](https://www.espruino.com/Puck.js#troubleshooting).
 
 #### 2 step:Firmware update.
 Update the lastest firmware. [video](https://www.youtube.com/watch?time_continue=123&v=N3CJbl29vy0)
@@ -19,6 +20,8 @@ Update the lastest firmware. [video](https://www.youtube.com/watch?time_continue
 7. click DFU icon.
 8. select file wich the downloads.
 9. upload it.
+
+ - p.s after disconnected, need re-pairing.
 
 #### 3 step:first tutorial.
 ![image](./firstTutorial.png)
