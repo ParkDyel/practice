@@ -24,4 +24,4 @@ Update the lastest firmware. [video](https://www.youtube.com/watch?time_continue
  - p.s after disconnected, need re-pairing.
 
 #### 3 step:first tutorial.
-![image](./firstTutorial.png)
+![image](./blinkExample.png)
