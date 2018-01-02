@@ -1,10 +1,10 @@
 # Practice Project written by Dyel
 ###### 2017-12-28
-###### Version 0.1.1
+###### Version 0.2.0
 
 This Project is written by beginners who have studied IoT but have a dream to become an web programmer. So it is composed of various topics and is fragmentary.
 
- - __algorithm__ Have not learned about algorithms in college, I am learning through various books.
+ - __Algorithm__ Have not learned about algorithms in college, I am learning through various books.
  - _(new)_ __ComputerEngineering__ A directory containing basic information about computer engineering.
  - __docs__ The planning intent was to assemble a variety of documents, but they will move to their respective directories, which will only write documents related to the main project. The directory that needs cleanup will be fixed in the near future. 
  - __IoT__ This directory is for the general purpose IoT platform.
