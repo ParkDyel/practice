@@ -1,0 +1,1 @@
+ADD_EXECUTABLE( test.out main.c maplinkedstack.c maputil.c )
