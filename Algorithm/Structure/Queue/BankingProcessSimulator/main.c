@@ -1,3 +1,11 @@
+/* EUC-KR
+* 제목 : 은행 업무 시스템 시뮬레이터
+* 작성 : ParkDyel
+* 설명 : 열혈강의 자료구조에 있는 예제를 기반으로
+*        작성된 코드로, 도착 시간과 처리 시간에 따라
+*        전체 대기 시간을 구하는 프로그램입니다.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "simdef.h"
@@ -34,7 +42,8 @@ int main(int argc, char* argv[]) {
 		*  틱    0  1  2  3  4  5  6  7  8  9  10
 		* 1사수  1  1  1  0  1  0  1  0  1  1  1
 		* 2사수  0  0  1  1  0  0  0  0  0  0  0
-		* !! 문제말생 : Node2의 고객을 카운트하지 못하고 있음.
+		* 문제말생 : Node2의 고객을 카운트하지 못하고 있음.
+		* 문제해결 : 복붙의 폐해.  
 		*/
 		if(pServiceNode1 != NULL && pServiceNode2 != NULL) {
 			printf("\t\t사수와 부사수 모두 열심히 일하고 있습니다\n");
