@@ -19,6 +19,12 @@
 
 [블록체인엔 이미 제2의 페북이 자라고 있다, 2018년 1월 19일 by 임유경](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180119173505) : 블록체인 기반 SNS의 탄생, '스팀잇',
 
+[공인인증서 제도 폐지…본인 인증 수단 다양화, 2018년 1월 22일](http://mn.kbs.co.kr/mobile/news/view.do?ncd=3596972)
+
+[디자이너, 코딩 꼭 해야 해?, 2018년 1월 24일 by](http://ppss.kr/archives/65766) [최민상](http://ppss.kr/archives/author/ppsswr1273) : 많은 디자이너들의 고민에 대한 개인적인 관념. 결국 웹 프로그래밍과 같은 HTML/CSS/JS도 하나의 툴에 지나지 않는다. 포토샾 CS 2 쓰는 디자이너보다 최신 일러스트 쓰는 디자이너가 훌륭한 디자이너라 결코 말할 수 없지 않은가?  
+
+[웹디자인의 타이포그래피 10가지 팁, 2018년 1월 24일 by](http://ppss.kr/archives/150664) [전민수](http://ppss.kr/archives/author/ppsswr687348534589) 
+
 ---
 
 ## 트렌드
@@ -34,6 +40,8 @@
 [성공하는 사람들이 거부하는 9가지, 2018년 1월 5일 by](http://ppss.kr/archives/147916?utm_source=dable) [고영성](http://ppss.kr/archives/author/ppsswr1583)
 
 [코스트코 이야기: 기업 이윤을 위해 국민이 희생되는 것이 옳을까?, 2018년 1월 16일 by](http://ppss.kr/archives/149265) [Nasica](http://ppss.kr/archives/author/ppsswr1420) : 웃지 않는 종업원, 중년 남성의 종업원, 찾을 수 없는 종업원. 다른 관점의 마트. 낮은 이익률, 결제 수단(삼성카드 1종) 제휴
+
+[신입사원을 매료하는, 면접실의 브랜딩, 2018년 1월 22일 by](http://ppss.kr/archives/149123) [박창선](http://ppss.kr/archives/author/ppsswr3881) : 회사가 면접자 또는 신입사원에게 대해야할 자세.
 ---
 
 ## 경제
