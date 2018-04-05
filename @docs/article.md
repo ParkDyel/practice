@@ -83,6 +83,10 @@
 
 [UI/UX 디자이너가 되기 위한 7단계, 2018년 3월 21일 by](http://ppss.kr/archives/154369) [전민수 UI/UX 컨설턴트](http://ppss.kr/archives/author/ppsswr687348534589)
 
+[](https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=221228118153&proxyReferer=&proxyReferer=)
+
+[](http://www.bloter.net/archives/306155)
+
 ---
 
 ## 트렌드
@@ -187,6 +191,10 @@
   1. 셋째, 진정성에는 ‘철학’
   1. 넷째, 하고 싶은 말을 하기보다는 묻는 말에 ‘충실히’ 대답하기
   1. 마지막, 화룡점정은 역시 ‘글빨’
+
+[](http://ppss.kr/archives/157916)
+
+[](http://ppss.kr/archives/105470)
 
 ---
 

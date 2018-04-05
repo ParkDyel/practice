@@ -1,6 +1,6 @@
 # Practice Project written by Dyel
-###### 2017-12-28
-###### Version 0.2.0
+###### 2018-04-06
+###### Version 0.2.2
 
 This Project is written by beginners who have studied IoT but have a dream to become an web programmer. So it is composed of various topics and is fragmentary.
 
@@ -66,10 +66,21 @@ Park Dyel
 
 ## License
 
-Copyright 2017 ParkDyel
+Copyright 2017-2018 ParkDyel
 
 Each project follows a stated license and, if not stated, is licensed for the underlying project or is subject to the [MIT license](https://opensource.org/licenses/mit-license.php). The lack of knowledge about licensing can cause problems, but I want to keep it as much as possible.
 
 ## Acknowledgments
 
 * Trying to do well because I lack a lot. Thank you for your advice and intellectual property.
+
+## Update Code
+  - '00' : 'Err:just mistake about manage GitHub with GUI Tools',
+  - '10' : 'We have added a new field.'
+  - '11' : 'We have added a new item.'
+  - '12' : 'We have added a new files.'
+  - '20' : 'Modified throughout the field.'
+  - '21' : 'Modified throughout the item.'
+  - '22' : 'Modified throughout the files.'
+  - '98' : 'Update:readme.md'
+  - '99' : 'Update:just Push'
