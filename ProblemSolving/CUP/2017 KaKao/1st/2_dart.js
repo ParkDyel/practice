@@ -1,15 +1,129 @@
-exports.dart = (input) => {
-
-}
+let str1 = "1S2D*3T";
 
 operandFlag = ['S', 'D', 'T'];
 optionFlag = ['*', '#'];
-ptrFlag = ['first', 'second', 'third']
+
+exports.dart = (input) => {
+
+  let parsedString = parsingString(input);
+  console.log("First Step: " + parsedString);
+  let setOperandString = setOperand(parsedString);
+  console.log("Second Step: " + setOperandString);
+  let setOptionString = setOption(setOperandString);
+  console.log("Third Step: " + setOptionString);
+
+  // Array.prototype.reduce(function(accumulator, currentValue, currentIndex, array){ return acc+curVal})
+  // Array.prototype.reduce( (prev, curr) => prev + curr )
+  // forEach처럼 행동하는 누산된 acc와, 현재값 curVal를 가지고 연산한다.;
+  sum = setOptionString.reduce((a, b) => a + b);
+  console.log(parseInt(sum));
+  return parseInt(sum);
+
+  // fun.call(this.args[,arg1[,...]])
+  // 함수를 호춣한다. 쉽게 말해 함수를 정의/선언하고 이를 사용하기 위해 바로 사용할 수 있다.
+  // apply와 다르게 여러 인자를 가질 수 있다. 상속인가..
+  /*
+  ```
+  function Product(name, price) {
+    this.name = name;
+    this.price = price;
+  
+    if (price < 0) {
+      throw RangeError('Cannot create product ' +
+                        this.name + ' with a negative price');
+    }
+  }
+  
+  function Food(name, price) {
+    Product.call(this, name, price);
+    this.category = 'food';
+  }
+  
+  function Toy(name, price) {
+    Product.call(this, name, price);
+    this.category = 'toy';
+  }
+  
+  var cheese = new Food('feta', 5);
+  var fun = new Toy('robot', 40);
+  ```
+  */
+  /*
+  ```
+  function greet() {
+    var reply = [this.person, 'Is An Awesome', this.role].join(' ');
+    console.log(reply);
+  }
+
+  var i = {
+    person: 'Douglas Crockford', role: 'Javascript Developer'
+  };
+
+  greet.call(i); // Douglas Crockford Is An Awesome Javascript Developer
+  ```
+  */
+}
 
 let parsingString = (input) => {
   // S,T,D,*,#을 만나면 나눠주도록 하자.
-  return ret;
+  input = input.replace(/#/g, '-1\n').replace(/\*/g, 'x\n').replace(/S/g, '^1\n').replace(/D/g, '^2\n').replace(/T/g, '^3\n').split('\n');
+
+  return input;
+};
+
+let setOperand = (input) => {
+  input = input.map(element => {
+    // S,T,D 인 경우
+    if (element.indexOf('^') > -1) {
+      //^기호로 나누고, 앞^뒤를 한다.
+      element = element.split('^');
+      element = Math.pow(element[0], element[1]);
+    }
+    return element;
+  })
+  return input;
 }
+
+let setOption = (input) => {
+  input.forEach((element, idx, arr) => {
+    //숫자로 된 것을 다시 문자열로 처리한다.
+    element = element.toString();
+    // 만약 -1(#)이 나타났다면!! 
+    if (element.indexOf('-1') > -1) {
+      arr.splice(idx - 1, 1, arr[idx - 1] * -1)
+      arr.splice(idx, 1)
+      ret = arr;
+    }
+    // 만약 첫번째에 x(*)가 나타난다면!
+    if (element.indexOf('x') > -1 && idx === 1) {
+      arr.splice(0, 1, arr[0] * 2)
+      arr.splice(idx, 1)
+      ret = arr;
+      // 만약 첫번째 이후에 x(*)가 나타난다면!!
+    } else if (element.indexOf('x') > -1 && idx > 1) {
+      arr.splice(idx - 2, 2, arr[idx - 2] * 2, arr[idx - 1] * 2)
+      arr.splice(idx, 1)
+      ret = arr;
+    }
+  })
+  return ret;
+  // Array.prototype.splice()
+  /*
+  array.splice(start)
+  array.splice(start, deleteCount)
+  array.splice(start, deleteCount, item1, item2, ...)
+  start         배열의 변경을 시작하는 인덱스입니다(초기 index : 0).  만약 배열 길이보다 길면 실제 시작 인덱스는 배열의 길이로 설정됩니다. 음수의 경우, 배열의 끝에서 부터 요소를 세어나가며 (초기 index : 1), 그 값의 절대값이 배열의 길이 보다 큰 경우 0으로 설정됩니다.
+  deleteCount   배열에서 제거를 할 요소의 수 입니다. 만약  deleteCount가 0의 경우, 아무런 요소도 제거되지 않습니다. 이경우, 최소한 하나의 새 요소를 특정해 주어야 합니다. 만약, deleteCount가 start에서 부터의 남은 요소 수 보다 많을 경우, 남은 요소를 모두 제거합니다.
+  itemN         배열에 추가될 요소입니다. 만약 아무런 요소도 특정되지 않을 경우,  splice()는 요소를 오직 삭제만 할 것입니다.
+  리턴 값       삭제된 요소들의 배열이 리턴됩니다. 만약 하나의 요소만이 삭제되었을 경우, 하나의 요소가 들어있는 배열이 리턴됩니다. 만약 아무런 요소도 삭제되지 않았을 경우, 빈 배열이 리턴됩니다.
+  */
+}
+
+let main = () => {
+  exports.dart(str1);
+}
+
+main();
 
 /*
 [모질라 재단의 래퍼런스](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/)
