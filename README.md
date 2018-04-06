@@ -75,7 +75,8 @@ Each project follows a stated license and, if not stated, is licensed for the un
 * Trying to do well because I lack a lot. Thank you for your advice and intellectual property.
 
 ## Gist Token
-6bbc1a44cea8aa3a8d68a5e6474b94f1c01da344
+GitHub Token: 176d549951c432c74bb3c2df3aa9ff8e3ec743e6
+GitHub Gist: 9a5d01904bb742b3c5942f542cb5f220
 
 ## Update Code
   - '00' : 'Err:just mistake about manage GitHub with GUI Tools',
