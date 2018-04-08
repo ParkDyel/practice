@@ -1,0 +1,15 @@
+{
+  "name": "getfileashttp",
+  "version": "0.1.0",
+  "description": "Get file as HTTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Dyel",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}

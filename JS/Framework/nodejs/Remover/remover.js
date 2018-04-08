@@ -3,6 +3,7 @@
 * Dyel
 * 2018.04.02
 * Removing files with simple rules
+* 왠지 정규식을 사용하면 훨씬 쉬울 것 같다. 아닌가?
 */
 
 const os = require('os'),       // 파일 시스템을 확인하기 위해 가져왔지만, 사실 path.sep을 찾아서 더 이상 의미 없다.
