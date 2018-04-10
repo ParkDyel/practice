@@ -56,3 +56,29 @@
       - jQuery, Bootstrap
     - 검토결과 : 신청
       - jQuery와 Bootstrap이라.. JS MV*으로 가고 싶은 마음이지만 아직 부족한가?
+
+#### 180410
+  - [㈜씨이랩 프론트엔드(Front-end) 개발자 채용합니다.](http://www.jobkorea.co.kr/Recruit/GI_Read/24629655?Oem_Code=C1&PageGbn=ST)
+    - 지원분야 : Front-end
+      - JAVA, JavaScript, Python, Spring, PHP, HTML 등
+      - Hadoop, 리눅스 클러스터, 서버 사이드 개발
+    - 근무지 : 강남
+    - 검토결과 : 신청
+      - [홈페이지](http://www.xiilab.com/main)
+      - 22억/29명 (평점 2.8)
+
+  - [㈜엠큐닉 상반기 신입/경력 사원 모집](http://www.jobkorea.co.kr/Recruit/GI_Read/24422424?Oem_Code=C1&PageGbn=ST)
+    - 지원분야 : 개발/신입
+      - JAVA
+      - 지도 ASPI
+    - 검토결과 : 신청
+      - [홈페이지](http://www.mqnic.com/)
+      - JAVA 기반의 회사라 다른 것 같음.
+
+  - [㈜다산네트웍스 [다산네트웍솔루션즈] 신입 SW개발자 채용의 건](http://www.jobkorea.co.kr/Recruit/GI_Read/24370842?Oem_Code=C1&PageGbn=ST)
+    - 지원분야 : (개발) 신입
+      - GIT/SVN, C, Linux 사용 가능자
+      - L2/L3 네트워크, SDN, 임베디드 S/W 관련 경험
+    - 검토결과 : 신청
+      - 이렇게 정보없는 채용글은 처음 봄.
+  - [스펙업애드 타임스프레드 Web Front-end / Back-end 개발자 부문 채용]
