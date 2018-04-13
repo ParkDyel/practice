@@ -1,0 +1,14 @@
+{
+  "name": "landingyournextjob",
+  "version": "0.1.0",
+  "description": "reverse context!",
+  "main": "ReverseContext.js",
+  "scripts": {
+    "test": "node ReverseContext.js \"hello, from other side\""
+  },
+  "author": "ParkDyel",
+  "license": "MIT",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}

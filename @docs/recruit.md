@@ -81,4 +81,45 @@
       - L2/L3 네트워크, SDN, 임베디드 S/W 관련 경험
     - 검토결과 : 신청
       - 이렇게 정보없는 채용글은 처음 봄.
+
   - [스펙업애드 타임스프레드 Web Front-end / Back-end 개발자 부문 채용]
+
+#### 180412
+  - [㈜이토마토 [토마토그룹] 개발자 경력/신입 수시모집 ](http://www.jobkorea.co.kr/Recruit/GI_Read/24624330?OEM_Code=C1)
+    - 지원분야 : 블록체인 개발
+      - 백앤엔드 개발 : 영문 기술 문서 이해, Linux 기반 C/C++
+      - 프론트앤드 개발 : PHP, Node.js 등을 활용한 RestAPI 기반 JSON-RPC
+      - 공통 : 블록체인에 대한 이해
+      - 우대 : 코인의 데몬 기술, ERC20 토큰 구조 이해, SOLIDITY 이용, 비즈니스 회화
+    - 검토결과 : 미신청
+      - 주식에 대한 [홈페이지](http://www.etomato.com/home/)를 운영하는 회사로 보임.
+      - 잡플래닛 검토 결과
+  - [NAVER Business Platform㈜ 2018 상반기 경력/인턴 사원 채용](http://www.jobkorea.co.kr/Recruit/GI_Read/24524802?Oem_Code=C1&PageGbn=)
+    - 지원분야 : 데이터센터 SW 개발(인턴)
+      - 웹 서버 및 [FE](https://www.google.co.kr/search?q=front-end) 개발을 위한 스킬, IoT, 임베디드 기반의 HW 및 SW 제작, 데이터베이스에 대한 이해
+    - 검토결과 : 작성 중(1.8/4)
+  - [㈜하이브랩 [하이브랩] 신입 마크업 개발자 모집](http://www.jobkorea.co.kr/Recruit/GI_Read/24592056?rPageCode=SL)
+    - 지원분야 : 마크업 개발자(신입)
+      - 웹 표준 준수 크로스 브라우징 마크업, CSS
+      - 접근성, 반응형, 모바일 작업, JavaScript 활용
+    - 검토결과 : 검토중
+  - [블루웨일 블루웨일 개발자(서버/머신러닝) 채용](http://www.jobkorea.co.kr/Recruit/GI_Read/24396369?rPageCode=SL)
+    - 지원분야 : 백엔드 시스템 개발
+      - 기본적인 컴퓨터 공학 지식, 자신있는 개발 언어 및 웹 프레임워크 최소 1개
+      - 기술스택 : Python, SQLAlchemy, Angular, MySQL, Redis, MongoDB, Elasticsearch, GCP Kubernates Engine
+    - 검토결과 : 미신청
+      - 자신있는 웹 프레임워크라...
+  - [(주)투토 [tutto] 웹개발(프론트엔드, 백엔드) 신입/경력직 모집](http://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=avatar&rec_idx=33373551&isMypage=yes&gz=1&recommend_ids=eJw9jtsRwEAIAlsS0UOrSSMpPk%2Fvc4dZgN5hEI%2BsOMnAEjQQxoofCM%2FCB95t6PUnaK1dwAKXD6iie9pSqhrnntxOgmaTZJpqnHx4O5be74MLTBErHQ%3D%3D&inner_source=saramin&inner_medium=pattern&inner_campaign=SRI_002_AVA-S_AVA_RCT&inner_term=7&t_ref=avatar&t_ref_content=SRI_002_AVA-S_AVA_RCT&t_ref_scnid=584#seq=0)
+    - 지원분야 : 웹/앱 서비스 개발
+      - JavaScript 
+    - 검토결과 : 지원
+  - [뮤자인 웹개발자 경력 채용](http://job.incruit.com/jobdb_info/jobpost.asp?job=1804060002117)
+    - 지원분야 : 웹 개발자
+      - 웹 개발 업무
+    - 검토결과 : 지원
+  - [이글루시큐리티 연구개발본부 직무별 경력 및 신입사원 모집](http://recruit.igloosec.co.kr/)
+    - 지원분야 : 로그 수집/프론트엔드 개발 신입
+      - 로그수집 : 시스템/네트워크 프로그래밍 경험자, 네트워크 패킷 분석 가능자, C/C++ 프로그래밍 이해 가능자
+      - 프론트엔드 개발 : Java 기반 웹UI/UX 개발 지식 보유자, 웹 프론트엔드 프레임워크 응용 개발 경험자
+    - 검토결과 : 미신청
+      - 음... 다시 로우쪽으로만은 가고 싶지 않다.
