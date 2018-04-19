@@ -98,6 +98,7 @@
     - 지원분야 : 데이터센터 SW 개발(인턴)
       - 웹 서버 및 [FE](https://www.google.co.kr/search?q=front-end) 개발을 위한 스킬, IoT, 임베디드 기반의 HW 및 SW 제작, 데이터베이스에 대한 이해
     - 검토결과 : 작성 중(1.8/4)
+    - [관련기사:네이버의 새로운 도전, 클라우드와 인공지능](http://it.donga.com/26683/)
   - [㈜하이브랩 [하이브랩] 신입 마크업 개발자 모집](http://www.jobkorea.co.kr/Recruit/GI_Read/24592056?rPageCode=SL)
     - 지원분야 : 마크업 개발자(신입)
       - 웹 표준 준수 크로스 브라우징 마크업, CSS
@@ -123,3 +124,28 @@
       - 프론트엔드 개발 : Java 기반 웹UI/UX 개발 지식 보유자, 웹 프론트엔드 프레임워크 응용 개발 경험자
     - 검토결과 : 미신청
       - 음... 다시 로우쪽으로만은 가고 싶지 않다.
+
+#### 180416
+  - [㈜엔디씨에스 웹 퍼블리셔 신입(센스) 모집](http://www.jobkorea.co.kr/Recruit/GI_Read/24670542?rPageCode=SL)
+    - 지원분야 : 웹 퍼블리셔
+      - jQuery
+    - 검토결과 : 신청
+      - 흠 jQuery라.. 4년이면 최고 프로그래머 가능
+  - [㈜인스팟 웹퍼블리셔 (Front-End 개발자)를 모집합니다.](http://www.jobkorea.co.kr/Recruit/GI_Read/24606042?Oem_Code=C1&sc=7)
+    - 지원분야 : 웹 퍼블리셔
+      - HTML/CSS/jQuery, 웹 표준 및 접근성
+    
+  - [㈜우리테크인터내셔날 (주)우리테크에서 Full-stack Javascript 개발자를 모십니다.](http://www.jobkorea.co.kr/Recruit/GI_Read/24460610?rPageCode=SL)
+    - 지원분야 : 개발
+      - [meteor.js, MongoDB, AWs](https://goo.gl/T1e9LO)
+    - 검토결과 : 신청
+      - meteor.js 기반의 Full-Stack
+  - [브레인즈스퀘어㈜ Node.js BackEnd 및 FrontEnd개발자를 모십니다](http://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=tailor&rec_idx=33566176&isMypage=yes&gz=1&recommend_ids=eJw1zMERwDAIA8GWMEIy9JbiE4Pz2zkxAFQI%2FgBkCXuAqoOInV0CBWsIt%2BQiG2bq8g1zg52IA%2Beazy46Grk0pWj%2FlPECRaAfRA%3D%3D&inner_source=saramin&inner_medium=pattern&inner_campaign=suited_list_&inner_term=suited_recruit_01&t_ref=suited_list&t_ref_content=suited_recruit_01#seq=0)
+    - 지원분야 : Node.js 개발(FE/BE)
+      - Elastic Stack, Node.js, ECMAScript, AI
+    - 검토결과 : 신청
+      - 기술스택이 흥미롭다.
+  - [(주)서영아이앤티 프론트엔드개발 퍼블리셔 디자인(Angular,JQuary,CSS,UX/UI)](http://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=tailor&rec_idx=33630096&isMypage=yes&gz=1&recommend_ids=eJwtzNENADEIAtCVFJTqbh3%2BctW%2FFyCQQnvhkiJN%2FhABLJSD5lRi9wMszkPlbOB2FpR%2BeFlPYp6TqGo3MYdGZnw2Oh8e&inner_source=saramin&inner_medium=pattern&inner_campaign=suited_list_1&inner_term=suited_recruit_01&t_ref=suited_list&t_ref_content=suited_recruit_01#seq=0)
+    - 지원분야 : FE 퍼블리셔
+      - FE 개발(BootStrap, Angular, React, VueJS)
+    - 검토결과 : 신청
