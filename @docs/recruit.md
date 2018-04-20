@@ -97,7 +97,7 @@
   - [NAVER Business Platform㈜ 2018 상반기 경력/인턴 사원 채용](http://www.jobkorea.co.kr/Recruit/GI_Read/24524802?Oem_Code=C1&PageGbn=)
     - 지원분야 : 데이터센터 SW 개발(인턴)
       - 웹 서버 및 [FE](https://www.google.co.kr/search?q=front-end) 개발을 위한 스킬, IoT, 임베디드 기반의 HW 및 SW 제작, 데이터베이스에 대한 이해
-    - 검토결과 : 작성 중(1.8/4)
+    - 검토결과 : 지원
     - [관련기사:네이버의 새로운 도전, 클라우드와 인공지능](http://it.donga.com/26683/)
   - [㈜하이브랩 [하이브랩] 신입 마크업 개발자 모집](http://www.jobkorea.co.kr/Recruit/GI_Read/24592056?rPageCode=SL)
     - 지원분야 : 마크업 개발자(신입)
@@ -149,3 +149,7 @@
     - 지원분야 : FE 퍼블리셔
       - FE 개발(BootStrap, Angular, React, VueJS)
     - 검토결과 : 신청
+  - [인더스트르 솔루션]
+    - 지원분야 : FE
+    - 검토결과 : 역제의
+      - 면접결과 : 준수
