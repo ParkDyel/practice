@@ -1,0 +1,13 @@
+package gdEng;
+
+message Device {
+  required int32 temperature = 1;
+  required int32 ampereConsumption = 2;
+  required int32 battery = 3;
+  required int64 battery = 4;
+  required bool battery = 5;
+}
+
+message AddressBook {
+  repeated Person people = 1;
+}
