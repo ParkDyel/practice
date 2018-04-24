@@ -2,6 +2,9 @@
 
 # import protocol buffers
 import devicedata_pb2 as devicedata
+from google.protobuf.internal.encoder import _VarintBytes
+from google.protobuf.internal.decoder import _DecodeVarint32
+
 import sys
 import random
 from datetime import datetime
@@ -14,7 +17,16 @@ def initDeviceData(deviceData):
     deviceData.option = random.randint(0, 268435456)
     deviceData.power = random.randint(0,1)
     deviceData.insertTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print deviceData.ByteSize()
+    print (deviceData.ByteSize())
+    return deviceData
+
+def writeDeviceDataToStream(deviceData, size, fd):
+    pos = 0
+    while pos < lens:
+
+        return
+
+def readDeviceDataFromStream(deviceData, size, fd):
     
 
 def getDeviceData(deviceData):
@@ -47,9 +59,9 @@ def main():
 
     # Read data from the existing proto data files.
     try:
-        fd = open(sys.argv[1], "rb")
-        device_data.ParseFromString(fd.read())
-        fd.close()
+        with open(sys.argv[1], 'rb') as fd:
+            device_data.ParseFromString(fd.read())
+            fd.close()
     except IOError:
         print (sys.argv[1] + ": Could not open file.  Creating a new one.")
 
@@ -57,18 +69,18 @@ def main():
     initDeviceData(device_data.device.add())
 
     # Write data to the proto data back to files in disk.
-    fd = open(sys.argv[1], "wb")
-    fd.write(device_data.SerializeToString())
-    fd.close() 
+    with open(sys.argv[1], 'wb') as fd:
+        fd.write(device_data.SerializeToString())
+        fd.close() 
 
     # create DeviceData Obejct.
     device_data2 = devicedata.DeviceData()
     # print (device_data2.__str__())
 
     # Read data from the existing proto data files.
-    fd = open(sys.argv[1], "rb")
-    device_data2.ParseFromString(fd.read())
-    fd.close()
+    with open(sys.argv[1], "rb") as fd:
+        device_data2.ParseFromString(fd.read())
+        fd.close()
 
     getDeviceData(device_data2) 
 

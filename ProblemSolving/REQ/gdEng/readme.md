@@ -49,7 +49,21 @@
     - proto 파일 첨부
     - 추가 작업 설명
 14. 통신망에서 패킷 사이즈를 10byte 이하로 제한하고 있다. 이에 맞추어 프로토콜을 수정합시다.(패킷 축소를 위해 Encode/Decode 전/후 추가적인 작업 수행 가능)
+    - proto 파일 첨부
+    - 추가 작업 설명
 
+    - 방안
+        1. 통신에서 제어 : stream에서 한번에 쓸 크기를 지정
+        2. 패킷에서 제어 : 패킷을 나누어 하나의 항목만 전송
+            - 각 항목의 크기 계산 필요
+            - 코드 해석 필요
+                ```
+                size = my_metric.ByteSize()
+                f.write(_VarintBytes(size))
+                msg_len, new_pos = _DecodeVarint32(buf, n)
+                read_metric = metric_pb2.Metric()
+                ```
 13..14 참고 [이글루스](http://egloos.zum.com/javawork/v/2726467)
+13..14 참고 [datadoghq](https://www.datadoghq.com/blog/engineering/protobuf-parsing-in-python/)
 
 15. 과제 수행 소감
