@@ -83,10 +83,11 @@
 
 [UI/UX 디자이너가 되기 위한 7단계, 2018년 3월 21일 by](http://ppss.kr/archives/154369) [전민수 UI/UX 컨설턴트](http://ppss.kr/archives/author/ppsswr687348534589)
 
-[](https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=221228118153&proxyReferer=&proxyReferer=)
+[AI를 이용하면 지진 감지 시스템 성능이 전보다 17배 UP!, 2018년 3월 13일 by 정보통신기술진흥센터](https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=221228118153&proxyReferer=&proxyReferer=)
+ 
+[“사람의 말을 기계언어로, 기계언어를 사람에게”, 2018년 03월 29일 by](http://www.bloter.net/archives/306155) [곽효원](khw33033@gmail.com) : "야민정음도 이해하는 기계" 구글 어시스턴트
 
-[](http://www.bloter.net/archives/306155)
-
+[개발자가 꿈이라면 주목! 알고리즘 시험 사이트 온라인 저지(Online Judge)](http://www.jobkorea.co.kr/starter/Tip/View?Inside_No=12968&schCtgr=0&schGrpCtgr=101&schTxt=%EC%A0%80%EC%A7%80&Page=1) : 개발자가 꿈이라면 주목! 알고리즘 시험 사이트 온라인 저지(Online Judge) 
 ---
 
 ## 트렌드
