@@ -3,7 +3,9 @@ import os.path
 import csv
 import math
 
-def csv_file_to_list_dict(file, sep='\t'):
+
+def read_tsv_file_to_list_dict(file, sep='\t'):
+    "read tsv file and return as dictionary which have list in each key."
     with open(file) as fd:
         reader = csv.reader(fd, delimiter=sep)
         header = next(reader)
@@ -49,6 +51,15 @@ def get_maen_and_std(data_list):
     return mean, std
 
 
+def read_tsv_file_to_dict_list(file, sep='\t'):
+    "read tsv file and return as dictionary list."
+    with open(file) as fd:
+        ret = list()
+        for dict_data in csv.DictReader(fd, delimiter=sep):
+            ret.append(dict_data)
+    return ret
+
+
 def main():
     if(len(sys.argv) < 2):
         print('USAGE:python script.py targetFile (sep)')
@@ -59,7 +70,7 @@ def main():
     if(len(sys.argv) == 3):
         sep = sys.argv[2]
     if(os.path.isfile(file_path)):
-        datas = csv_file_to_list_dict(file_path)
+        datas = read_tsv_file_to_list_dict(file_path)
 
     result = dict({key: dict() for key in datas.keys()})
     result = get_index_of_max_value(datas, result)
@@ -73,6 +84,7 @@ def main():
     print("Xn MEAN : ", xn_mean, "Xn STE : ", xn_std)
 
     return
+
 
 if __name__ == '__main__':
     main()
