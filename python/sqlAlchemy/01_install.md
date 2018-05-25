@@ -31,10 +31,15 @@
         2| sudo dpkg -i mysql-apt-config_0.8.9-1_all.deb
         ```
     - 2)2 과정에서 에러 메세지에 lsb-release를 설치하려고 하면 그대로 이행하도록 한다. 설치하면서 sudo도 필요하다면 같이 설치하도록 한다.
-    3)
+    3) MySQL 설치 테스트
+        ```
+        1| service mysqld status
+        2| service mysqld start
+        3| service mysqld status
+        ```
+    4) Python Library 설치
         ```
         1| sudo apt update 
-        2| sudo apt install mysql-server python-mysqldb
-        3| pip install mysql-python
+        2| sudo apt install mysql-server python3-mysqldb
+        3| pip install mysqlclient
         ```
-    

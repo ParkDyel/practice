@@ -1,0 +1,2 @@
+1. [https://docs.sqlalchemy.org/en/latest/orm/tutorial.html](https://docs.sqlalchemy.org/en/latest/orm/tutorial.html)   
+2. [http://docs.sqlalchemy.org/en/latest/core/pooling.html](http://docs.sqlalchemy.org/en/latest/core/pooling.html)
