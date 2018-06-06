@@ -1,0 +1,1 @@
+- [sqlalchemy engine, connection, and session difference](https://stackoverflow.com/questions/34322471/sqlalchemy-engine-connection-and-session-difference)
