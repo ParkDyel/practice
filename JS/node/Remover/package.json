@@ -4,9 +4,12 @@
   "description": "remove files with simple rule. \"usage : node remover.js {$Path} {$extension}\"",
   "main": "remover.js",
   "scripts": {
-    "all" : "node remover.js ./ *",
-    "jpg" : "node remover.js ./ jpg"
+    "all": "node remover.js ./ *",
+    "jpg": "node remover.js ./ jpg"
   },
   "author": "Dyel",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "promise": "^8.0.1"
+  }
 }
