@@ -109,7 +109,8 @@
         - Bootstrap
 
 11. Python:Extension
-    - Djando
+    - Django
+    - Flask
     - Tensorflow
 
 12. JavaScript:Extension
