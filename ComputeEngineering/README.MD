@@ -81,20 +81,24 @@
         
         프로그램이 운영체제 등에 의해 자원을 할당받고 실행되고 있는 상태를 말합니다.
 
-    - Environment
-        - OS
-        - Visual Studio Code
-        - MinGW
-        - Chrome
-        - Node.js
-        - Python 3.x
-        - OpenJDK 8
 
 2. Development Diversity
     - Diversity
-        - FrontEnd-BackEnd-DBA
+        - Web Application Developer
+
+        |DB|<->|Server|<->|Client(Browser)|||
+        |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+        |||||<||웹 퍼블리셔, 웹 디자이너|
+        ||| < ||FE 개발자|
+        | < ||BE 개발자|| > |
+        |DBA||>|||
+
+        브라우저에서 동작하는 프로그램을 개발하는 개발자로 통칭 웹 개발자라고 합니다. 세부 분야로는 back-end, front-end, 웹 퍼블리싱 등이 있고, 각각의 양 끝에는 DBA, 웹 디자이너 등이 있습니다. **back-end(Server) 개발자**는 front-end에서 화면을 출력하기 위해 필요한 자료들이나, 로그인 요청과 같은 로직을 처리하는 프로그램을 개발하고, **front-end(Client) 개발자**는 사용자에게 데이터나 정보를 제공하기 위해 웹 화면을 프로그래밍합니다. 이외에도 관련 직무로 데이터와 정보를 다루기 위한 데이터베이스 설계 및 운용사, 사용자에게 편리한 서비스를 제공하기 위한 웹 퍼블리셔/디자이너 등이 있습니다.
+
         - Application Developer
-        - 
+        
+        - Emebeded Developer
+        - DBA
     - OS
         - Windows
         - Linux(Unix)
