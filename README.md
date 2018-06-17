@@ -2,6 +2,8 @@
 ##### 2018.06.10
 ##### Version 0.3.0
 
+Just practice code chunk.
+
 ## Content
  - __ComputerEngineering__ The Basics of Computer Engineering. It include Algorithm and etc.
  - __docs__ Various documents like list of article, wanna be tech stack. 
@@ -51,16 +53,13 @@ Park Dyel
 ## License
 Copyright 2017-2018 ParkDyel
 
-Each project follows a stated license and, if not stated, is licensed for the underlying project or is subject to the [MIT license](https://opensource.org/licenses/mit-license.php). The lack of knowledge about licensing can cause problems, but I want to keep it as much as possible.
+Each project follows each stated license. but if not stated, will follow [MIT license](https://opensource.org/licenses/mit-license.php). The lack of knowledge about licensing can cause problems, but I want to keep it as much as possible.
 
 ## Acknowledgments
-* Trying to do well because I lack a lot. Thank you for your advice and intellectual property.
+* this repo's code and program are messy. Thank you for your advice.
 
 ## Gist Token
 I want to use it well, but something does not always work.
- - GitHub Token: de856ee031da49a17dda20afb3848a6d01b39710
- - GitHub Gist: 7a861d453b795044980d269afad6befc
- - GitHub Gist Type: Public
 
 ## Update Code
   - '00' : 'Version Change.'
