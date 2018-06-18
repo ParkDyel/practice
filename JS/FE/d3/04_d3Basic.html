@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  //d3.js 입문 149P
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="myGraph">
+  </div>
+  <div id="myGraphPannel">
+    <button id="svgChangeDataBt" onclick="svgChangeDataBt()" />
+    <button id="svgChangeColorBt" onclick="changeColor()" />
+  </div>
+</body>
+<footer>
+  <script>
+    window.onload = function () {
+      document.getElementById('svgChangeDataBt')
+        .innerHTML = "Change Data Button"
+      document.getElementById('svgChangeColorBt')
+        .innerHTML = "Change Stack Color Button"
+      resizeSVG(window.innerWidth)
+    }
+  </script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <style>
+    #firstChart {
+      {
+        #width: 320px;
+        #
+      }
+      height: 240px;
+      border: 1px solid black;
+    }
+
+    rect {
+      fill: cornflowerblue
+    }
+  </style>
+  <script>
+    var myGraph = d3.select("#myGraph")
+      .append("svg")
+      .attr("id", "firstChart")
+      .append("rect")
+      .attr("id", "firstStack")
+      .attr("class", "Stack")
+      .attr("x", "10px")
+      .attr("y", "50px")
+      .attr("width", "200px")
+      .attr("height", "30px");
+    // 위의 다섯개의 attr 함수는 다음과 같이 표현 가능하다.
+    /* .attr({
+      id : "firstStack",
+      class : "Stack"
+      x: "10px",
+      y: "50px",
+      width:"200px",
+      height : "30px"
+    })
+    */
+
+    function svgChangeDataBt() {
+      d3.select("#firstStack")
+        .transition()
+        .duration(1000)
+        .attr("width", function () {
+          return 500 + "px"
+        })
+    }
+
+    function resizeSVG(w) {
+      d3.select("#firstChart")
+        .attr("width", function () {
+          return w + "px"
+        })
+    }
+
+    function changeColor(selected) {
+      //selected
+      d3.selectAll(".Stack")
+       .style("fill", "red")
+       .style("stroke", "black")
+    }
+  </script>
+</footer>
+
+
+</html>

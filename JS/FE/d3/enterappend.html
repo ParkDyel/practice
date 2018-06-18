@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+</body>
+<footer>
+  <script src="https://d3js.org/d3.v4.min.js">
+  </script>
+  <script>
+    d3.select("body")
+      .selectAll("p")
+      .data([4, 8, 15, 16, 23, 42])
+      .enter().append("p")
+      .text(function (d) {
+        return "I’m number " + d + "!";
+      });
+  </script>
+</footer>
+
+</html>

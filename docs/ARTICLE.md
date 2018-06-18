@@ -88,6 +88,8 @@
 [“사람의 말을 기계언어로, 기계언어를 사람에게”, 2018년 03월 29일 by](http://www.bloter.net/archives/306155) [곽효원](khw33033@gmail.com) : "야민정음도 이해하는 기계" 구글 어시스턴트
 
 [개발자가 꿈이라면 주목! 알고리즘 시험 사이트 온라인 저지(Online Judge)](http://www.jobkorea.co.kr/starter/Tip/View?Inside_No=12968&schCtgr=0&schGrpCtgr=101&schTxt=%EC%A0%80%EC%A7%80&Page=1) : 개발자가 꿈이라면 주목! 알고리즘 시험 사이트 온라인 저지(Online Judge) 
+
+[파루, 기술로 세상을 이롭게 하다, 2018년 06월 14일 by](http://www.innovationlab.co.kr/project/paru/) [innovation Lab](http://www.innovationlab.co.kr/) : 인쇄전자
 ---
 
 ## 트렌드
@@ -133,7 +135,9 @@
 
 [청년들을 현장으로 모으기 위한 5가지 방법, 2018년 2월 14일 by](http://ppss.kr/archives/152957 ) [권병태](http://ppss.kr/archives/author/ppsswr5004) : 다양한 경험을 한 노박사가 건설현장에서 일하며 생각한 청년들을 공사현장으로 불러들이기 위한 개선점들. 이러한 문제를 고민하는 참신한 발상이 인상 깊다.
 
-[세상이 변했다, 가사도우미도 달라졌다 2018년 2월 13일 by](http://ppss.kr/archives/152962) [ 산업정보포털 아이디비](http://ppss.kr/archives/author/ppsswr5002) : 가사도우미의 온라인 기업화와 정량화
+[세상이 변했다, 가사도우미도 달라졌다 2018년 2월 13일 by](http://ppss.kr/archives/152962) [산업정보포털 아이디비](http://ppss.kr/archives/author/ppsswr5002) : 가사도우미의 온라인 기업화와 정량화
+
+[일부러 만든 불편한 도로가 있다?, 2018년 6월 9일 by](https://1boon.kakao.com/subusunews/5b1a5550709b530001d2bcc8?view=katalk) [스브스뉴스](https://1boon.kakao.com/subusunews) & [열도의 중앙분리대, 2018년 6월 9일 by](https://community.v.kakao.com/v/ob1K1jDPJt) 웃긴대학 : 졸음운전을 방지하기 위해 좋은 기술 2가지
 
 ---
 
@@ -166,6 +170,12 @@
 [하고 싶은 것을 하는 어도비 디자이너의 삶, 2018년 2월 9일 by](http://ppss.kr/archives/149586) [김진영](http://ppss.kr/archives/author/ppsswr11467) : 클래스는 다를 수 있으나 삶의 모습이 비슷한 것 같은 느낌이 들었다. 물론 미국 유학빼고.
 
 [가깝다고, 쉽다고, 편하게 일할 수 있다고 선택하지 마세요, 2018년 2월 8일 by](http://ppss.kr/archives/99216) [최경희](http://ppss.kr/archives/author/ppsswr1994) : 디자이너 직군을 통해 바라본 직종에 대한 환상
+
+[천재들이 남긴 10가지 명언, 아인슈타인이 남긴 명언은?, 2018년 5월 30일 by 하루5분연구소](https://1boon.kakao.com/5minute_lab/5b0bf48ced94d20001b58077?view=katalk)
+1. 나는 미래에 대해 생각하는 법이 없다. 어차피 곧 닥치니까. - Albert Einstein
+1. 작은 일이 완벽함을 만든다. 그리고 완벽함은 작은 일이 아니다. - Michelangelo Buonarroti
+1. 할 수 없다고 생각하면 절대로 할 수 없다. 결국 그런 생각으로는 어떤 일도 불가능하다. - Rene Descartes
+1. 모두가 세상을 변화시키려고 생각하지만, 정작 스스로 변하겠다고 생각하는 사람은 없다. - Lev Tolstoy
 
 ---
 
