@@ -179,6 +179,7 @@
 
 [한 의사가 평생을 바쳐 만든 음료, 아이를 살려내다, 2018년 6월 18일 by](http://ppss.kr/archives/166802) [마시즘](http://ppss.kr/archives/author/ppsswr6911) : 베지밀 창업자 일대기
 
+[초보 개발자를 위한 팁, 2018년 6월 18일 3가지 by](https://youtu.be/gctZUbEmt-k) [노마드 코더](https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ)
 ---
 
 ## 채용
@@ -205,9 +206,9 @@
   1. 넷째, 하고 싶은 말을 하기보다는 묻는 말에 ‘충실히’ 대답하기
   1. 마지막, 화룡점정은 역시 ‘글빨’
 
-[](http://ppss.kr/archives/157916)
+[프리랜서가 경력을 정리하는 방법, 2018년 3월 28일 by](http://ppss.kr/archives/157916) [마르코](http://ppss.kr/archives/author/ppsswr2036)
 
-[](http://ppss.kr/archives/105470)
+[어떻게 사람을 평가할 것인가?, 2018년 3월 18일 by](http://ppss.kr/archives/105470) [뉴스페퍼민트](http://ppss.kr/archives/author/ppsswr1835)
 
 ---
 
