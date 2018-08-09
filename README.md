@@ -1,7 +1,7 @@
 # Dyel's Practice Chunk
 
 2018.08.09\
-Version 0.4.0
+Version 0.4.1
 
 code chunk, which just consist of practice.
 
