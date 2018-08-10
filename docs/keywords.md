@@ -1,2 +1,3 @@
-- 프로그레시브 웹 앱
+- PWA, Progressive Web App
 - Immersive Web
+- ROA Resource Oriented Architecture
