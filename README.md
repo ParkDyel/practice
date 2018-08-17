@@ -7,8 +7,10 @@ code chunk, which just consist of practice.
 
 ## Content
 
+- __BE__ about Server back-end.
 - __ComputerEngineering__ The Basics of Computer Engineering. It include Algorithm and etc.
-- __docs__ Various documents like list of article, wanna be tech stack. 
+- __docs__ Various documents like list of article, wanna be tech stack.
+- __FE__ about Server front-end. 
 - __Firmware__ (New) Study Firmware like avr.
 - __IoT__ Study universal IoT or build Project using universal IoT
 - __JS__ Study JavaScript And relevante FramkWork with Node.js, Vue.js and etc.
