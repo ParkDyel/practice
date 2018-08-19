@@ -6,6 +6,7 @@
 - __0.7.0__ (Reserved) clear up Linux and git
 - __0.6.0__ (Reserved) clear up Firmware and IoT
 - __0.5.0__ (Reserved) clear up ComputerEngineering
+- __0.4.3__ study about GraphQL.
 - __0.4.2__ rebuild directory tree. and clear up Tool/git.
 - __0.4.1__ create docs/post.md to sepereate share url, because docs/article is not collect tpye for share IT. and add new item on python for future.
 - __0.4.0__ Update Fields 'Firmware', and delete Project Field cause not clear.
