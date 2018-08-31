@@ -116,6 +116,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 # Copy the modified Nginx conf
 COPY nginx.conf /etc/nginx/conf.d/
 
+COPY uwsgi.ini /etc/uwsgi/
+
 # Install Supervisord
 RUN apt-get update && apt-get install -y supervisor \
 && rm -rf /var/lib/apt/lists/*
