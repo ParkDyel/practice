@@ -77,12 +77,12 @@ I want to use it well, but something does not always work.
 
 ## Update Code
 
-- '00' : 'Version Change.'
-- '10' : 'Add a new field.'
-- '11' : 'Add a new item.'
-- '12' : 'Add a new files.'
-- '20' : 'Modify the field.'
-- '21' : 'Modify the item.'
-- '22' : 'Modify the files.'
-- '98' : 'Update readme_md'
-- '99' : 'Just Push'
+- 00 : Version Change.
+- 10 : Add a new field.
+- 11 : Add a new item.
+- 12 : Add a new files.
+- 20 : Modify the field.
+- 21 : Modify the item.
+- 22 : Modify the files.
+- 98 : Update readme_md.
+- 99 : Just push.
