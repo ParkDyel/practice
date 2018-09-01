@@ -1,0 +1,19 @@
+version: '3'
+services:
+  flask:
+    image: flask:python3.6.6-stretch-slim
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        NGINX_VERSION: 1.15.3-1~stretch
+        NJS_VERSION: 1.15.3.0.2.3-1~stretch
+    container_name: flask
+    volumes:
+      # for windows
+      - ..\:/app
+      # for linux
+      - ../:/app
+    ports:
+      - "8080:80"
+    restart: always
