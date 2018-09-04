@@ -1,14 +1,16 @@
 # Dyel's Practice Chunk
 
-2018.08.09\
-Version 0.4.1
+2018.08.17\
+Version 0.4.2
 
 code chunk, which just consist of practice.
 
 ## Content
 
+- __BE__ about Server back-end.
 - __ComputerEngineering__ The Basics of Computer Engineering. It include Algorithm and etc.
-- __docs__ Various documents like list of article, wanna be tech stack. 
+- __docs__ Various documents like list of article, wanna be tech stack.
+- __FE__ about Server front-end. 
 - __Firmware__ (New) Study Firmware like avr.
 - __IoT__ Study universal IoT or build Project using universal IoT
 - __JS__ Study JavaScript And relevante FramkWork with Node.js, Vue.js and etc.
@@ -75,12 +77,12 @@ I want to use it well, but something does not always work.
 
 ## Update Code
 
-- '00' : 'Version Change.'
-- '10' : 'Add a new field.'
-- '11' : 'Add a new item.'
-- '12' : 'Add a new files.'
-- '20' : 'Modify the field.'
-- '21' : 'Modify the item.'
-- '22' : 'Modify the files.'
-- '98' : 'Update readme_md'
-- '99' : 'Just Push'
+- 00 : Version Change.
+- 10 : Add a new field.
+- 11 : Add a new item.
+- 12 : Add a new files.
+- 20 : Modify the field.
+- 21 : Modify the item.
+- 22 : Modify the files.
+- 98 : Update readme_md.
+- 99 : Just push.
