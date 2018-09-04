@@ -1,5 +1,27 @@
 ﻿# POST.MD
 
+## 2018.09.04
+- [Flask + GraphQL](http://artoria.us/m/30)
+    - Study 참고자료
+- [서울 해커톤 LoRa 동영상 강의 목록](http://www.seoulhackathon.org/tag/LoRa_Setalab_AuLoRa_Daliworks_Thingplus)
+    - LoRa에 관심이 있다면 살펴봐도 좋을 것 같아 즐겨찾기
+- [이종_세계를 놀라게 한 발명품](http://m.cafe.daum.net/ssaumjil/LnOm/2033600?svc=kakaotalkTab&bucket=toros_cafe_channel_beta)
+    - 개발을 하는 그 마음이 너무 인상 깊어 발자취를 남겨둔다.
+    - 봐라. 도저히 들어갈 수 없는 불길 속에서 사람을 둘러업고 나오는 소방관들을 봐라. 그들이라고 매번 확신이 있어서 불길로 뛰어들겠냐
+
+## 2018.09.02
+- [Vuejs + GraphQL](https://medium.com/@lachlanmiller_52885/graphql-basics-and-practical-examples-with-vue-6b649b9685e0)
+    - Study 참고자료
+
+## 2018.09.01
+- [열정을 찾으라’는 말이 나쁜 조언인 이유](https://ppss.kr/archives/172716)
+    - 관심사가 고정되어 있다고 믿는 학생들은 자신의 관심사와 맞지 않는다는 이유로 흥미로운 수업이나 새로운 기회를 놓치게 될 수 있다
+    - 암에 대해 전혀 모르던 사람도 부모님이 암에 걸리면 순식간에 암에 관한 전문가가 됩니다
+- [잘나가는 팀이 되기 위한 5가지 방법](https://ppss.kr/archives/169155)
+    - 최악의 경우에 대비하라. 최선의 경우는 스스로 알아서 잘 관리된다. "이디시어 속담 중"
+    - 자신의 모습을 최대한 객관적으로 보기 위해 반성하면 내가 뭘 알고 모르는지에 대한 ‘메타인지’가 올라간다고 한다.
+    - 총알 먼저 쏘고 대포 쏘기
+
 ## 2018.08.09
 
 - [프로그래머가 되는 방법: 짧고 폭넓고 개인적인 요약](https://wiki.kldp.org/wiki.php/HowToBeAProgrammer) :
@@ -14,5 +36,3 @@
         - [의역제목:슈퍼 개발자를 향한 조언](http://yookeun.github.io/think/2016/02/05/think-howwork/)
 - [★ 신입 개발자 생활백서](https://www.slideshare.net/jayjin0427/ss-61315271) : 슬라이드 제작자가 준비한 신입사원 과정
 - [★★★★★ The Best Explanation of JavaScript Reactivity](http://devtimothy.tistory.com/87) : 반응형 시스템을 구성하는 방법 with Vue.js by Evan You who create Vue.js => PPT 제작 예정
-  
-== End ==
