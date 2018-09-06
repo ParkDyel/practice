@@ -1,5 +1,5 @@
 # just.ignore
-*.just.ignore
+.just.ignore
 
 # Setting file
 init.*.*
@@ -13,7 +13,8 @@ node_modules
 node_modules/*
 
 # Python
-*.pyc
+.pyc
+__pycache__
 
 # exe
-*.exe
+.exe
