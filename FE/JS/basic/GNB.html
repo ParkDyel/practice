@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GNB</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 40px;
+            transition: top 0.2s ease-in-out
+        }
+
+        li {
+            font-size: 16px;
+        }
+
+        .nav-up {
+            top: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="wraper" style="border:1px solid #ccc!important; border-radius:16px;text-align: center;">
+            <ul>
+                <li style="display:inline-block;">
+                    <a href="https://google.co.kr">구글</a>
+                </li>
+                <li style="display:inline-block;">
+                    <a href="https://naver.com">네이버</a>
+                </li>
+                <img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" alt="logo"
+                    style="display:inline-block;height:16px;">
+                <li style="display:inline-block;">
+                    <a href="https://github.com">GitHub</a>
+                </li>
+                <li style="display:inline-block;">
+                    <a href="https://stackoverflow.com">Stackoverflow</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <div id="container" style="height:2000px">
+
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+            // If they scrolled down and are past the navbar, add class .nav-up. // This is necessary so you never see what is "behind" the navbar. 
+            if (st > lastScrollTop && st > navbarHeight) { // Scroll Down 
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up 
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            lastScrollTop = st;
+        }
+    </script>
+</body>
+
+</html>
