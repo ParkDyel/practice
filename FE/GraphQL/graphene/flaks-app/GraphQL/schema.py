@@ -1,6 +1,6 @@
 import graphene
 
-class Character(graphene.Interface):
+class Character(graphene.ObjectType):
     name = graphene.String()
     PN = graphene.String()
 
@@ -16,10 +16,29 @@ User.append(Dyel)
 class Query(graphene.ObjectType):
     hello = graphene.String(name=graphene.String(default_value="stranger"))
     name = graphene.String(name=graphene.String(default_value="stranger"))
+    pn = graphene.String(pn=graphene.String(default_value="0"))
 
     def resolve_hello(self, info, name):
         return 'Hello ' + name
 
-    def 
+    def resolve_name(self, info, name):
+        return name
+    
+    def resolve_pn(self, info, pn):
+        return pn
 
-schema = graphene.Schema(query=Query)
+class setDefualtMutation(graphene.Mutation):
+    class Arguments:
+        name = graphene.String()
+
+    message = graphene.String()
+
+    def mutate(root, info, name):
+        default_value = name
+
+        return "Success"
+
+class Mutation(graphene.ObjectType):
+    set_default = setDefualtMutation.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)

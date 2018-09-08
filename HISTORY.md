@@ -6,6 +6,7 @@
 - __0.8.0__ (Reserved) clear up Linux and git
 - __0.7.0__ (Reserved) clear up Firmware and IoT
 - __0.6.0__ (Reserved) clear up ComputerEngineering
+- __0.5.1__ edit docker, build from local images.
 - __0.5.0__ graphQL
 - __0.4.3__ edit docker
 - __0.4.2__ rebuild directory tree. and clear up Tool/git.

@@ -5,12 +5,20 @@ from flask_graphql import GraphQLView
 from GraphQL.schema import schema
 from GraphQL.data import *
 
-# Data Setup
-setup()
-
 # Test 1
-result = schema.execute('query{ hello }')
+result = schema.execute('''
+query{
+    hello
+}''')
 print(result.data['hello']) # "Hello stranger"
+
+result = schema.execute('''{
+mutation Nutation 
+    }''')
+print(result.data['name']) # "Hello stranger"
+
+
+# app = Flask(__name__)
 
 # DEBUG_ENABLE = 1
 
@@ -18,7 +26,8 @@ print(result.data['hello']) # "Hello stranger"
 # def hello_world():
 #     return 'Hello, World!'
 
+# app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True))
+
 # if __name__ == "__main__":
 #     app = Flask(__name__)
-#     app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True, context={'session': db_session}))
 #     app.run(host='0.0.0.0', port=8080, debug=DEBUG_ENABLE)
