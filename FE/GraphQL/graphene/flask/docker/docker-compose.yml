@@ -1,0 +1,22 @@
+version: '3'
+services:
+  base_nginx_uwsgi:
+    image: nginx_uwsgi:python3.6.6-stretch-slim
+    build:
+      context: .
+      dockerfile : ./nginx_uwsgi.Dockerfile
+      args:
+        NGINX_VERSION: 1.15.3-1~stretch
+        NJS_VERSION: 1.15.3.0.2.3-1~stretch
+
+  flask-app:
+    image: flask-app:python3.6.6-stretch-slim
+    build:
+      context: .
+      dockerfile: ./flask-app.Dockerfile
+    container_name: flask-app
+    volumes:
+      - ../:/app
+    ports:
+      - "8080:80"
+    restart: always

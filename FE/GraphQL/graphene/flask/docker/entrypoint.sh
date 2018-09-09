@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 # Get the maximum upload file size for Nginx, default to 0: unlimited
