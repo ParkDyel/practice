@@ -1,6 +1,14 @@
 ﻿# POST.MD
 
+## 2018.09.10
+
+- [CSS flex tutorial](https://flexboxfroggy.com/#ko)
+    - 게임으로 배우는 CSS flex
+- [CSS Gradient Generator](https://mycolor.space/)
+    - 팔레트 또는 그래디언트 CSS를 생성해주는 사이트
+
 ## 2018.09.04
+
 - [Flask + GraphQL](http://artoria.us/m/30)
     - Study 참고자료
 - [서울 해커톤 LoRa 동영상 강의 목록](http://www.seoulhackathon.org/tag/LoRa_Setalab_AuLoRa_Daliworks_Thingplus)
@@ -10,10 +18,12 @@
     - 봐라. 도저히 들어갈 수 없는 불길 속에서 사람을 둘러업고 나오는 소방관들을 봐라. 그들이라고 매번 확신이 있어서 불길로 뛰어들겠냐
 
 ## 2018.09.02
+
 - [Vuejs + GraphQL](https://medium.com/@lachlanmiller_52885/graphql-basics-and-practical-examples-with-vue-6b649b9685e0)
     - Study 참고자료
 
 ## 2018.09.01
+
 - [열정을 찾으라’는 말이 나쁜 조언인 이유](https://ppss.kr/archives/172716)
     - 관심사가 고정되어 있다고 믿는 학생들은 자신의 관심사와 맞지 않는다는 이유로 흥미로운 수업이나 새로운 기회를 놓치게 될 수 있다
     - 암에 대해 전혀 모르던 사람도 부모님이 암에 걸리면 순식간에 암에 관한 전문가가 됩니다
