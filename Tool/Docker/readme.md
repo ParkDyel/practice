@@ -11,6 +11,10 @@ docker exec
 docker exec -it
 ```
 
+```bash
+docker logs --tail 50 --follow --timestamps `ContainerName`
+```
+
 ## DockerFile
 
 이미지 빌드 용 DSL(Domain Specfic Langugae )
