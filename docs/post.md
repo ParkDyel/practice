@@ -1,5 +1,10 @@
 ﻿# POST.MD
 
+## 2018.09.13
+
+- [CSS flex 생활코딩](https://opentutorials.org/course/2418/13526)
+    - 재밌다
+
 ## 2018.09.10
 
 - [CSS flex tutorial](https://flexboxfroggy.com/#ko)
