@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>holyGrailLayout</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left:20px;
+            text-align: center;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+        }
+        footer #name_tag {
+            display: inline-block;
+            cursor:pointer;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right:1px solid gray;
+        }
+
+        .content nav ul {
+            padding : 0px;
+            margin : 4px;
+        }
+
+        .content nav ul>li {
+            list-style-type: none;
+        }
+
+        .content aside{
+            border-left:1px solid gray;   
+        }
+
+        nav, aside{
+            flex-basis: 100px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Flex Awesome!!</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main class="lorem100">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non voluptatibus, aut sequi hic in aliquam ipsam consequatur nisi animi aspernatur culpa perspiciatis quaerat officiis veritatis iusto optio voluptatum temporibus impedit nulla? Esse accusamus alias explicabo ullam odio numquam molestiae, eligendi veniam magnam! Ratione, nihil? Amet consectetur quos molestiae debitis saepe itaque magnam nobis optio. Ducimus facere magnam placeat, dolorum earum ullam minus nisi laudantium hic atque iusto, minima recusandae. Corrupti velit inventore similique iusto esse, nisi expedita earum, unde incidunt tempora voluptates sapiente ratione pariatur sint ipsum delectus! Nostrum aliquid, aspernatur doloribus et nisi earum iste culpa architecto animi?
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <div id="name_tag">Park Dyel</div>
+        </footer>
+    </div>
+    <script>
+        var nameTag = document.getElementById("name_tag")
+        nameTag.onclick = () => {
+            location.href = "https://github.com/parkdyel/practice"
+        }        
+    </script>
+</body>
+</html>
