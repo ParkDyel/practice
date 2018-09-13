@@ -1,0 +1,5 @@
+#requirements.txt
+
+flask
+flask_graphql
+graphene>=2.0
