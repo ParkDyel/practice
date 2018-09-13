@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>holyGrailLayout</title>
     <style>
-        .container{
+        .container {
             display: flex;
             flex-direction: column;
         }
-        header{
-            border-bottom:1px solid gray;
-            padding-left:20px;
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
             text-align: center;
         }
-        footer{
-            border-top:1px solid gray;
-            padding:20px;
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
             text-align: center;
         }
+
         footer #name_tag {
             display: inline-block;
-            cursor:pointer;
+            cursor: pointer;
         }
-        .content{
-            display:flex;
+
+        .content {
+            display: flex;
         }
-        .content nav{
-            border-right:1px solid gray;
+
+        .content nav {
+            border-right: 1px solid gray;
         }
 
         .content nav ul {
-            padding : 0px;
-            margin : 4px;
+            padding: 0px;
+            margin: 4px;
         }
 
         .content nav ul>li {
             list-style-type: none;
         }
 
-        .content aside{
-            border-left:1px solid gray;   
+        .content aside {
+            border-left: 1px solid gray;
         }
 
-        nav, aside{
+        nav,
+        aside {
+            /* 기본 폭 */
             flex-basis: 100px;
+            /* 고통을 분산하는 수치, 기본값은 1이다. */
+            /* 형제끼리의 총 합분의 자신의 값 */
             flex-shrink: 0;
         }
-        main{
-            padding:10px;
+
+        main {
+            padding: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -67,7 +79,14 @@
                 </ul>
             </nav>
             <main class="lorem100">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non voluptatibus, aut sequi hic in aliquam ipsam consequatur nisi animi aspernatur culpa perspiciatis quaerat officiis veritatis iusto optio voluptatum temporibus impedit nulla? Esse accusamus alias explicabo ullam odio numquam molestiae, eligendi veniam magnam! Ratione, nihil? Amet consectetur quos molestiae debitis saepe itaque magnam nobis optio. Ducimus facere magnam placeat, dolorum earum ullam minus nisi laudantium hic atque iusto, minima recusandae. Corrupti velit inventore similique iusto esse, nisi expedita earum, unde incidunt tempora voluptates sapiente ratione pariatur sint ipsum delectus! Nostrum aliquid, aspernatur doloribus et nisi earum iste culpa architecto animi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non voluptatibus, aut sequi hic in aliquam
+                ipsam consequatur nisi animi aspernatur culpa perspiciatis quaerat officiis veritatis iusto optio
+                voluptatum temporibus impedit nulla? Esse accusamus alias explicabo ullam odio numquam molestiae,
+                eligendi veniam magnam! Ratione, nihil? Amet consectetur quos molestiae debitis saepe itaque magnam
+                nobis optio. Ducimus facere magnam placeat, dolorum earum ullam minus nisi laudantium hic atque iusto,
+                minima recusandae. Corrupti velit inventore similique iusto esse, nisi expedita earum, unde incidunt
+                tempora voluptates sapiente ratione pariatur sint ipsum delectus! Nostrum aliquid, aspernatur doloribus
+                et nisi earum iste culpa architecto animi?
             </main>
             <aside>
                 AD
@@ -81,7 +100,8 @@
         var nameTag = document.getElementById("name_tag")
         nameTag.onclick = () => {
             location.href = "https://github.com/parkdyel/practice"
-        }        
+        }
     </script>
 </body>
+
 </html>
