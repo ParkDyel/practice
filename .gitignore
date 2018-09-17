@@ -9,11 +9,11 @@ npm-debug.log*
 debug.log
 
 # install via Package Manager
-node_modules
-node_modules/*
+node_modules/
 
 # Python
 *.pyc
+__pycache__/
 
 # exe
 *.exe
