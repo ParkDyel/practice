@@ -1,11 +1,12 @@
 # HISTORY.MD
 
-- __1.0.0__ (Reserved) after 0.9.0 finished, Release 1.x.x ! but maybe steel alone :(.
-- __0.11.0__ (Reserved) clear up JavaScript
-- __0.10.0__ (Reserved) clear up Python
-- __0.9.0__ (Reserved) clear up Linux and git
-- __0.8.0__ (Reserved) clear up Firmware and IoT
-- __0.7.0__ (Reserved) clear up ComputerEngineering
+- __1.0.0__ (Reserved) Release 1.x.x ! but maybe steel alone :(.
+- __0.12.0__ (Reserved) clear up JavaScript
+- __0.11.0__ (Reserved) clear up Python
+- __0.10.0__ (Reserved) clear up Linux and git
+- __0.9.0__ (Reserved) clear up Firmware and IoT
+- __0.8.0__ (Reserved) clear up ComputerEngineering
+- __0.7.0__ Vue.js
 - __0.6.0__ CSS flex
 - __0.5.0__ graphQL
 - __0.4.3__ edit docker
