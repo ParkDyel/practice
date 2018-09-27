@@ -68,11 +68,15 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
         ```
     4. branch 생성
         ```bash
-        git branch 'NewBranch'
+        git branch `${NewBranch}`
         ```
     5. branch 전환
         ```bash
-        git checkout 'NewBranch'
+        git checkout `${NewBranch}`
+        ```
+    ps) 4번 항목과 5번 항목을 다음 명령어로 한번에 실행할 수 있다.
+        ```bash
+        git checkout -b `${NewBranch}`
         ```
 1. 변경 사항 확인
     1. 변경된 코드 확인
@@ -82,4 +86,10 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
     2. 변경된 이력 확인
         ```bash
         git log
+        ```
+        
+1. Git 설치 시 설정한 설정 변경
+    1. global   
+        ```bash
+        git config --global --edit
         ```
