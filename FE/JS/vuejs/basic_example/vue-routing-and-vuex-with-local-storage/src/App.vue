@@ -7,11 +7,32 @@
 <script>
 import gnb from './components/GNB.vue'
 
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'app',
   components : {
     gnb: gnb
-  }
+  },
+  computed: {
+    ...mapGetters([
+      'deviceStatus'
+    ])
+  },
+  methods: {
+    customEvtLocalStorageHanddler(e) {
+      if (localStorage.getItem(e.detail.field) != this.deviceStatus){
+        this.$store.commit('deviceStatus', { state : localStorage.getItem('deviceStatus')})
+      }
+    }
+  },
+  mounted() {
+    // const evtLocalStorage = new CustomEvent("customLocalStorage", {"bubbles":true, "cancelable":true, "composed":true, "detail":{"field":true, "val":true}})
+    document.addEventListener("UserLocalStorage", this.customEvtLocalStorageHanddler)
+    // function(e){
+    //   console.log("event!")
+    // })
+  },
 }
 </script>
 

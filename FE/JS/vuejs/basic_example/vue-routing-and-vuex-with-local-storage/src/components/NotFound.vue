@@ -12,5 +12,8 @@
 <script>
 export default {
   name: 'NotFound',
+  mounted() {
+      this.$store.commit('deviceStatus', { state:'잘못 왔었어'})
+  },
 }
 </script>
