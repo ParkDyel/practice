@@ -1,23 +1,8 @@
 # Dyel's Practice Chunk
 
-2018.08.17\
-Version 0.4.2
+2018.10.02
 
 code chunk, which just consist of practice.
-
-## Content
-
-- __BE__ about Server back-end.
-- __ComputerEngineering__ The Basics of Computer Engineering. It include Algorithm and etc.
-- __docs__ Various documents like list of article, wanna be tech stack.
-- __FE__ about Server front-end. 
-- __Firmware__ (New) Study Firmware like avr.
-- __IoT__ Study universal IoT or build Project using universal IoT
-- __JS__ Study JavaScript And relevante FramkWork with Node.js, Vue.js and etc.
-- __Linux__ Study Linux.
-- __Project__ Project.
-- __Troubleshooting__ Try to solve various problems.
-- __Python__ Study Python.
 
 ## Getting Started
 
@@ -31,22 +16,6 @@ The development environment is specified in each directory or project, but gener
 - __JavaScript__ [Node.js 8.x](https://nodejs.org/), [MongoDB 3.x](https://www.mongodb.com/), [Chrome](https://chrome.com)
 - __Python__ Python 3.7
 - __IoT__ [Arduino Uno](https://www.arduino.cc/), [Raspberry Pi 3](https://www.raspberrypi.org/)
-
-### Install
-
-Use __docker__
-
-1. Node.js : 
-2. Python : tiangolo/uwsgi-nginx-flask:python3.6
-
-## Next Job
-
-1. make contents about sqlAlchemy basic.
-1. make contents about git and docker basic.
-1. make contents about each readme_md.
-1. update contents about CE readme_md.
-1. make contents about mongoDB basic.
-1. make contents about vuejs basic.
 
 ## Built With
 
@@ -74,15 +43,3 @@ Each project follows each stated license. but if not stated, will follow [MIT li
 ## Gist Token
 
 I want to use it well, but something does not always work.
-
-## Update Code
-
-- 00 : Version Change.
-- 10 : Add a new field.
-- 11 : Add a new item.
-- 12 : Add a new files.
-- 20 : Modify the field.
-- 21 : Modify the item.
-- 22 : Modify the files.
-- 98 : Update readme_md.
-- 99 : Just push.
