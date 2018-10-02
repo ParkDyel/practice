@@ -1,6 +1,6 @@
 # Git Usage
 
-2018.08.17
+2018.09.27
 
 ## Git이란
 
@@ -9,6 +9,9 @@
 ## Git Hub란
 
 GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유할 수 있도록 하고 나아가 코드를 공개함으로 더 많은 사람들이 코드를 공유하여 함께 문제점을 찾고 프로젝트에 기여할 수 있도록 하는 서비스이다. 꼭 public으로 공개되어있지 않고 제한된 인원에게만 공유되는 private 서비스도 있다.
+
+[github](https://github.com/)
+[gitbucket](https://bitbucket.org/)
 
 ## easy start
 
@@ -68,11 +71,15 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
         ```
     4. branch 생성
         ```bash
-        git branch 'NewBranch'
+        git branch `${NewBranch}`
         ```
     5. branch 전환
         ```bash
-        git checkout 'NewBranch'
+        git checkout `${NewBranch}`
+        ```
+    ps) 4번 항목과 5번 항목을 다음 명령어로 한번에 실행할 수 있다.
+        ```bash
+        git checkout -b `${NewBranch}`
         ```
 1. 변경 사항 확인
     1. 변경된 코드 확인
@@ -82,4 +89,10 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
     2. 변경된 이력 확인
         ```bash
         git log
+        ```
+        
+1. Git 설치 시 설정한 설정 변경
+    1. global   
+        ```bash
+        git config --global --edit
         ```
