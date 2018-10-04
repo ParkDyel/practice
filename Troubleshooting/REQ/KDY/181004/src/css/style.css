@@ -1,0 +1,133 @@
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+
+  background: rgb(50, 50, 50);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 1);
+}
+
+header>div {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+header>div>img {
+  height: 10vh;
+  padding: 2vh;
+  margin: 2vh 2vw;
+
+  background: rgba(255, 255, 255, 1);
+
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px 0px rgba(15, 15, 15, 0.8);
+}
+
+header>ul {
+  margin-left: 22vh;
+}
+
+header>ul>li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+
+  background: rgb(35, 35, 35);
+  color: white;
+
+  border-radius: 10px;
+
+  box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+section {
+  /* height: 85vh; */
+  margin: 3vh 2vh 2vh 2vh;
+  padding: 7vh 7vh 6vh 6vh;
+  box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.8);
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+section h2 {
+  display: inline-block;
+  margin: 4vh 0vh 0vh 14vh;
+  /* text-shadow: 3px 3px 3px rgba(0,0,0,0.3); */
+
+  animation: floating-text 2s ease alternate infinite;
+}
+
+@keyframes floating-text {
+  0% {
+    transform: translateY(0.05em);
+    text-shadow: 0 0 .5em rgba(255, 255, 255, 0.4),
+      0 0 .2em rgba(0, 0, 0, .3),
+      0 .3em .2em rgba(0, 0, 0, .3);
+  }
+
+  100% {
+    text-shadow: 0 0 .5em rgba(255, 255, 255, 0.8),
+      0 0 .2em rgba(0, 0, 0, 0.3),
+      0 .5em .5em rgba(0, 0, 0, 0.3);
+  }
+}
+
+section .toppic {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+section .toppic h3 {
+  margin-left: 2vh;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+section .toppic .contents {
+  margin-top: 2vh;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+ul.contents {
+  margin-left: 6vh;
+  line-height: 200%;
+  list-style: circle;
+  text-align: left;
+}
+
+section .link {
+  text-align: center;
+
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
