@@ -1,5 +1,11 @@
 ﻿# POST.MD
 
+## 2018.10.04
+- [Next Vue.js 3.0](https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf)
+    - 읽어봐야지
+- [Vuex 10분 Tutorial](https://youtu.be/LW9yIR4GoVU)
+    - 간단하게 훒는 붹스
+
 ## 2018.09.13
 
 - [CSS flex 생활코딩](https://opentutorials.org/course/2418/13526)
