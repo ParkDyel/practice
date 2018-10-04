@@ -4,6 +4,9 @@
 # Setting file
 init.*.*
 
+# build
+dist
+
 # Logs
 npm-debug.log*
 debug.log

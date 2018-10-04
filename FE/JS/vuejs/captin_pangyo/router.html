@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Router</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>뷰 라우터 예제</h1>
+        <p>
+            <router-link to="/">
+                <img src="https://www.google.co.kr/logos/doodles/2018/googles-20th-birthday-6342583134453760.7-s.png">
+            </router-link>
+            <router-link to="/login">Login 컴포넌트로 이동</router-link>
+            <router-view></router-view>
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script>
+        var Main = {
+            template: '<div>main</div>'
+        }
+        var Login = {
+            template: '<div>login</div>'
+        }
+        var NotFound = {
+            template: '<div>NotFound</div>'
+        }
+
+        var routes = [
+            {
+                path: '',
+                component : Main
+            },
+            {
+                path: '/login',
+                component: Login
+            },
+            {
+                path: '/*',
+                component: NotFound
+            }
+        ]
+
+        const router = new VueRouter({
+            // mode: 'history',
+            routes
+        })
+
+        var app = new Vue({
+            router
+        }).$mount('#app')
+    </script>
+</body>
+
+</html>
