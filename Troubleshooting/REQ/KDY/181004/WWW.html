@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>KoDaYe</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/font.css">
@@ -13,26 +14,48 @@
 
 <body>
   <header>
-    <div><img src="./src/img/html-5.png" alt="Logo"></div>
+    <div id="logoWrapper"><img src="./src/img/html-5.png" alt="Logo"></div>
     <ul>
       <li>
-        <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        <a href="./WWW.html">
+          <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        </a>
       </li>
       <li>
-        <h4>웹표준</h4>
+        <a href="./WebStandards.html">
+          <h4>웹표준</h4>
+        </a>
       </li>
       <li>
-        <h4>웹 접근성</h4>
+        <a href="./WebAccess.html">
+          <h4>웹 접근성</h4>
+        </a>
       </li>
       <li>
-        <h4>Cross Browsing</h4>
+        <a href="./CrossBrowsing.html">
+          <h4>Cross Browsing</h4>
+        </a>
       </li>
     </ul>
   </header>
   <section>
+    <nav id="navBar">
+      <ul>
+        <li>
+          <a href="#whatIsWWW">
+            <h4>WWW이란?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#wwwHistory">
+            <h4>WWW의 역사</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div id="WWW">
       <h2>World Wide Web</h2>
-      <div class="toppic">
+      <div id="whatIsWWW" class="toppic">
         <h3>WWW이란?</h3>
         <div class="contents">
           <p>인터넷상의 정보를 하이퍼텍스트 방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다.
@@ -46,7 +69,7 @@
             두 번째 웹의 자원 이름에 접근하는 프로토콜(protocol) 예를 들면 HTTP, 자원들 사이를 쉽게 항해 할 수 있는 언어 예를 들면 HTML.</p>
         </div>
       </div>
-      <div class="toppic">
+      <div id="wwwHistory" class="toppic">
         <h3>월드와이드웹의 역사</h3>
         <div class="contents">
           <h4>월드와이드웹의 창시자</h4>
@@ -75,21 +98,36 @@
         </div>
       </div>
       <div class="link">
-          <h4>함께보면 좋은 자료</h4>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%98_%EC%97%AD%EC%82%AC">
-                        <p>Wiki:인터넷의 역사</p>
-                        <img src="./src/img/www.jpg" alt="www">
-                    </a>
-                </li>
-            </ul>
+        <h4>함께보면 좋은 자료</h4>
+        <ul>
+          <li>
+            <a target="_blank" href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%98_%EC%97%AD%EC%82%AC">
+              <p>Wiki:인터넷의 역사</p>
+              <img src="./src/img/www.jpg" alt="www">
+            </a>
+          </li>
+        </ul>
       </div>
 
     </div>
   </section>
 
   <script>
+    window.onload = function() {
+      document.getElementById("logoWrapper").addEventListener("mouseover", callNav);
+      document.getElementById("navBar").addEventListener("mouseover", callNav);
+
+    }
+
+    function callNav() {
+      document.getElementById("navBar").classList.add('slide_out')
+      document.getElementById("navBar").addEventListener("mouseout", returnNav);
+    }
+
+    function returnNav() {
+      document.getElementById("navBar").classList.remove('slide_out')
+      document.getElementById("navBar").removeEventListener("mouseout", returnNav);
+    }
   </script>
 </body>
 

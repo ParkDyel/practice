@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>KoDaYe</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/font.css">
@@ -13,26 +14,48 @@
 
 <body>
   <header>
-    <div><img src="./src/img/html-5.png" alt="Logo"></div>
+    <div id="logoWrapper"><img src="./src/img/html-5.png" alt="Logo"></div>
     <ul>
       <li>
-        <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        <a href="./WWW.html">
+          <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        </a>
       </li>
       <li>
-        <h4>웹표준</h4>
+        <a href="./WebStandards.html">
+          <h4>웹표준</h4>
+        </a>
       </li>
       <li>
-        <h4>웹 접근성</h4>
+        <a href="./WebAccess.html">
+          <h4>웹 접근성</h4>
+        </a>
       </li>
       <li>
-        <h4>Cross Browsing</h4>
+        <a href="./CrossBrowsing.html">
+          <h4>Cross Browsing</h4>
+        </a>
       </li>
     </ul>
   </header>
   <section>
-    <div id="WebStandards">
+    <nav id="navBar">
+      <ul>
+        <li>
+          <a href="#whatIsWebStandard">
+            <h4>웹표준이란?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#useCase">
+            <h4>일반적인 이용</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="webStandards">
       <h2>웹표준</h2>
-      <div class="toppic">
+      <div id="whatIsWebStandard" class="toppic">
         <h3>웹표준이란?</h3>
         <div class="contents">
           <p>웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어이다.
@@ -48,7 +71,7 @@
           </ul>
         </div>
       </div>
-      <div class="toppic">
+      <div id="useCase" class="toppic">
         <h3>일반적인 이용</h3>
         <div class="contents">
           <p>웹 사이트나 웹 페이지가 웹 표준을 준수한다는 것은 일반적으로 올바른 HTML, CSS, 자바스크립트를 사이트나 페이지가 가지고 있다는 것을 뜻한다.
@@ -85,6 +108,20 @@
   </section>
 
   <script>
+    window.onload = function() {
+      document.getElementById("logoWrapper").addEventListener("mouseover", callNav);
+      document.getElementById("navBar").addEventListener("mouseover", callNav);
+    }
+
+    function callNav() {
+      document.getElementById("navBar").classList.add('slide_out')
+      document.getElementById("navBar").addEventListener("mouseout", returnNav);
+    }
+
+    function returnNav() {
+      document.getElementById("navBar").classList.remove('slide_out')
+      document.getElementById("navBar").removeEventListener("mouseout", returnNav);
+    }
   </script>
 </body>
 

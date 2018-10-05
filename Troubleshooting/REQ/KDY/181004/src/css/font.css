@@ -1,3 +1,8 @@
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:2.5vh;
+}
+
 h1 {
     font-size:5em;
     line-height: 200%;
