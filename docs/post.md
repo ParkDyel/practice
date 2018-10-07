@@ -1,5 +1,14 @@
 ﻿# POST.MD
 
+## 2018.10.07
+ - [Vuex 모듈 화](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
+ - [WebPack4 사용법](https://meetup.toast.com/posts/153)
+ - [WebPack create multiple bundle](http://codys.club/blog/2015/07/04/webpack-create-multiple-bundles-with-entry-points/)
+ - [Vue Cli WebPack](https://cli.vuejs.org/config/#global-cli-config)
+ - [FE 3대장 비교글 (1)](http://devtimothy.tistory.com/92)
+ - [FE 3대장 비교글 (2)](http://devtimothy.tistory.com/93)
+ - [스마트폰과 연동되는 멀티미터기](https://www.vionmeter.io/)
+
 ## 2018.10.04
 - [Next Vue.js 3.0](https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf)
     - 읽어봐야지
