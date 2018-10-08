@@ -1,5 +1,8 @@
 ﻿# POST.MD
 
+## 2018.10.08
+ - [vue.config.js multiple target](https://stackoverflow.com/questions/49454372/how-can-i-create-two-separate-bundles-with-vue-cli-3)
+
 ## 2018.10.07
  - [Vuex 모듈 화](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
  - [WebPack4 사용법](https://meetup.toast.com/posts/153)
