@@ -32,12 +32,12 @@ function delCache(key) {
   return false;
 }
 
-function getDeviceState() {
+export function getDeviceState() {
   // return JSON.parse(getCache('vuex')).deviceState;
   return localStorage.getItem('deviceStatus')
 }
 
-function setDeviceState(state) {
+export function setDeviceState(state) {
   // let bucket = JSON.parse(localStorage.getItem('vuex'));
   // bucket.deviceState= state;
   // localStorage.setItem('vuex', JSON.stringify(bucket));
