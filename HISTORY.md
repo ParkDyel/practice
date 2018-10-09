@@ -12,7 +12,6 @@
 - __0.x.0__ (Reserved) clear up Linux and git
 - __0.x.0__ (Reserved) clear up Firmware and IoT
 - __0.x.0__ (Reserved) clear up ComputerEngineering
-- __0.8.0__ Android Studio WebView 
 - __0.7.2__ (Reserved) Vue & Vuex document
 - __0.7.1__ Vuex with localStorage Event
 - __0.7.0__ Vue.js
