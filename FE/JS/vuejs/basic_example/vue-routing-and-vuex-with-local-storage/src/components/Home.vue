@@ -10,6 +10,8 @@
 </style>
 
 <script>
+import { getDeviceState } from '../cache'
+
 export default {
   name: 'Home',
   props: {
@@ -17,6 +19,7 @@ export default {
   },
   mounted() {
     this.$store.commit('deviceStatus', { state:'집이다'})
+    console.log(`from cache : ${getDeviceState()}`)
   },
 }
 </script>
