@@ -13,6 +13,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import { getDeviceState } from '../cache'
 
 export default {
   name: 'Home',
@@ -33,6 +34,7 @@ export default {
   },
   mounted() {
     this.$store.commit('deviceStatus', { state:'집이다'})
+    console.log(`from cache : ${getDeviceState()}`)
   },
 }
 </script>
