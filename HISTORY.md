@@ -12,7 +12,9 @@
 - __0.x.0__ (Reserved) clear up Linux and git
 - __0.x.0__ (Reserved) clear up Firmware and IoT
 - __0.x.0__ (Reserved) clear up ComputerEngineering
-- __0.7.2__ (Reserved) Vue & Vuex document
+- __0.8.0__ Android
+- __0.7.3__ (Reserved) Vue & Vuex document
+- __0.7.2__ (Reserved) Vue Study
 - __0.7.1__ Vuex with localStorage Event
 - __0.7.0__ Vue.js
 - __0.6.0__ (Working) CSS flex
