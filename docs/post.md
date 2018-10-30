@@ -1,5 +1,8 @@
 ﻿# POST.MD
 
+## 2018.10.30
+ - [html video mp4 or img gif?](https://cloudinary.com/blog/evolution_of_img_gif_without_the_gif)
+
 ## 2018.10.08
  - [vue.config.js multiple target](https://stackoverflow.com/questions/49454372/how-can-i-create-two-separate-bundles-with-vue-cli-3)
 
