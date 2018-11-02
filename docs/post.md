@@ -1,5 +1,8 @@
 ﻿# POST.MD
 
+## 2018.11.02
+ - [sqlalcehmy lost connection after timeout](http://yongho1037.tistory.com/569)
+
 ## 2018.10.30
  - [html video mp4 or img gif?](https://cloudinary.com/blog/evolution_of_img_gif_without_the_gif)
 
