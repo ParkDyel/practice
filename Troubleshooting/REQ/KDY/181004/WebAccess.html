@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KoDaYe</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/font.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div id="logoWrapper"><img src="./src/img/html-5.png" alt="Logo"></div>
+    <ul>
+      <li>
+        <a href="./WWW.html">
+          <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebStandards.html">
+          <h4>웹표준</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebAccess.html">
+          <h4>웹 접근성</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./CrossBrowsing.html">
+          <h4>Cross Browsing</h4>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <nav id="navBar">
+      <ul>
+        <li>
+          <a href="#whatIsWebAccessibility">
+            <h4>웹 접근성이란?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#ITEnv">
+            <h4>IT 환경의 이해</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="WebAccess">
+      <h2>웹 접근성</h2>
+      <div id="whatIsWebAccessibility" class="toppic">
+        <h3>웹 접근성이란?</h3>
+        <div class="contents">
+          <p>웹 접근성(web accessibility)은 장애를 가진 사람과 장애를 가지지 않은 사람 모두가 웹사이트를 이용할 수 있게 하는 방식을 가리킨다. 사이트가 올바르게 설계되어 개발되고 편집되어 있을 때 모든 사용자들은 정보와 기능에 동등하게 접근할 수 있다. 웹 접근성에는 다음의 사항들을 고려하여야 한다:</p>
+          <ul class="contents">
+            <li>시각: 실명, 색각 이상, 다양한 형태의 저시력을 포함한 시각 장애</li>
+            <li>운동성: 파킨슨병, 근육병, 뇌성마비, 뇌졸중과 같은 조건으로 인한 근육 속도 저하, 근육 제어 손실로 말미암아 손을 쓰기 어렵거나 쓸 수 없는 상태</li>
+            <li>청각: 청각 장애</li>
+            <li>발작: 깜박이는 효과나 시각적인 스트로보스코프를 통해 일어나는 뇌전증성 발작</li>
+            <li>인지: 문제 해결과 논리 능력, 집중력, 기억력에 문제가 있는 정신 지체 및 발달 장애, 학습 장애 (난독증, 난산증 등)</li>
+          </ul>
+        </div>
+      </div>
+      <div id="ITEnv" class="toppic">
+        <h3>정보 통신환경의 이해</h3>
+        <div class="contents">
+          <table>
+            <tr>
+              <th colspan="2">장애유형</th>
+              <th>특징</th>
+              <th>보안대책</th>
+            </tr>
+            <tr>
+              <td rowspan="3">시각장애</td>
+              <td>전맹</td>
+              <td>모니터를 볼 수 없음</td>
+              <td>스크린 리더</td>
+            </tr>
+            <tr>
+              <td>저시력</td>
+              <td>모니터 사용이 일부 가능함</td>
+              <td>화면 확대/고대비 </td>
+            </tr>
+            <tr>
+              <td>색맹</td>
+              <td>색을 구별할 수 없음</td>
+              <td>색상에만 의존하지 않기/고대비</td>
+            </tr>
+            <tr>
+              <td colspan="2">청각장애</td>
+              <td>사운드, 오디오 등을 청취할 수 없음</td>
+              <td>수화, 시각정보 제공</td>
+            </tr>
+            <tr>
+              <td rowspan="2">지체장애</td>
+              <td>상지장애</td>
+              <td>손을 사용할 수 없음</td>
+              <td>마우스 대체 방법, 키보드만 사용</td>
+            </tr>
+            <tr>
+              <td>기타</td>
+              <td>움직임이 어려움</td>
+              <td>충분한 시간 제공</td>
+            </tr>
+            <tr>
+              <td colspan="2">언어장애</td>
+              <td>복잡한 용어, 어려운 용어의 이해 불가능</td>
+              <td>쉬운 용어 사용</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    window.onload = function() {
+      document.getElementById("logoWrapper").addEventListener("mouseover", callNav);
+      document.getElementById("navBar").addEventListener("mouseover", callNav);
+
+    }
+
+    function callNav() {
+      document.getElementById("navBar").classList.add('slide_out')
+      document.getElementById("navBar").addEventListener("mouseout", returnNav);
+    }
+
+    function returnNav() {
+      document.getElementById("navBar").classList.remove('slide_out')
+      document.getElementById("navBar").removeEventListener("mouseout", returnNav);
+    }
+  </script>
+</body>
+
+</html>

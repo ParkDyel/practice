@@ -1,15 +1,24 @@
 # HISTORY.MD
 
-- __1.0.0__ (Reserved) Release 1.x.x ! but maybe steel alone :(.
-- __0.13.0__ (Reserved) clear up JavaScript
-- __0.12.0__ (Reserved) clear up Python
-- __0.11.0__ (Reserved) clear up Linux and git
-- __0.10.0__ (Reserved) clear up Firmware and IoT
-- __0.9.0__ (Reserved) clear up ComputerEngineering
-- __0.8.0__ Mobile>Android Studio
+- __1.x.0__ (Reserved) PWA
+- __1.x.0__ (Reserved) Python asyncio
+- __1.x.0__ (Reserved) Docker
+- __1.x.x__ (Reserved) Node.js with nginx
+- __1.x.0__ (Reserved) nginx
+- __1.x.0__ (Reserved) Node.js
+- __1.0.0__ (Reserved) Release 1.x.x ! in 2018. but maybe steel alone :(
+- __0.x.0__ (Reserved) clear up JavaScript
+- __0.x.0__ (Reserved) clear up Python
+- __0.x.0__ (Reserved) clear up Linux and git
+- __0.x.0__ (Reserved) clear up Firmware and IoT
+- __0.x.0__ (Reserved) clear up ComputerEngineering
+- __0.8.0__ Android
+- __0.7.3__ (Reserved) Vue & Vuex document
+- __0.7.2__ (Reserved) Vue Study
+- __0.7.1__ Vuex with localStorage Event
 - __0.7.0__ Vue.js
-- __0.6.0__ CSS flex
-- __0.5.0__ graphQL
+- __0.6.0__ (Working) CSS flex
+- __0.5.0__ (Working) graphQL
 - __0.4.3__ edit docker
 - __0.4.2__ rebuild directory tree. and clear up Tool/git.
 - __0.4.1__ create docs/post.md to sepereate share url, because docs/article is not collect tpye for share IT. and add new item on python for future.
