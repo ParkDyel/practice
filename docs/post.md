@@ -1,5 +1,8 @@
 ﻿# POST.MD
 
+## 2018.11.25
+ - [TS on Vue, vue.config.js 참고하기에 좋음](https://github.com/Microsoft/TypeScript-Vue-Starter#typescript-vue-starter)
+
 ## 2018.11.02
  - [sqlalcehmy lost connection after timeout](http://yongho1037.tistory.com/569)
 
