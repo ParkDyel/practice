@@ -2,6 +2,9 @@
 
 ## 2018.11.25
  - [TS on Vue, vue.config.js 참고하기에 좋음](https://github.com/Microsoft/TypeScript-Vue-Starter#typescript-vue-starter)
+ - [개발자 추노](https://ppss.kr/archives/180071)
+ - ![동상이몽](https://ppss.kr/wp-content/uploads/2018/11/05-12-768x576.jpg)
+ - [웹 디자인의 핵심 요소](https://ppss.kr/archives/65951)
 
 ## 2018.11.02
  - [sqlalcehmy lost connection after timeout](http://yongho1037.tistory.com/569)
