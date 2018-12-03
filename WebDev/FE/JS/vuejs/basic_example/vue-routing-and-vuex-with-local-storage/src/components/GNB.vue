@@ -3,7 +3,7 @@
         router-link(to="/Home") Home
         router-link(to="/About") About
         router-link(to="/NotFound") NotFound
-        img(class="logo" alt="logo" src="../assets/logo.png")
+        img(class="logo" alt="logo" src="../assets/image/logo.png")
 
 </template>
 
