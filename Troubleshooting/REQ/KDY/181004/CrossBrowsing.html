@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KoDaYe</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/font.css">
+</head>
+
+<body>
+  <header>
+    <div id="logoWrapper"><img src="./src/img/html-5.png" alt="Logo"></div>
+    <ul>
+      <li>
+        <a href="./WWW.html">
+          <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebStandards.html">
+          <h4>웹표준</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebAccess.html">
+          <h4>웹 접근성</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./CrossBrowsing.html">
+          <h4>Cross Browsing</h4>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <nav id="navBar">
+      <ul>
+        <li>
+          <a href="#whatIsCrossBrowsing">
+            <h4>크로스 브라우징이란?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#whyCrossBrowsing">
+            <h4>왜 크로스브라우징을 해야할까?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#disadvantageUnuseCrossBrowsing">
+            <h4>크로스브라우징이 안되는 홈페이지의 불이익</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="crossBrowsing<">
+      <h2>Cross Browsing</h2>
+      <div id="whatIsCrossBrowsing" class="toppic">
+        <h3>Cross Browsing이란?</h3>
+        <div class="contents">
+          <p>크로스 브라우징은 W3C에서 채택된 표준 웹 기술을 적용해 모든 브라우저에 다른 기종의 운용체계나 HTML 렌더링 기술로 웹페이지를 제작하는 방법론이다. 크로스 브라우징은 다양한 컴퓨터 환경이나 브라우저에서 정보를 동일하게 표현하기 위해 필요하다. 대부분 인터넷 익스플로러, 오페라(Opera), 파이어폭스(FireFox), 그리고 매킨토시 운용체계의 사파리(Safari)에서 동일한 웹이 다르게 표현될 수 있다. 크로스 브라우징은 일반인이 아닌 다양한 사용자, 즉 나이가 어린 사람, 시각 장애인, 노약자가 웹을 쉽게 사용할 수 있도록 돕는다. 텍스트, 폰트 설정, 테이블, 대체 태그, 접근성 시험에 대한 W3C의 웹 표준을 활용하면 다양한 웹 브라우징 환경에서도 동일한 웹을 균등하게 표현할 수 있다.</p>
+        </div>
+      </div>
+      <div id="whyCrossBrowsing" class="toppic">
+        <h3>왜 크로스브라우징 해야할까?</h3>
+        <div class="contents">
+          <p>이 용자들이 사용하는 브라우저에 따라 바탕이 되는 시스템이나 표현의 구현 방식이 다르기 때문에 완벽히 똑같을 수는 없지만 표준 웹 기술을 적용시켜서 기기나 시스템에 따른 서로 다른 구현방식으로도 최대한 비슷하게 표현되도록 웹 페이지를 제작하여 브라우저의 종류에 구애 받지 않고 웹을 이용할 수 있도록 하기 위해서다.
+            기대효과: 스마트폰 2천만 시대인 요즘 다양한 종류의 브라우저간의 호환성을 맞추는 것은 필수다.</p>
+        </div>
+      </div>
+      <div id="disadvantageUnuseCrossBrowsing" class="toppic">
+        <h3>크로스브라우징이 안되는 홈페이지의 불이익</h3>
+        <div class="contents">
+          <p>가령 어떤 홈페이지가 익스에서는 잘뜨는데 그 밖의 브라우저에서는 모두 깨져서 보이다면 익스를 사용하는 유저를 제외한 다른 브라우저를 사용하는 사람들은 그 홈페이지를 더이상 보지 않을것이다. 고객중에 적어도 30%는 잃는 셈이다. 아주 흔한 경우이지만 어떤 홈페이지가 다른 기능은 잘되는데 유독 결재만은 익스에서 하라고 경고창이 뜨게 된다. 그 사용자 또한 그 홈페이지를 더이상 방문하지 않을것이다. 그렇다면 이제부터라도 홈페이지를 만들땐 무조건 크로스브라우징을 해야겠다. 그런데 아직도 수없이 많은 웹에이전시에서는 그 기술을 구현하지 못하는것이 현실이다. 홈페이지 만들땐 꼭 확인해라. 크로스 브라우징이 실현가능한지 말이다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    window.onload = function() {
+      document.getElementById("logoWrapper").addEventListener("mouseover", callNav);
+      document.getElementById("navBar").addEventListener("mouseover", callNav);
+
+    }
+
+    function callNav() {
+      document.getElementById("navBar").classList.add('slide_out')
+      document.getElementById("navBar").addEventListener("mouseout", returnNav);
+    }
+
+    function returnNav() {
+      document.getElementById("navBar").classList.remove('slide_out')
+      document.getElementById("navBar").removeEventListener("mouseout", returnNav);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KoDaYe</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/font.css">
+</head>
+
+<body>
+  <header>
+    <div id="logoWrapper"><img src="./src/img/html-5.png" alt="Logo"></div>
+    <ul>
+      <li>
+        <a href="./WWW.html">
+          <h4>W<span>orld </span>W<span>ide </span>W<span>eb</span></h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebStandards.html">
+          <h4>웹표준</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./WebAccess.html">
+          <h4>웹 접근성</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./CrossBrowsing.html">
+          <h4>Cross Browsing</h4>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <nav id="navBar">
+      <ul>
+        <li>
+          <a href="#whatIsWebStandard">
+            <h4>웹표준이란?</h4>
+          </a>
+        </li>
+        <li>
+          <a href="#useCase">
+            <h4>일반적인 이용</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="webStandards">
+      <h2>웹표준</h2>
+      <div id="whatIsWebStandard" class="toppic">
+        <h3>웹표준이란?</h3>
+        <div class="contents">
+          <p>웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어이다.
+            최근에 이 용어는 웹 사이트를 작성하는 데 중요도가 높아지고 있으며 웹 디자인, 개발과 관계가 있다.
+            수많은 상호 의존성이 있는 표준들과 규격들 가운데 일부는 단지 월드 와이드 웹으로만 끝나는 것이 아니라, 인터넷의 관리 측면이기도 하며 이러한 표준들은 직간접적으로 웹 사이트, 웹 서비스 개발과 관리에 영향을 주고 있다.
+            이러한 것들 모두 "웹 표준"이라고 부르지만 웹 표준으로 이동하는 것을 찬성하는 사람들은 사용성과 접근성에 직접 영향을 미치는 더 높은 수준의 표준에 초점을 두는 경향이 있다. 더 넓은 뜻의 웹 표준은 다음을 이룬다:</p>
+          <ul class="contents">
+            <li>W3C (World Wide Web Consortium)</li>
+            <li>국제 인터넷 표준화 기구 (IETF)가 출판한 인터넷 표준 (STD) 문서</li>
+            <li>Ecma 인터내셔널 (이전 이름은 ECMA)이 출판한 표준들</li>
+            <li>유니코드 컨소시엄이 출판한 유니코드 표준과 다양한 유니코드 기술 보고서 (UTR)</li>
+            <li>인터넷 할당 번호 기관 (IANA)이 운영하는 이름과 번호 레지스트리</li>
+          </ul>
+        </div>
+      </div>
+      <div id="useCase" class="toppic">
+        <h3>일반적인 이용</h3>
+        <div class="contents">
+          <p>웹 사이트나 웹 페이지가 웹 표준을 준수한다는 것은 일반적으로 올바른 HTML, CSS, 자바스크립트를 사이트나 페이지가 가지고 있다는 것을 뜻한다.
+            HTML은 접근성과 시맨틱 HTML의 가이드라인을 충족해야 한다. 웹 표준을 논할 때 일반적으로 다음의 것들이 중요성이 있는 것으로 보인다:</p>
+          <ul class="contents">
+            <li>HTML, XHTML, SVG, XForms와 같은 마크업 언어의 W3C 권고</li>
+            <li>스타일시트, 특히 CSS의 W3C 권고</li>
+            <li>흔히 자바스크립트나 ECMA스크립트로 불리는 Ecma 인터내셔널 표준</li>
+            <li>문서 객체 모델의 W3C 권고</li>
+          </ul>
+          <p>웹 접근성은 일반적으로 W3C의 Web Accessibility Initiative가 출판한 웹 콘텐츠 접근성 가이드라인에 기반을 두고 있다</p>
+        </div>
+      </div>
+      <div class="link">
+        <h4>같이 보기</h4>
+        <ul class="contents">
+          <li> 대한민국의 웹 호환성 문제 </li>
+          <li> 마이크로포맷 </li>
+          <li> 웹 표준 프로젝트 </li>
+        </ul>
+
+        <h4>함께보면 좋은 자료</h4>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.webstandards.org/">
+              <p>웹 표준 프로젝트</p>
+              <img src="./src/img/HTML5.jpg" alt="www">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    window.onload = function() {
+      document.getElementById("logoWrapper").addEventListener("mouseover", callNav);
+      document.getElementById("navBar").addEventListener("mouseover", callNav);
+    }
+
+    function callNav() {
+      document.getElementById("navBar").classList.add('slide_out')
+      document.getElementById("navBar").addEventListener("mouseout", returnNav);
+    }
+
+    function returnNav() {
+      document.getElementById("navBar").classList.remove('slide_out')
+      document.getElementById("navBar").removeEventListener("mouseout", returnNav);
+    }
+  </script>
+</body>
+
+</html>
