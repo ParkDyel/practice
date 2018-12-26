@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+body>header>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+body>.contents {
+    display: flex;
+    justify-content:space-around;
+}
+
+body>.contents>section {
+    flex-grow: 4;
+    flex-shrink: 4;
+}
+
+body>.contents>aside {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+body>footer {
+    display: flex;
+    justify-content: space-around;
+}
+body>footer>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+body>footer>.info { 
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
