@@ -16,7 +16,7 @@
 - __0.8.0__ Android WebView
 - __0.7.3__ (Reserved) Vue & Vuex document
 - __0.7.2__ (Reserved) Vue Study
-- __0.7.1__ Vuex with localStorage Event
+- __0.7.1__ vue with ts
 - __0.7.0__ Vue.js
 - __0.6.0__ (Working) CSS flex
 - __0.5.0__ (Working) graphQL

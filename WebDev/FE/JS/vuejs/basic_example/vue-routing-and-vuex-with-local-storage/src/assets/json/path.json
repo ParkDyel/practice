@@ -1,8 +1,0 @@
-{
-    "assets" : {
-        "image" : "../assets/image/"
-    },
-    "img" : {
-        "logo" : "logo.png"
-    }
-}
