@@ -1,6 +1,6 @@
 # Dyel's Practice Chunk
 
-2018.10.02
+2019.01.19
 
 code chunk, which just consist of practice.
 
@@ -10,12 +10,14 @@ The development environment is specified in each directory or project, but gener
 
 ### Prerequisites
 
-- __OS__ Win 10, Ubuntu 16.04(up to 18.01)
-- __Code Editor__[Visual Studio Code](https://code.visualstudio.com/)
-- __C__ [MinGW GCC 5.3.0](http://www.mingw.org/)
-- __JavaScript__ [Node.js 8.x](https://nodejs.org/), [MongoDB 3.x](https://www.mongodb.com/), [Chrome](https://chrome.com)
-- __Python__ Python 3.7
-- __IoT__ [Arduino Uno](https://www.arduino.cc/), [Raspberry Pi 3](https://www.raspberrypi.org/)
+- **OS** Win 10, Ubuntu 18.01
+- **Code Editor** [Visual Studio Code](https://code.visualstudio.com/)
+- **C** [MinGW GCC 5.3.0](http://www.mingw.org/)
+- **JavaScript**
+  - [Node.js 8.x](https://nodejs.org/)
+  - [Vue.js 2.x](https://vuejs.org/)
+- **Python** [Python 3.7](https://www.python.org/)
+- **IoT** [Arduino Uno](https://www.arduino.cc/), [Raspberry Pi 3](https://www.raspberrypi.org/)
 
 ## Built With
 
@@ -23,8 +25,7 @@ This README.MD based on [this template](https://gist.github.com/PurpleBooth/1093
 
 ## Versioning
 
-Try learning to use [SemVer](http://semver.org/) for versioning.
-[HISTORY.MD](./HISTORY.md)
+Try learning to use [SemVer](http://semver.org/) for versioning. get [HISTORY.MD](./HISTORY.md)
 
 ## Authors
 
@@ -32,7 +33,7 @@ Park Dyel
 
 ## License
 
-Copyright 2017-2018 ParkDyel
+Copyright 2017-2019 ParkDyel
 
 Each project follows each stated license. but if not stated, will follow [MIT license](https://opensource.org/licenses/mit-license.php). The lack of knowledge about licensing can cause problems, but I want to keep it as much as possible.
 
