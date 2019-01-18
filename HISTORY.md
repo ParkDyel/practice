@@ -1,31 +1,36 @@
 # HISTORY.MD
 
-- __1.x.0__ (Reserved) PWA
-- __1.x.0__ (Reserved) Python asyncio
-- __1.x.0__ (Reserved) Docker
-- __1.x.x__ (Reserved) Node.js with nginx
-- __1.x.0__ (Reserved) nginx
-- __1.x.0__ (Reserved) Node.js
-- __1.0.0__ (Reserved) Release 1.x.x ! in 2018. but maybe steel alone :(
-- __0.x.0__ (Reserved) clear up JavaScript
-- __0.x.0__ (Reserved) clear up Python
-- __0.x.0__ (Reserved) clear up Linux and git
-- __0.x.0__ (Reserved) clear up Firmware and IoT
-- __0.x.0__ (Reserved) clear up ComputerEngineering
-- __0.8.0__ Android
-- __0.7.3__ (Reserved) Vue & Vuex document
-- __0.7.2__ (Reserved) Vue Study
-- __0.7.1__ Vuex with localStorage Event
-- __0.7.0__ Vue.js
-- __0.6.0__ (Working) CSS flex
-- __0.5.0__ (Working) graphQL
-- __0.4.3__ edit docker
-- __0.4.2__ rebuild directory tree. and clear up Tool/git.
-- __0.4.1__ create docs/post.md to sepereate share url, because docs/article is not collect tpye for share IT. and add new item on python for future.
-- __0.4.0__ Update Fields 'Firmware', and delete Project Field cause not clear.
-- __0.3.0__ Redefine the internal structure since the employment.
-- __0.2.1__ Update some file, and article lists.
-- __0.2.0__ Merge TEdI storage for maker education.
-- __0.1.1__ Complete project structure redefine.
-- __0.1.0__ Begin project structure redefine.
-- __before Versioning__ Build a project to organize the knowledge
+- **1.e.0** (Reserved) PWA & Desktop PWAs
+- **1.d.0** (Reserved) Docker
+- **1.c.x** (Reserved) Node.js with nginx
+- **1.c.x** (Reserved) Node.js with express
+- **1.c.0** (Reserved) Node.js
+- **1.b.0** (Reserved) nginx
+- **1.a.x** (Reserved) Python sqlAlchemy
+- **1.a.x** (Reserved) Python asyncio
+- **1.a.x** (Reserved) Python flask
+- **1.a.0** (Reserved) Python
+- **1.0.0** (Reserved) Release 1.x.x ! in 2018. but maybe steel alone :(
+- **0.x.0** (Reserved) clear up WebDev
+- **0.x.0** (Reserved) clear up JavaScript
+- **0.x.0** (Reserved) clear up Python
+- **0.x.0** (Reserved) clear up Linux and git
+- **0.x.0** (Reserved) clear up Firmware and IoT
+- **0.x.0** (Reserved) clear up ComputerEngineering
+- **0.8.0** (Deprecated) Android
+- **0.7.3** (Reserved) Vue & Vuex document
+- **0.7.2** (Reserved) Vue Study
+- **0.7.1** Vuex with localStorage Event
+- **0.7.0** Vue.js
+- **0.6.0** (Reserved) CSS flex
+- **0.5.0** (Reserved) graphQL
+- **0.4.3** edit docker
+- **0.4.2** rebuild directory tree. and clear up Tool/git.
+- **0.4.1** create docs/post.md to sepereate share url, because docs/article is not collect tpye for share IT. and add new item on python for future.
+- **0.4.0** Update Fields 'Firmware', and delete Project Field cause not clear.
+- **0.3.0** Redefine the internal structure since the employment.
+- **0.2.1** Update some file, and article lists.
+- **0.2.0** Merge TEdI storage for maker education.
+- **0.1.1** Complete project structure redefine.
+- **0.1.0** Begin project structure redefine.
+- **before Versioning** Build a project to organize the knowledge
