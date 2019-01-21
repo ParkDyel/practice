@@ -1,17 +1,15 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+<template lang="pug">
+.home
+  shared-gnb
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import SharedGnb from '@/components/sharedGnb.vue'; // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld
+    'shared-gnb': SharedGnb
   }
 })
 export default class Home extends Vue {}

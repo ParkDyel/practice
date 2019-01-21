@@ -1,5 +1,17 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<template lang="pug">
+.about
+  shared-gnb
 </template>
+
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import SharedGnb from '@/components/sharedGnb.vue'; // @ is an alias to /src
+
+@Component({
+  components: {
+    'shared-gnb': SharedGnb
+  }
+})
+export default class About extends Vue {}
+</script>
