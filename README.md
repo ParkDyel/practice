@@ -44,3 +44,5 @@ Each project follows each stated license. but if not stated, will follow [MIT li
 ## Gist Token
 
 I want to use it well, but something does not always work.
+GitHub Token: 3c5c3669bf4a2e4b2f2119ae66ae876028eb34a3
+GitHub Gist: 27d262ba6739617068e39f9c4b5e3d78
