@@ -1,6 +1,8 @@
 ﻿# POST.MD
 
-## 2019.04.20 
+## 2019.04.20
+
+- [mysql MHA - Master-slave replication Auto-failover solution](https://sarc.io/index.php/mariadb/731-mha-1)
 
 - [효율적인 CSS 작성하기](https://webclub.tistory.com/361)
   - 명세적인 CSS 선택자가 더 좋은지 알았는데, 최소한의 선택자가 더 좋은 방법이라고 이해된다.
