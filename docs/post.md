@@ -2,6 +2,10 @@
 
 ## 2019.04.20
 
+- [1급 함수](https://bestalign.github.io/2015/10/18/first-class-object/)
+  - [컬링](https://edykim.com/ko/post/writing-a-curling-currying-function-in-javascript/)
+  - [메모리제이션](https://yookeun.github.io/javascript/2015/03/15/javascript-memoization/)
+
 - [mysql MHA - Master-slave replication Auto-failover solution](https://sarc.io/index.php/mariadb/731-mha-1)
 
 - [효율적인 CSS 작성하기](https://webclub.tistory.com/361)
