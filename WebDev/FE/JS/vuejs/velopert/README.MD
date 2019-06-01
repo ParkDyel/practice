@@ -1,1 +1,0 @@
-this codes src is [velopert](https://velopert.com)

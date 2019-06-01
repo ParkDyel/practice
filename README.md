@@ -41,8 +41,7 @@ Each project follows each stated license. but if not stated, will follow [MIT li
 
 - this repo's code and program are messy. Thank you for your advice.
 
-## Gist Token
+## VS Code Sync
 
-I want to use it well, but something does not always work.
-GitHub Token: 3c5c3669bf4a2e4b2f2119ae66ae876028eb34a3
-GitHub Gist: 27d262ba6739617068e39f9c4b5e3d78
+- (T) : bba9633ae03f39b8d043a5bf63840a0492585359
+- (G) : 53fc57cc0add3f8c83f8ac2eab0f52b2
