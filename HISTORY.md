@@ -10,18 +10,16 @@
 - **1.a.x** (Reserved) Python asyncio
 - **1.a.x** (Reserved) Python flask
 - **1.a.0** (Reserved) Python
-- **1.0.0** (Reserved) Release 1.x.x ! in 2018. but maybe steel alone :(
+- **1.0.0** (Reserved) Release 1.x.x ! in 202X. but maybe steel alone :(
 - **0.x.0** (Reserved) clear up WebDev
 - **0.x.0** (Reserved) clear up JavaScript
 - **0.x.0** (Reserved) clear up Python
 - **0.x.0** (Reserved) clear up Linux and git
 - **0.x.0** (Reserved) clear up Firmware and IoT
 - **0.x.0** (Reserved) clear up ComputerEngineering
+- **0.9.0** WebPack
 - **0.8.0** (Deprecated) Android
-- **0.7.3** (Reserved) Vue & Vuex document
-- **0.7.2** (Reserved) Vue Study
-- **0.7.1** Vuex with localStorage Event
-- **0.7.0** Vue.js
+- **0.7.0** (Split) Vue.js
 - **0.6.0** (Reserved) CSS flex
 - **0.5.0** (Reserved) graphQL
 - **0.4.3** edit docker
