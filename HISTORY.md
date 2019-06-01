@@ -1,15 +1,14 @@
 # HISTORY.MD
 
-- **1.e.0** (Reserved) PWA & Desktop PWAs
-- **1.d.0** (Reserved) Docker
-- **1.c.x** (Reserved) Node.js with nginx
-- **1.c.x** (Reserved) Node.js with express
-- **1.c.0** (Reserved) Node.js
-- **1.b.0** (Reserved) nginx
-- **1.a.x** (Reserved) Python sqlAlchemy
-- **1.a.x** (Reserved) Python asyncio
-- **1.a.x** (Reserved) Python flask
-- **1.a.0** (Reserved) Python
+- **1.x.0** (Reserved) Node.js
+- **1.x.0** (Reserved) Kube
+- **1.x.0** (Reserved) Docker
+- **1.x.0** (Reserved) PWA & Desktop PWAs
+- **1.x.0** (Reserved) nginx
+- **1.x.3** (Reserved) Python sqlAlchemy
+- **1.x.2** (Reserved) Python asyncio
+- **1.x.1** (Reserved) Python flask
+- **1.x.0** (Reserved) Python
 - **1.0.0** (Reserved) Release 1.x.x ! in 202X. but maybe steel alone :(
 - **0.x.0** (Reserved) clear up WebDev
 - **0.x.0** (Reserved) clear up JavaScript
