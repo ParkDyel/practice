@@ -1,5 +1,22 @@
 ﻿# POST.MD
 
+## 2019.05.30
+
+- [W3C vs WHATWG](https://v.kakao.com/v/20190531203200486)
+  - 결국 기업들이 이기는 세상이 왔다.
+
+- [마네킹 가슴 눌렀더니 붉은 피가... 전세계 깜짝 놀라게 한 토종제품](https://1boon.kakao.com/jobsN/5c7f1c606a8e5100018bd1be?view=katalk)
+  - 혁신적인 제품을 내서 성공하긴 어렵지만, 제품을 개선해서 성공하긴 보다 쉬운것 같다.
+
+## 2019.05.29
+
+- [실시간 통·번역 인공지능이 나와도 언어 공부를 해야 할까?, 2019년 5월 28일 by](https://ppss.kr/archives/195794) [남세동](https://ppss.kr/archives/author/ppsswr2148)
+  - 언어에 대한 고찰
+
+## 2019.05.02
+
+- [이해하기 쉬운 코드 작성방법 정리, 2019.05.01](https://chodragon9.github.io/blog/easy-code/)
+
 ## 2019.04.20
 
 - [1급 함수](https://bestalign.github.io/2015/10/18/first-class-object/)
