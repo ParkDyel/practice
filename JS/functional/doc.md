@@ -128,5 +128,75 @@ for (const el of iterator) console.log(el);
 const a = [1, 2];
 a[Symbol.iterator] = null;
 const b = [...a, ...[3, 4]]; // iterator error!
+```
 
+## 제너레이터와 이터레이터
+
+제너레이터: 이터레이너(well formed)이자 이터러블을 생성하는 함수, 모든 로직을 순회 가능하게 만들 수 있음.
+
+```javascript
+function *get(){
+  yield 1;
+  yield 2;
+  yield 3;
+  return 100; // 순회할 때는 제외됨
+}
+let iter = gen();
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+```
+
+### odds 예제
+
+```javascript
+function *odds(l){
+  for(let i=0; i<l; i++){
+    if(i%2) yield i;
+  }
+}
+
+let iter = odds(10);
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+```
+
+```javascript
+function *infinity(i = 0){
+  while (true){
+    yield i++;
+  }
+}
+function *limit(l, iter){
+  for(const a of iter){
+    yield a;
+    if(a >= l) return;
+  }
+}
+
+function *odds(l){
+  for(const a of limit(l, infinity(1))) {
+    if(a %2) yield a;
+  }
+}
+
+let iter = odds(10);
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+
+// iter 활용 : 구조분해, 나머지 연산자
+
+const [head, ...tail] = odds(5);
+console.log(head);
+console.log(tail);
+
+const [head, afterHead, ...tail] = odds(5);
+console.log(head);
+console.log(afterHead);
+console.log(tail);
 ```
