@@ -1,7 +1,4 @@
-sudo yum install git docker -y
-sudo usermod -aG docker $USER
-sudo systemctl enable docker
-sudo reboot
+sudo yum install git docker -y && sudo usermod -aG docker $USER && sudo systemctl enable docker && sudo reboot
 docker pull zabbix/zabbix-appliance
 # docker run --name zabbix-appliance --restart always -p 80:80 -p 10051:10051 -d zabbix/zabbix-appliance 
 docker run --name zabbix-appliance --restart always -p 80:80 -p 10051:10051 -d zabbix/zabbix-appliance

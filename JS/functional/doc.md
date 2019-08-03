@@ -200,3 +200,93 @@ console.log(head);
 console.log(afterHead);
 console.log(tail);
 ```
+
+## map, filter, reduce
+
+```javascript
+const products = [
+  {name:"iphone", price : 15000},
+  {name:"S10", price : 30000},
+  {name:"G50", price : 20000},
+  {name:"V50", price : 70000},
+  {name:"Q30", price : 26000},
+]
+```
+
+### map
+
+```javascript
+const map = (f, iter) => {
+  let res = [];
+  for(const i of iter) {
+    res.push(f(i));
+  }
+  return res;
+}
+
+console.log(map(p => p.name, products))
+console.log(map(p => p.price, products))
+```
+
+```javascript
+let m = new Map();
+m.set('a', 20)
+m.set('b', 40)
+console.log(new Map(map( ([k,a]) => [k, a*2], m)));
+```
+
+### filter
+
+```javascript
+const filter = (f, iter) => {
+  let res = [];
+  for(const i of iter){
+    if(f(i)) res.push(i);
+  }
+  return res;
+}
+
+console.log(...filter(p => p.price > 20000, products))
+console.log(...filter(p => p.price < 27000, products))
+console.log(...filter(n => n % 2, function *(){
+  yield 1;
+  yield 2;
+  yield 3;
+  yield 4;
+  yield 5;
+}()))
+```
+
+### reduce
+
+```javascript
+const reduce = (f, acc, iter) => {
+  if (iter == undefined) {
+    iter = acc[Symbol.iterator]();
+    acc = iter.next().value;
+  }
+  for(const i of iter){
+    acc = f(acc, i)
+  }
+  return acc;
+}
+
+const add = (a, b) => a+ b;
+console.log(reduce(add, 0, [1,2,3,4,5]))
+console.log(reduce(add, [1,2,3,4,5]))
+
+console.log(
+  reduce(
+    (total_price, product) => total_price + product.price,
+    0,
+    products
+  )
+)
+
+console.log(
+  reduce(
+    add,
+    map(p=> p.price, products)
+  )
+)
+```
