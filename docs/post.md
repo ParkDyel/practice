@@ -1,5 +1,9 @@
 ﻿# POST.MD
 
+## 2019.08.20
+
+ - [Dev:Web:웹 리소스 다운로드 옵션](https://css-tricks.com/using-relpreconnect-to-establish-network-connections-early-and-increase-performance/)
+ 
 ## 2019.05.30
 
 - [W3C vs WHATWG](https://v.kakao.com/v/20190531203200486)
