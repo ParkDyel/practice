@@ -1,5 +1,5 @@
 # just.ignore
-*.just.ignore
+.just.ignore
 
 # Setting file
 init.*.*
@@ -15,7 +15,8 @@ debug.log
 node_modules
 
 # Python
-*.pyc
+.pyc
+__pycache__
 
 # Android
 ## Built application files
