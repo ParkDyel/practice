@@ -1,5 +1,8 @@
 ﻿# POST.MD
 
+## 2019.08.31
+ - [AWS Lambda로 cror 작업하기](https://medium.com/itus-project/aws-aws-lambda-%EB%A1%9C-cron-job-%EB%8F%8C%EB%A6%AC%EA%B8%B0-c1c8875dc288)
+
 ## 2019.08.20
 
  - [Dev:Web:웹 리소스 다운로드 옵션](https://css-tricks.com/using-relpreconnect-to-establish-network-connections-early-and-increase-performance/)
