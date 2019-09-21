@@ -1,5 +1,9 @@
 ﻿# POST.MD
 
+## 2019.09.20
+ - [위워크의 단점을 해결한 공유오피스 '인더스트리어스'](http://www.bizion.com/bbs/board.php?bo_table=insight&wr_id=1312)
+   - 위워크가 가지는 리스크를 줄이고, 동일한 사업 모델에서 더 나은 서비스를 선보였다. 비슷하게 에어비앤비도 쉐어 서비스를 제공하여 직접 주택을 소유하지 않고도 숙박업을 제공할 수 있었고 기존의 모텔이나 호텔 등을 위협했다. 더 많은 분야에 이러한 서비스를 제공한다면, 많은 노고를 들이지 않고도 차별점을 줄수 있는 포인트가 될 수 있을것 같다.
+
 ## 2019.08.31
  - [AWS Lambda로 cror 작업하기](https://medium.com/itus-project/aws-aws-lambda-%EB%A1%9C-cron-job-%EB%8F%8C%EB%A6%AC%EA%B8%B0-c1c8875dc288)
 
