@@ -1,6 +1,6 @@
 # react-hooked
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and based on [How to build a movie search app using React Hooks](https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and followed this [How to build a movie search app using React Hooks](https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7).
 
 learn hooks with [리액트의 Hooks 완벽 정복하기](https://velog.io/@velopert/react-hooks)
 
