@@ -1,10 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <title>Part 1. what is function programming?</title>
+</head>
+<body>
 # 함수형 프로그래밍이란
 
 ## 기본
 
 함수형 프로그래밍은 순수함 함수를 작성하고, 공유된 상태와 변경 가능한 데이터 및 부작용을 피하여 소프트웨어를 작성하는 프로세스이다.
 
-애플리케이션 상태가 공유되고, 객체의 메소드와 사용되는 객체 지향 프로그래밍과 대조는된다 
+애플리케이션 상태가 공유되고, 객체의 메소드와 사용되는 객체 지향 프로그래밍과 대조는된다
 
 ### 장점
 
@@ -20,7 +25,7 @@ y= f(x)
 
 합성함수는 말 그대로 두 가지 이상의 함수가 합성되었음을 뜻한다.
 
-f(x), g(x)가 있을 때 f(g(x)) 는 f*g(x)로 표현할 수 있다.
+f(x), g(x)가 있을 때 f(g(x)) 는 f\*g(x)로 표현할 수 있다.
 
 ### 평가와 일급
 
@@ -35,23 +40,23 @@ f(x), g(x)가 있을 때 f(g(x)) 는 f*g(x)로 표현할 수 있다.
 함수의 인자로 사용될 수 있다.
 함수의 결과로 사용될 수 있다.
 
-```javascript
+<script>
 const a = 10;
-const add10 = acc => acc+10;
+const add10 = (acc) => acc + 10;
 const b = add10(a);
-```
+</script>
 
 #### 일급 함수
 
 함수를 값으로 다룰 수 있다.
 조합성과 추상화의 도구
 
-```javascript
+<script>
 const add5 = a => a+5;
 const deep1 = () => () => 1;
 const deep2 = f1();
 deep2();
-```
+</script>
 
 #### 고차 함수
 
@@ -59,7 +64,7 @@ deep2();
 
 ##### 함수를 인자로 받아서 실행하는 함수
 
-```javascript
+<script>
 const df = cb => cb(1);
 const ret = req => req + 2;
 df(req)
@@ -68,16 +73,14 @@ const multiRun = (f, n) => {
   let i =-1;
   while(++i<n) f(i);
 }
-
-```
+</script>
 
 ##### 함수를 만들어 리턴하는 함수(클로저)
 
-```javascript
+<script>
 const calc => a => b => a+b;
 calc(a=10)(b=10)
-
-```
+</script>
 
 ## 순회와 이터러블:이터레이터 프로토콜
 
@@ -94,33 +97,35 @@ Symbol.iterator
 이터레이터 : { value, done } 객체를 리턴하는 next()를 가진 값
 이터러블/이터레이터 프로토콜 : 이터러블을 for...of, 전개 연산자 등과 함께 동작하도록한 규약
 
-```javascript
+<script>
 const arr = [1, 2, 3];
-for (const el of arr) console.log(el)
+for (const el of arr) console.log(el);
 arr[Symbol.iterator] = null;
-for (const el of arr) console.log(el)
+for (const el of arr) console.log(el);
 
 const arr2 = [1, 2, 3];
-let iterator = arr2[Symbol.iterator]
+let iterator = arr2[Symbol.iterator];
 iterator.next();
 iterator.next();
 iterator.next();
 iterator.next();
-```
+</script>
 
-```javascript
+<script>
 const iterable = {
-  [Symbol.iterator](){
+  [Symbol.iterator]() {
     let i = 3;
     return {
       next() {
-        return i == 0 ? { done : true } : { value : i--, done: false};
+        return i == 0 ? { done: true } : { value: i--, done: false };
       },
       // well formed iterator, 상태값 보관
-      [Symbol.iterator]() {return this;}
-    }
+      [Symbol.iterator]() {
+        return this;
+      }
+    };
   }
-}
+};
 let iterator = iterable[Symbol.iterator]();
 for (const el of iterator) console.log(el);
 
@@ -128,13 +133,13 @@ for (const el of iterator) console.log(el);
 const a = [1, 2];
 a[Symbol.iterator] = null;
 const b = [...a, ...[3, 4]]; // iterator error!
-```
+</script>
 
 ## 제너레이터와 이터레이터
 
 제너레이터: 이터레이너(well formed)이자 이터러블을 생성하는 함수, 모든 로직을 순회 가능하게 만들 수 있음.
 
-```javascript
+<script>
 function *get(){
   yield 1;
   yield 2;
@@ -146,11 +151,11 @@ console.log(iter.next());
 console.log(iter.next());
 console.log(iter.next());
 console.log(iter.next());
-```
+</script>
 
 ### odds 예제
 
-```javascript
+<script>
 function *odds(l){
   for(let i=0; i<l; i++){
     if(i%2) yield i;
@@ -162,24 +167,24 @@ console.log(iter.next());
 console.log(iter.next());
 console.log(iter.next());
 console.log(iter.next());
-```
+</script>
 
-```javascript
+<script>
 function *infinity(i = 0){
   while (true){
     yield i++;
   }
 }
-function *limit(l, iter){
-  for(const a of iter){
+function* limit(l, iter) {
+  for (const a of iter) {
     yield a;
-    if(a >= l) return;
+    if (a >= l) return;
   }
 }
 
-function *odds(l){
-  for(const a of limit(l, infinity(1))) {
-    if(a %2) yield a;
+function* odds(l) {
+  for (const a of limit(l, infinity(1))) {
+    if (a % 2) yield a;
   }
 }
 
@@ -199,11 +204,11 @@ const [head, afterHead, ...tail] = odds(5);
 console.log(head);
 console.log(afterHead);
 console.log(tail);
-```
+</script>
 
 ## map, filter, reduce
 
-```javascript
+<script>
 const products = [
   {name:"iphone", price : 15000},
   {name:"S10", price : 30000},
@@ -211,40 +216,40 @@ const products = [
   {name:"V50", price : 70000},
   {name:"Q30", price : 26000},
 ]
-```
+</script>
 
 ### map
 
-```javascript
+<script>
 const map = (f, iter) => {
   let res = [];
-  for(const i of iter) {
+  for (const i of iter) {
     res.push(f(i));
   }
   return res;
-}
+};
 
 console.log(map(p => p.name, products))
 console.log(map(p => p.price, products))
-```
+</script>
 
-```javascript
+<script>
 let m = new Map();
 m.set('a', 20)
 m.set('b', 40)
 console.log(new Map(map( ([k,a]) => [k, a*2], m)));
-```
+</script>
 
 ### filter
 
-```javascript
+<script>
 const filter = (f, iter) => {
   let res = [];
-  for(const i of iter){
-    if(f(i)) res.push(i);
+  for (const i of iter) {
+    if (f(i)) res.push(i);
   }
   return res;
-}
+};
 
 console.log(...filter(p => p.price > 20000, products))
 console.log(...filter(p => p.price < 27000, products))
@@ -255,33 +260,29 @@ console.log(...filter(n => n % 2, function *(){
   yield 4;
   yield 5;
 }()))
-```
+</script>
 
 ### reduce
 
-```javascript
+<script>
 const reduce = (f, acc, iter) => {
   if (iter == undefined) {
     iter = acc[Symbol.iterator]();
     acc = iter.next().value;
   }
-  for(const i of iter){
-    acc = f(acc, i)
+  for (const i of iter) {
+    acc = f(acc, i);
   }
   return acc;
-}
+};
 
-const add = (a, b) => a+ b;
-console.log(reduce(add, 0, [1,2,3,4,5]))
-console.log(reduce(add, [1,2,3,4,5]))
+const add = (a, b) => a + b;
+console.log(reduce(add, 0, [1, 2, 3, 4, 5]));
+console.log(reduce(add, [1, 2, 3, 4, 5]));
 
 console.log(
-  reduce(
-    (total_price, product) => total_price + product.price,
-    0,
-    products
-  )
-)
+  reduce((total_price, product) => total_price + product.price, 0, products)
+);
 
 console.log(
   reduce(
@@ -289,4 +290,71 @@ console.log(
     map(p=> p.price, products)
   )
 )
-```
+
+console.log(
+  reduce(
+    add,
+    map(p => p.price, filter(p => p.price < 20000, products ))
+  )
+)
+</script>
+
+## Code를 값으로 다루기
+
+### go & pipe
+
+<script>
+const go = (...args) => {
+  reduce( (a, f) => f(a), args )
+};
+
+go(0, a => a+1, a=>a+10, a=>a+100, log);
+const pipe = (...fs) => (a) = {go(a, ...fs)};
+
+const f = pipe(a => a+1, a => a+10, a => a+100);
+</script>
+
+### go로 코드 가독성 높이기
+
+<script>
+go (
+  products,
+  products => filter(p => p.price < 5000, products),
+  products => map(p => p.price, products),
+  prices => reduce(add, prices),
+  log
+);
+</script>
+
+### go + curry 로 코드 가독성 높이기
+
+<script>
+  const curry = f => (a, ..._) => { _.length ? f(a, ...) : (..._) => f(a, ..._)}
+
+  const mult = curry((a, b) => a * b);
+  log(multi(1)(2));
+
+  const mult3 = mult(3);
+  log(mult3(10));
+  log(mult3(5));
+  log(mult3(3));
+
+  // filter with curry, map with curry, and reduce with curry 
+  // go (
+  //   products,
+  //   products => filter(p => p.price < 5000)(products),
+  //   products => map(p => p.price)(products),
+  //   prices => reduce(add)(prices),
+  //   log
+  // );
+
+  // filter with curry, map with curry, and reduce with curry 
+  // go (
+  //   products,
+  //   filter(p => p.price < 5000),
+  //   map(p => p.price),
+  //   reduce(add),
+  //   log
+  // );
+</script>
+</body>
