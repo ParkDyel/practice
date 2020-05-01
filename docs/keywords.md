@@ -1,3 +1,0 @@
-- PWA, Progressive Web App
-- Immersive Web
-- ROA Resource Oriented Architecture

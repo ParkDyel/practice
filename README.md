@@ -1,47 +1,47 @@
+---
+description: merge with github
+---
+
 # Dyel's Practice Chunk
 
-2019.01.19
+2019.10.29
 
 code chunk, which just consist of practice.
 
-## Getting Started
+### Getting Started
 
 The development environment is specified in each directory or project, but generally following this environment.
 
-### Prerequisites
+#### Prerequisites
 
-- **OS** Win 10, Ubuntu 18.01
-- **Code Editor** [Visual Studio Code](https://code.visualstudio.com/)
-- **C** [MinGW GCC 5.3.0](http://www.mingw.org/)
-- **JavaScript**
-  - [Node.js 8.x](https://nodejs.org/)
-  - [Vue.js 2.x](https://vuejs.org/)
-- **Python** [Python 3.7](https://www.python.org/)
-- **IoT** [Arduino Uno](https://www.arduino.cc/), [Raspberry Pi 3](https://www.raspberrypi.org/)
+* **OS** Win 10, Ubuntu 18.01
+* **Code Editor** [Visual Studio Code](https://code.visualstudio.com/)
+* **C** [MinGW GCC 5.3.0](http://www.mingw.org/)
+* **JavaScript**
+  * [Node.js 8.x](https://nodejs.org/)
+  * [Vue.js 2.x](https://vuejs.org/)
+* **Python** [Python 3.7](https://www.python.org/)
+* **IoT** [Arduino Uno](https://www.arduino.cc/), [Raspberry Pi 3](https://www.raspberrypi.org/)
 
-## Built With
+### Built With
 
 This README.MD based on [this template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
 
-## Versioning
+### Versioning
 
-Try learning to use [SemVer](http://semver.org/) for versioning. get [HISTORY.MD](./HISTORY.md)
+get [HISTORY.MD](https://github.com/ParkDyel/practice/blob/dataStructureJs/HISTORY.md)
 
-## Authors
+### Authors
 
 Park Dyel
 
-## License
+### License
 
-Copyright 2017-2019 ParkDyel
+Copyright 2017-2019 Park Dyel
 
 Each project follows each stated license. but if not stated, will follow [MIT license](https://opensource.org/licenses/mit-license.php). The lack of knowledge about licensing can cause problems, but I want to keep it as much as possible.
 
-## Acknowledgments
+### Acknowledgments
 
-- this repo's code and program are messy. Thank you for your advice.
+* this repo's code and program are messy. Thank you for your advice.
 
-## VS Code Sync
-
-- (T) : bba9633ae03f39b8d043a5bf63840a0492585359
-- (G) : 53fc57cc0add3f8c83f8ac2eab0f52b2
