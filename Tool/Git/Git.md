@@ -21,35 +21,49 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
 3. create a new directory.
 4. change 'work directory' to the new directory.
 5. make directory as git repo.
+
     ```bash
     git init
     ```
 6. create the REDEME.md.
+
     ```bash
     echo '#README.md' >> README.md
     ```
+
 7. add files that will be add on repo.
+
     ```bash
     git add README.md
     ```
+
 8. config userEmail and userName on shell.
+
     ```bash
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
     ```
+
 9. commit and edit commit message
+
     ```bash
     git commit -m "first commit"
     ```
+
 10. add git remote.
+
     ```bash
     git remote add origin https://github.com/{UserName}/{repo.git}
     ```
+
 11. push to git remote 'origin' as brunch 'master'
+
     ```bash
     git push -u origin master
     ```
+
     or just run at once 9,10
+
     ```bash
     git push -u {repo.git} {brunchName}
     ```
@@ -58,41 +72,64 @@ GitHub란 Git을 Network 상에 공유하여 여러 사람이 작업을 공유�
 
 1. 다른 작업 환경을 구성하기 위해 새로운 branch를 생성
     1. 현재 branch 확인
+
         ```bash
         git checkout
         ```
+
     2. local에서 추적중인 branch 확인
+
         ```bash
         git branch -r
         ```
     3. git hub의 branch 목록 갱신
+
         ```bash
         git fetch
         ```
+
     4. branch 생성
+
         ```bash
         git branch `${NewBranch}`
         ```
+
     5. branch 전환
+
         ```bash
         git checkout `${NewBranch}`
         ```
-    ps) 4번 항목과 5번 항목을 다음 명령어로 한번에 실행할 수 있다.
+
+        ps) 4번 항목과 5번 항목을 다음 명령어로 한번에 실행할 수 있다.
+
         ```bash
         git checkout -b `${NewBranch}`
         ```
+
 1. 변경 사항 확인
     1. 변경된 코드 확인
+
         ```bash
         git diff
         ```
+
     2. 변경된 이력 확인
+
         ```bash
         git log
         ```
-        
+
 1. Git 설치 시 설정한 설정 변경
-    1. global   
+    1. global
+
         ```bash
         git config --global --edit
         ```
+
+1. 이미 commit(local)까지 한 상태에서 수정점이 생겼을 때 추가하기
+
+    다음 명령어를 통해 commit 메세지도 수정할 수 있다.
+
+    ```bash
+    git commit - ammend
+    ```
