@@ -1,0 +1,4 @@
+/node_modules/
+
+**/big-integer/docs/
+**/big-integer/node_modules/
