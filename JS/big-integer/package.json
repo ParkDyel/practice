@@ -1,0 +1,14 @@
+{
+  "name": "big-integer",
+  "version": "0.1.0",
+  "description": "이 프로젝트는 더글라스 크락포드의 \"자바스크립크는 왜 그 모양일까?\"의 일부를 옮겨 온것입니다. This project is a part of a translation of Douglas Crockford's \"how javascript works\".",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "doc": "jsdoc main.js -R readme.md -d docs"
+  },
+  "author": "",
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
+  }
+}
