@@ -70,3 +70,135 @@ function is_zero(big){
   return !Array.isArray(big) || big.lengh < 2;
 }
 ```
+
+mint 함수는 배열의 마지막 요소가 영(0)인 경우 제거합니다. 윗 자리수가 배열의 끝에 있기 때문에, 마지막에 있는 0은 의미가 없습니다. 가능한 상수로 반환하고, 상수 중에 일치하는 것이 없다면 배열을 동결합니다.
+
+```JavaScript
+function mint(proto_big_integer) {
+  while (last(progo_big_integer) === 0) {
+    proto_big_integer.length -= 1;
+  }
+
+  if (progo_big_integer.length <= 1) {
+    return zero;
+  }
+
+  if (proto_big_integer[sign] === plus) {
+    if (proto_big_integer.length === 2) {
+      if (proto_big_integer[least] === 1) {
+        return one;
+      }
+
+      if (proto_big_integer[least] === 2) {
+        return two;
+      }
+
+      if (proto_big_integer[least] === 10) {
+        return ten;
+      }
+    } 
+  } else if (proto_big_integer.length === 2) {
+    if (proto_big_integer[sign] === 1) {
+      return negative_wun;
+    }  
+  }
+  return Object.freeze(proto_big_integer);
+}
+```
+
+이제 만들어볼 함수는 부호 바꾸기, 절댓값, 그리고 부호를 추출하는 함수입니다.
+
+```JavaScript
+function neg(big){
+  if (is_zero(big)){
+    return zero;
+  }
+  let negation = big.slice();
+  negation[sign] = (
+    is_negative(big)
+    ? plus
+    : minus
+  );
+  return mint(negation);
+}
+
+function abs(big){
+  return (
+    is_zero(big)
+    ? zero
+    : (
+      is_negative(big)
+      ? neg(big)
+      : big
+    )
+  )
+}
+
+function signum(big){
+  return (
+    is_zero(big)
+    ? zero
+    : (
+      is_negative(big)
+      ? negative_wun
+      : wun
+    )
+  )
+}
+```
+
+함수 eq는 두 큰 정수가 동일한 값을 가지는 지 확인합니다.
+
+```JavaScript
+function eq(comparahend, comparator){
+  return comparahend === comparator || (
+    comparahend.length === comparator.length
+    && comparahend.every((el, el_nr)=>{
+      return el === comparator[el_nr]
+    })
+  )
+}
+```
+
+함수 abs_lt는 큰 정수의 절대값이 다른 큰 정수 절대값보다 작은 지 판별합니다. lt 함수는 부호를 포함한 값이 다른 정수 값보다 작은지 봅니다.
+```JavaScript
+function abs_lt(comparahend, comparator){
+  return (
+    comparahend.length == comparator.length
+    ? comparahend.reduce((reduction, el, el_nr)=>{
+      if(el_nr !== sign){
+        const other = comparator[el_nr];
+        if ( el !== other){
+          return el < other;
+        }
+      },
+      false
+    })
+    : comparahend.length < comparator.length;
+  )
+}
+
+function lt(comparahend, comparator){
+  return (
+    comparahend[sign] !== comparator[sign]
+    ? is_negative(comparahend)
+    : (
+      is negative(comparator)
+      ? abs_lt(comparator, comparahend)
+      ? abs_lt(comparahend, comparator)
+    )
+  )
+}
+
+function ge(a, b){
+  return !lt(a, b);
+}
+
+function gt(a, b){
+  return lt(b, a);
+}
+
+function le(a, b){
+  return !lt(b, a);
+}
+```

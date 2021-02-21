@@ -17,8 +17,38 @@ const sign = 0;
 const least = 1;
 
 /**
+ * @const {Array} zero
+ * @desc archetype value
+ */
+const zero = Object.freeze([plus]);
+
+/**
+ * @const {Array} wun
+ * @desc archetype value
+ */
+const wun = Object.freeze([plus, 1]);
+
+/**
+ * @const {Array} two
+ * @desc archetype value
+ */
+const two = Object.freeze([plus, 2]);
+
+/**
+ * @const {Array} ten
+ * @desc archetype value
+ */
+const ten = Object.freeze([plus, 10]);
+
+/**
+ * @const {Array} negative_wun
+ * @desc archetype value
+ */
+const negative_wun = Object.freeze([minus, 1]);
+
+/**
  * check it is big or not
- * @param {BigNumber} big
+ * @param {Array} big
  * @return {boolean}
  */
 function is_big_integer(big) {
@@ -35,87 +65,61 @@ function is_negative(big) {
 }
 
 /**
- * @class
- * @classdesc Big Number
+ * return last value in array
+ * @param {Array} array
+ * @return {Number} ? sign
  */
-class BigNumber {
-  constructor(_arr) {
-    if (
-      !Array.isArray(_arr) ||
-      !(_arr[sign] === plus || _arr[sign] === minus)
-    ) {
-      throw TypeError('Value that does not conform to the format.');
-    }
-    this._value = Object.freeze(_arr);
-  }
-
-  /**
-   * return value
-   * @return {Array}
-   */
-  get value() {
-    return Object.freeze(this._value);
-  }
-
-  /**
-   * return last elment
-   */
-  get last() {
-    return this._value(this._value.length - 1);
-  }
-
-  /**
-   * return next to last elment
-   */
-  get next_to_last() {
-    return this._value[this._value.length - 2];
-  }
-
-  /**
-   * print value
-   * FIXME
-   */
-  print() {
-    console.log(
-      this._value.reduce((acc, x) => {
-        return acc + x;
-      }, '')
-    );
-  }
+function last(array) {
+  return array[array.length - 1];
 }
 
 /**
- * @const {BigNumber} zero
- * @desc archetype value
+ * return next to last value in array
+ * @param {Array} array
+ * @return {Number}
  */
-const zero = new BigNumber([plus]);
+function next_to_last(array) {
+  return array[array.length - 2];
+}
 
 /**
- * @const {BigNumber} wun
- * @desc archetype value
+ * return next to last value in array
+ * @param {Array} array
+ * @return {Array}
  */
-const wun = new BigNumber([plus, 1]);
+function mint(proto_big_integer) {
+  while (last(progo_big_integer) === 0) {
+    proto_big_integer.length -= 1;
+  }
 
-/**
- * @const {BigNumber} two
- * @desc archetype value
- */
-const two = new BigNumber([plus, 2]);
+  if (progo_big_integer.length <= 1) {
+    return zero;
+  }
 
-/**
- * @const {BigNumber} ten
- * @desc archetype value
- */
-const ten = new BigNumber([plus, 10]);
+  if (proto_big_integer[sign] === plus) {
+    if (proto_big_integer.length === 2) {
+      if (proto_big_integer[least] === 1) {
+        return one;
+      }
 
-/**
- * @const {BigNumber} negative_wun
- * @desc archetype value
- */
-const negative_wun = new BigNumber([minus, 1]);
+      if (proto_big_integer[least] === 2) {
+        return two;
+      }
+
+      if (proto_big_integer[least] === 10) {
+        return ten;
+      }
+    } 
+  } else if (proto_big_integer.length === 2) {
+    if (proto_big_integer[sign] === 1) {
+      return negative_wun;
+    }  
+  }
+  return Object.freeze(proto_big_integer);
+}
 
 if (typeof require !== 'undefined' && require.main === module) {
-  let x = new BigNumber(['-', 2, 4]);
+  let x = Object.freeze(['-', 2, 4]);
   x.print();
   // let y = new BigNumber([2, 4]);
 }
